@@ -12,7 +12,6 @@ import requests
 
 def get_filmaffinity_suggestions(word):
     url = "https://www.filmaffinity.com/es/search-ac.ajax.php?action=searchTerm&term=" + word
-    print("posting " + url + " to filmaffinity")
     return requests.post(url).json()
 
 
@@ -27,7 +26,7 @@ def main(wf):
     # added via `Workflow3(libraries=...)`
 
     import json
-    from pyquery import PyQuery
+    from pyquery import PyQuery as pq
     # import amodule
     # import anothermodule
 
@@ -36,23 +35,27 @@ def main(wf):
     args = wf.args
 
     # Do stuff here ...
-    print("searching for " + args[0])
-    res = get_filmaffinity_suggestions(args[0])
-    for result in res['results']:
-        # print(json.dumps(result, indent=4))
-        icon_src = PyQuery(result['label'])('src')
-        wf.add_item(
-            title=result['value'],
-            # subtitle=result['href'],
-            arg="https://www.filmaffinity.com/es/film" + str(result['id']) + ".html",
-            valid=True,
-            icon=icon_src
-        )
+    # print("searching for " + args[0])
+    if (len(args) > 0):
+        res = get_filmaffinity_suggestions(args[0])
+        for result in res[u'results']:
+
+            # print("found" + json.dumps(result, indent=4))
+            d = pq(result['label'])
+            icon_src = d('div img').attr('src')
+            # print(icon_src)
+            wf.add_item(
+                title=result['value'],
+                # subtitle=result['href'],
+                arg="https://www.filmaffinity.com/es/film" + str(result['id']) + ".html",
+                valid=True,
+                icon=icon_src
+            )
     # print(json.dumps(results, indent=4))
     # print(args[0])
 
     # Add an item to Alfred feedback
-    wf.add_item(u'Item title', u'Item subtitle')
+    # wf.add_item(u'Item title', u'Item subtitle')
 
     # Send output to Alfred. You can only call this once.
     # Well, you *can* call it multiple times, but subsequent calls

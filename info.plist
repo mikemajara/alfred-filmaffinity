@@ -7,7 +7,21 @@
 	<key>category</key>
 	<string>Internet</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>B519331B-5408-4981-929A-0587835710A7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>83F28A94-40CE-4B0C-BE01-3EE066D31398</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>Mike Majara</string>
 	<key>description</key>
@@ -18,6 +32,25 @@
 	<string>Filmaffinity</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B519331B-5408-4981-929A-0587835710A7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -32,7 +65,7 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>102</integer>
 				<key>keyword</key>
 				<string>ff</string>
 				<key>queuedelaycustom</key>
@@ -46,9 +79,9 @@
 				<key>runningsubtext</key>
 				<string>Asking uncomfortable questions to filmaffinity...</string>
 				<key>script</key>
-				<string>python main.py</string>
+				<string>python main.py "{query}"</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
@@ -56,7 +89,7 @@
 				<key>title</key>
 				<string>Search filmaffinity for</string>
 				<key>type</key>
-				<integer>3</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -75,7 +108,14 @@
 		<key>83F28A94-40CE-4B0C-BE01-3EE066D31398</key>
 		<dict>
 			<key>xpos</key>
-			<integer>450</integer>
+			<integer>245</integer>
+			<key>ypos</key>
+			<integer>175</integer>
+		</dict>
+		<key>B519331B-5408-4981-929A-0587835710A7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>550</integer>
 			<key>ypos</key>
 			<integer>170</integer>
 		</dict>
