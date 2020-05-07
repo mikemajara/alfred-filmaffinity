@@ -42,14 +42,14 @@ def main(wf):
 
             # print("found" + json.dumps(result, indent=4))
             d = pq(result['label'])
-            icon_src = d('div img').attr('src')
+            # icon_src = d('div img').attr('src')
             # print(icon_src)
             wf.add_item(
                 title=result['value'],
                 # subtitle=result['href'],
                 arg="https://www.filmaffinity.com/es/film" + str(result['id']) + ".html",
                 valid=True,
-                icon=icon_src
+                icon="icon.png"
             )
     # print(json.dumps(results, indent=4))
     # print(args[0])

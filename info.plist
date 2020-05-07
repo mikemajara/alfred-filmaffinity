@@ -8,11 +8,11 @@
 	<string>Internet</string>
 	<key>connections</key>
 	<dict>
-		<key>B519331B-5408-4981-929A-0587835710A7</key>
+		<key>83F28A94-40CE-4B0C-BE01-3EE066D31398</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>83F28A94-40CE-4B0C-BE01-3EE066D31398</string>
+				<string>F7D6EB52-6019-4DF9-B0EC-DFF0554F33AE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -32,25 +32,6 @@
 	<string>Filmaffinity</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>B519331B-5408-4981-929A-0587835710A7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -100,6 +81,25 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>F7D6EB52-6019-4DF9-B0EC-DFF0554F33AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -112,12 +112,12 @@
 			<key>ypos</key>
 			<integer>175</integer>
 		</dict>
-		<key>B519331B-5408-4981-929A-0587835710A7</key>
+		<key>F7D6EB52-6019-4DF9-B0EC-DFF0554F33AE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>550</integer>
+			<integer>545</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>175</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
