@@ -7,11 +7,12 @@ import sys
 # Workflow3 supports Alfred 3's new features. The `Workflow` class
 # is also compatible with Alfred 2.
 from workflow import Workflow3
-# import requests
+import requests
 
-# def get_filmaffinity_suggestions(word):
-#     url = "https://www.filmaffinity.com/es/search-ac.ajax.php?action=searchTerm&term=" + word
-#     return requests.post(url)
+def get_filmaffinity_suggestions(word):
+    url = "https://www.filmaffinity.com/es/search-ac.ajax.php?action=searchTerm&term=" + word
+    print("posting " + url + " to filmaffinity")
+    return requests.post(url).json()
 
 
 def main(wf):
@@ -32,8 +33,8 @@ def main(wf):
     args = wf.args
 
     # Do stuff here ...
-    # print(get_filmaffinity_suggestions(args[1]))
-    # print(args)
+    print(get_filmaffinity_suggestions(args[0]))
+    # print(args[0])
 
     # Add an item to Alfred feedback
     wf.add_item(u'Item title', u'Item subtitle')
