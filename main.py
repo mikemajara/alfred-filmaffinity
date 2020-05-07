@@ -9,6 +9,7 @@ import sys
 from workflow import Workflow3
 import requests
 
+
 def get_filmaffinity_suggestions(word):
     url = "https://www.filmaffinity.com/es/search-ac.ajax.php?action=searchTerm&term=" + word
     print("posting " + url + " to filmaffinity")
@@ -25,6 +26,8 @@ def main(wf):
     # is not a bad idea, or if the modules/packages are in a directory
     # added via `Workflow3(libraries=...)`
 
+    import json
+    from pyquery import PyQuery
     # import amodule
     # import anothermodule
 
@@ -33,7 +36,19 @@ def main(wf):
     args = wf.args
 
     # Do stuff here ...
-    print(get_filmaffinity_suggestions(args[0]))
+    print("searching for " + args[0])
+    res = get_filmaffinity_suggestions(args[0])
+    for result in res['results']:
+        # print(json.dumps(result, indent=4))
+        icon_src = PyQuery(result['label'])('src')
+        wf.add_item(
+            title=result['value'],
+            # subtitle=result['href'],
+            arg="https://www.filmaffinity.com/es/film" + str(result['id']) + ".html",
+            valid=True,
+            icon=icon_src
+        )
+    # print(json.dumps(results, indent=4))
     # print(args[0])
 
     # Add an item to Alfred feedback
