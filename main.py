@@ -1,16 +1,23 @@
 #!/usr/bin/python
 # encoding: utf-8
 
-import sys
 import os
+import re
+import sys
 import urllib
 
 from workflow import Workflow3, web
 from bs4 import BeautifulSoup
 
-# lets implement simple (quick & light) vs complete (slow and heavy) modes
-MODE_SIMPLE = os.getenv('MM_SIMPLE_MODE') or False # Complex Mode (False) is default mode
-URL_SEARCH_GET = "https://www.filmaffinity.com/es/advsearch2.php?q="
+# lets implement simple (quick & light) vs complete (slow and heavy) modes through display otpions
+
+# DISPLAY_DETAILS = re.match(r"^[Tt]rue$", str(os.getenv('MM_DISPLAY_DETAILS')))
+# DISPLAY_THUMBNAILS = re.match(r"^[Tt]rue$", str(os.getenv('MM_DISPLAY_THUMBNAILS')))
+
+DISPLAY_DETAILS = os.getenv('MM_DISPLAY_DETAILS').isdigit() and int(os.getenv('MM_DISPLAY_DETAILS'))
+DISPLAY_THUMBNAILS = os.getenv('MM_DISPLAY_THUMBNAILS').isdigit() and int(os.getenv('MM_DISPLAY_THUMBNAILS'))
+
+URL_SEARCH_GET = "https://www.filmaffinity.com/es/search.php?stype=title&stext="
 URL_SEARCH_POST = "https://www.filmaffinity.com/es/search-ac.ajax.php?action=searchTerm&term="
 ICON_DEFAULT = "icon.png"
 
@@ -18,20 +25,52 @@ def get_filmaffinity_suggestions(word):
     url = "https://www.filmaffinity.com/es/search-ac.ajax.php?action=searchTerm&term=" + urllib.quote(word)
     return web.post(url)
 
-def get_filmaffinity_html(url):
+def get_raw_html_for_url(url):
     res = web.get(url)
     return res.text if res.status_code == 200 else None
 
-def get_film_url(id):
+def get_url_for_film_id(id):
     return "https://www.filmaffinity.com/es/film" + str(id) + ".html"
 
-def crawl_filmaffinity_html(html):
-    soup = BeautifulSoup(html, 'html.parser')
-    rating_element = soup.find(id='movie-rat-avg')
-    rating = rating_element.attrs['content'] if rating_element is not None else None
-    return {
-        'rating': rating
-    }
+# Result example
+# {
+#     u'id': 387687, 
+#     u'label': u'<div class="movie-card-ac">\r\n <img width="80" height="114" src="https://pics.filmaffinity.com/el_silencio_del_pantano-252305344-msmall.jpg" alt="El silencio del pantano "><div class="title">El silencio del pantano  <small>(2019)</small></div>\r\n<div class="cast">Pedro Alonso, Nacho Fresneda, ...</div>\r\n</div>\r\n', 
+#     u'value': u'El silencio del pantano '
+# }
+def get_film_detail_string(id):
+    try:
+        html_raw = get_raw_html_for_url(get_url_for_film_id(id))
+        if html_raw is None:
+            return None
+        soup = BeautifulSoup(html_raw, 'html.parser')
+
+            # get details
+        rating_node = soup.find(id='movie-rat-avg')
+        if rating_node is not None:
+            rating_str= (rating_node.attrs['content'] or "-") + "/10"
+        
+        return rating_str
+    except:
+        print("Unexpected exception")
+        return ""
+
+
+def download_image_from_url(url):
+    save_directory = './cache'
+    try:
+        filename = os.path.basename(url)
+        filepath = os.path.join(save_directory, filename)
+        web.get(url).save_to_path(filepath)
+        return filename, filepath
+    except:
+        print("Unexpected exception") # On error fall back to defaults
+        return ICON_DEFAULT, os.path.join('.', ICON_DEFAULT)
+
+
+def is_result_type_movie(result):
+    return re.search(r"movie-card-ac", result['label']) is not None
+
 
 def main(wf):
 
@@ -43,35 +82,26 @@ def main(wf):
     if (len(args) > 0):
         res = get_filmaffinity_suggestions(searchString).json()
         for result in res['results']:
-            if not isinstance(result['id'], int):
-                continue
-            d = pq(result['label'])
-            thumbnail_uri = d('div img').attr('src')
-            
-            html_raw = get_filmaffinity_html(get_film_url(result['id']))
-
-            if html_raw is None:
+            if not is_result_type_movie(result):
                 continue
 
-            film_attributes = crawl_filmaffinity_html(html_raw)
+            # defaults 
+            filename, filepath = ICON_DEFAULT, os.path.join('.', ICON_DEFAULT)
+            subtitle = ""
 
-            # no thumbnail - default
-            filename = ICON_DEFAULT
-            filepath = os.path.join('./cache', filename)
+            if DISPLAY_THUMBNAILS:
+                d = pq(result['label'])
+                thumbnail_uri = d('div img').attr('src')
+                if thumbnail_uri is not None:
+                    filename, filepath = download_image_from_url(thumbnail_uri)
 
-            # there is a thumbnail -
-            if thumbnail_uri is not None:
-                filename = os.path.basename(thumbnail_uri)
-                filepath = os.path.join('./cache', filename)
-                web.get(thumbnail_uri).save_to_path(filepath)
-
-            # attributes
-            rating_str = "-" if film_attributes['rating'] is None else film_attributes['rating'] + "/10"
+            if DISPLAY_DETAILS:
+                subtitle = get_film_detail_string(result['id'])
             
             wf.add_item(
                 title=result['value'].encode('ascii', 'replace'),
-                subtitle=u"Nota: "+rating_str,
-                arg=get_film_url(result['id']),
+                subtitle=subtitle,
+                arg=get_url_for_film_id(result['id']),
                 valid=True,
                 icon=filepath
             )
