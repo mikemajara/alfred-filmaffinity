@@ -4,11 +4,12 @@
 
 import sys
 import os
+import urllib
 
 # Workflow3 supports Alfred 3's new features. The `Workflow` class
 # is also compatible with Alfred 2.
 from workflow import Workflow3, web
-import urllib
+from bs4 import BeautifulSoup
 
 URL_SEARCH_GET = "https://www.filmaffinity.com/es/advsearch2.php?q="
 URL_SEARCH_POST = "https://www.filmaffinity.com/es/search-ac.ajax.php?action=searchTerm&term="
@@ -18,6 +19,22 @@ def get_filmaffinity_suggestions(word):
     url = "https://www.filmaffinity.com/es/search-ac.ajax.php?action=searchTerm&term=" + urllib.quote(word)
     return web.post(url)
 
+def get_filmaffinity_html(url):
+    res = web.get(url)
+
+    return res.text if res.status_code == 200 else None
+
+def get_film_url(id):
+    # print('getting url for film ' + str(id))
+    return "https://www.filmaffinity.com/es/film" + str(id) + ".html"
+
+def crawl_filmaffinity_html(html):
+    soup = BeautifulSoup(html, 'html.parser')
+    rating_element = soup.find(id='movie-rat-avg')
+    rating = rating_element.attrs['content'] if rating_element is not None else None
+    return {
+        'rating': rating
+    }
 
 def main(wf):
     # The Workflow3 instance will be passed to the function
@@ -43,9 +60,17 @@ def main(wf):
     if (len(args) > 0):
         res = get_filmaffinity_suggestions(searchString).json()
         for result in res['results']:
-            
+            if not isinstance(result['id'], int):
+                continue
             d = pq(result['label'])
             thumbnail_uri = d('div img').attr('src')
+            
+            html_raw = get_filmaffinity_html(get_film_url(result['id']))
+
+            if html_raw is None:
+                continue
+
+            film_attributes = crawl_filmaffinity_html(html_raw)
 
             # no thumbnail - default
             filename = ICON_DEFAULT
@@ -56,11 +81,14 @@ def main(wf):
                 filename = os.path.basename(thumbnail_uri)
                 filepath = os.path.join('./cache', filename)
                 web.get(thumbnail_uri).save_to_path(filepath)
+
+            # attributes
+            rating_str = "-" if film_attributes['rating'] is None else film_attributes['rating'] + "/10"
             
             wf.add_item(
                 title=result['value'].encode('ascii', 'replace'),
-                # subtitle=result['href'],
-                arg="https://www.filmaffinity.com/es/film" + str(result['id']) + ".html",
+                subtitle=u"Nota: "+rating_str+". Genero: drama, comedia",
+                arg=get_film_url(result['id']),
                 valid=True,
                 icon=filepath
             )
