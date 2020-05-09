@@ -285,7 +285,7 @@ ICON_BURN	../workflow/workflow.py	/^ICON_BURN = os.path.join(ICON_ROOT, 'Burning
 ICON_CLOCK	../workflow/workflow.py	/^ICON_CLOCK = os.path.join(ICON_ROOT, 'Clock.icns')$/;"	kind:variable	line:75
 ICON_COLOR	../workflow/workflow.py	/^ICON_COLOR = os.path.join(ICON_ROOT, 'ProfileBackgroundColor.icns')$/;"	kind:variable	line:76
 ICON_COLOUR	../workflow/workflow.py	/^ICON_COLOUR = ICON_COLOR  # Queen's English, if you please$/;"	kind:variable	line:77
-ICON_DEFAULT	../main.py	/^ICON_DEFAULT = "icon.png"$/;"	kind:variable	line:18
+ICON_DEFAULT	../main.py	/^ICON_DEFAULT = "icon.png"$/;"	kind:variable	line:16
 ICON_EJECT	../workflow/workflow.py	/^ICON_EJECT = os.path.join(ICON_ROOT, 'EjectMediaIcon.icns')$/;"	kind:variable	line:78
 ICON_ERROR	../workflow/workflow.py	/^ICON_ERROR = os.path.join(ICON_ROOT, 'AlertStopIcon.icns')$/;"	kind:variable	line:80
 ICON_FAVORITE	../workflow/workflow.py	/^ICON_FAVORITE = os.path.join(ICON_ROOT, 'ToolbarFavoritesIcon.icns')$/;"	kind:variable	line:81
@@ -2531,7 +2531,7 @@ copy_annotations	../lxml/html/diff.py	/^def copy_annotations(src, dest): $/;"	ki
 copyreg	../soupsieve/util.py	/^    import copy_reg as copyreg  # noqa F401$/;"	kind:namespace	line:26
 copyreg	../soupsieve/util.py	/^    import copyreg  # noqa F401$/;"	kind:namespace	line:17
 cp	../soupsieve/__init__.py	/^from . import css_parser as cp$/;"	kind:namespace	line:30
-crawl_filmaffinity_html	../main.py	/^def crawl_filmaffinity_html(html):$/;"	kind:function	line:33
+crawl_filmaffinity_html	../main.py	/^def crawl_filmaffinity_html(html):$/;"	kind:function	line:31
 create_fake_parent	../soupsieve/css_match.py	/^    def create_fake_parent(el):$/;"	kind:member	line:151
 create_treebuilder	../bs4/builder/_html5lib.py	/^    def create_treebuilder(self, namespaceHTMLElements):$/;"	kind:member	line:104
 css	../cssselect/parser.py	/^    def css(self):$/;"	kind:member	line:664
@@ -2880,9 +2880,9 @@ get_default_parser	../lxml/doctestcompare.py	/^    def get_default_parser(self):
 get_descendants	../soupsieve/css_match.py	/^    def get_descendants(self, el, tags=True, no_iframe=False):$/;"	kind:member	line:206
 get_downloads	../workflow/update.py	/^def get_downloads(repo):$/;"	kind:function	line:390
 get_element_by_id	../lxml/html/__init__.py	/^    def get_element_by_id(self, id, *default):$/;"	kind:member	line:394
-get_film_url	../main.py	/^def get_film_url(id):$/;"	kind:function	line:29
-get_filmaffinity_html	../main.py	/^def get_filmaffinity_html(url):$/;"	kind:function	line:24
-get_filmaffinity_suggestions	../main.py	/^def get_filmaffinity_suggestions(word):$/;"	kind:function	line:20
+get_film_url	../main.py	/^def get_film_url(id):$/;"	kind:function	line:27
+get_filmaffinity_html	../main.py	/^def get_filmaffinity_html(url):$/;"	kind:function	line:22
+get_filmaffinity_suggestions	../main.py	/^def get_filmaffinity_suggestions(word):$/;"	kind:function	line:18
 get_include	../lxml/__init__.py	/^def get_include():$/;"	kind:function	line:6
 get_matching_blocks	../lxml/html/diff.py	/^    def get_matching_blocks(self):$/;"	kind:member	line:873
 get_name	../soupsieve/css_parser.py	/^    def get_name(self):$/;"	kind:member	line:298
@@ -3162,7 +3162,7 @@ lxml	../lxml/includes/etreepublic.pxd	/^    cdef class lxml.etree._ElementTree [
 lxml	../pyquery/pyquery.py	/^import lxml.html$/;"	kind:namespace	line:12
 lxml_trace	../bs4/diagnose.py	/^def lxml_trace(data, html=True, **kwargs):$/;"	kind:function	line:93
 main	../lxml/html/_diffcommand.py	/^def main(args=None):$/;"	kind:function	line:32
-main	../main.py	/^def main(wf):$/;"	kind:function	line:41
+main	../main.py	/^def main(wf):$/;"	kind:function	line:39
 main	../workflow/background.py	/^def main(wf):  # pragma: no cover$/;"	kind:function	line:248
 main.py	../main.py	1;"	kind:file	line:1
 makeElement	../lxml/includes/etreepublic.pxd	/^    cdef _Element makeElement(tag, _Document doc, parser,$/;"	kind:function	line:69
@@ -3382,7 +3382,7 @@ plistlib	../workflow/workflow.py	/^import plistlib$/;"	kind:namespace	line:32
 png_to_icns	../workflow/notify.py	/^def png_to_icns(png_path, icns_path):$/;"	kind:function	line:237
 popTag	../bs4/__init__.py	/^    def popTag(self):$/;"	kind:member	line:473
 post	../workflow/web.py	/^def post(url, params=None, data=None, headers=None, cookies=None, files=None,$/;"	kind:function	line:594
-pq	../main.py	/^    from pyquery import PyQuery as pq$/;"	kind:namespace	line:51
+pq	../main.py	/^    from pyquery import PyQuery as pq$/;"	kind:namespace	line:49
 prepare_child	../lxml/_elementpath.py	/^def prepare_child(next, token):$/;"	kind:function	line:99
 prepare_descendant	../lxml/_elementpath.py	/^def prepare_descendant(next, token):$/;"	kind:function	line:119
 prepare_markup	../bs4/builder/__init__.py	/^    def prepare_markup(self, markup, user_specified_encoding=None,$/;"	kind:member	line:229
@@ -4366,7 +4366,7 @@ web	../main.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:11
 web	../workflow/update.py	/^import web$/;"	kind:namespace	line:35
 web.py	../workflow/web.py	1;"	kind:file	line:1
 webbrowser	../lxml/html/__init__.py	/^    import webbrowser$/;"	kind:namespace	line:1865
-wf	../main.py	/^    wf = Workflow3()$/;"	kind:variable	line:118
+wf	../main.py	/^    wf = Workflow3()$/;"	kind:variable	line:116
 wf	../workflow/background.py	/^def wf():$/;"	kind:function	line:35
 wf	../workflow/notify.py	/^def wf():$/;"	kind:function	line:63
 wf	../workflow/update.py	/^def wf():$/;"	kind:function	line:46
