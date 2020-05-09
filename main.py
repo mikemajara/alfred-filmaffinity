@@ -7,8 +7,6 @@ import sys
 import urllib
 from time import time
 
-from bs4 import BeautifulSoup
-
 from workflow import Workflow3, web
 
 DISPLAY_DETAILS = os.getenv('MM_DISPLAY_DETAILS').isdigit() and int(os.getenv('MM_DISPLAY_DETAILS'))
@@ -41,22 +39,11 @@ def get_film_detail_string(id):
         if html_raw is None:
             return None
 
-        t1 = time()
-        soup = BeautifulSoup(html_raw, 'html.parser')
-        rating_node = soup.find(id='movie-rat-avg')
-        t2 = time()
-        elapsed1 = t2 - t1
-        # print('Elapsed time is %f seconds.' % elapsed1)
-
-        t1 = time()
         d = pq(html_raw)        
         rating_node = d('div#movie-rat-avg')
-        t2 = time()
-        elapsed2 = t2 - t1
-        # print('Elapsed time is %f seconds.' % elapsed2)
 
         if rating_node is not None:
-            rating_str = (rating_node.attr('content') or "-") + "/10. bs4: " + str(round(elapsed1, 4)) + "s. pq" + str(round(elapsed2, 4)) + "s. "  
+            rating_str = (rating_node.attr('content') or "-") + "/10 "
         
         return rating_str
     except e:
