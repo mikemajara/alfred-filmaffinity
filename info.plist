@@ -56,7 +56,7 @@
 				<key>queuedelaymode</key>
 				<integer>1</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Asking uncomfortable questions to filmaffinity...</string>
 				<key>script</key>
