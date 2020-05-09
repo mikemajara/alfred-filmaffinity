@@ -108,20 +108,23 @@
 		<key>83F28A94-40CE-4B0C-BE01-3EE066D31398</key>
 		<dict>
 			<key>xpos</key>
-			<integer>245</integer>
+			<integer>185</integer>
 			<key>ypos</key>
 			<integer>175</integer>
 		</dict>
 		<key>F7D6EB52-6019-4DF9-B0EC-DFF0554F33AE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>545</integer>
+			<integer>550</integer>
 			<key>ypos</key>
 			<integer>175</integer>
 		</dict>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
+	<key>variables</key>
+	<dict>
+		<key>MM_SIMPLE_MODE</key>
+		<string>True</string>
+	</dict>
 	<key>version</key>
 	<string>0.1</string>
 	<key>webaddress</key>

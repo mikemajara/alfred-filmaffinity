@@ -6,11 +6,14 @@ import sys
 import os
 import urllib
 
+
 # Workflow3 supports Alfred 3's new features. The `Workflow` class
 # is also compatible with Alfred 2.
 from workflow import Workflow3, web
 from bs4 import BeautifulSoup
 
+# lets implement simple (quick & light) vs complete (slow and heavy) modes
+MODE_SIMPLE = os.getenv('MM_SIMPLE_MODE') or False # Complex Mode (False) is default mode
 URL_SEARCH_GET = "https://www.filmaffinity.com/es/advsearch2.php?q="
 URL_SEARCH_POST = "https://www.filmaffinity.com/es/search-ac.ajax.php?action=searchTerm&term="
 ICON_DEFAULT = "icon.png"
