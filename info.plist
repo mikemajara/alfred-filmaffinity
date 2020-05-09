@@ -70,7 +70,7 @@
 				<key>title</key>
 				<string>Search filmaffinity for</string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
