@@ -87,7 +87,7 @@ def main(wf):
             
             wf.add_item(
                 title=result['value'].encode('ascii', 'replace'),
-                subtitle=u"Nota: "+rating_str+". Genero: drama, comedia",
+                subtitle=u"Nota: "+rating_str,
                 arg=get_film_url(result['id']),
                 valid=True,
                 icon=filepath
