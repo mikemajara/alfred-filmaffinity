@@ -10,7 +10,7 @@
             "type": "python",
             "request": "launch",
             "program": "main.py",
-            "args": ["hola"],
+            "args": ["hola", "amigos"],
             "console": "integratedTerminal",
         }
     ]
