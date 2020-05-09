@@ -1,4 +1,3 @@
-
 #!/usr/bin/python
 # encoding: utf-8
 
@@ -6,9 +5,6 @@ import sys
 import os
 import urllib
 
-
-# Workflow3 supports Alfred 3's new features. The `Workflow` class
-# is also compatible with Alfred 2.
 from workflow import Workflow3, web
 from bs4 import BeautifulSoup
 
@@ -24,11 +20,9 @@ def get_filmaffinity_suggestions(word):
 
 def get_filmaffinity_html(url):
     res = web.get(url)
-
     return res.text if res.status_code == 200 else None
 
 def get_film_url(id):
-    # print('getting url for film ' + str(id))
     return "https://www.filmaffinity.com/es/film" + str(id) + ".html"
 
 def crawl_filmaffinity_html(html):
@@ -40,25 +34,11 @@ def crawl_filmaffinity_html(html):
     }
 
 def main(wf):
-    # The Workflow3 instance will be passed to the function
-    # you call from `Workflow3.run`.
-    # Not super useful, as the `wf` object created in
-    # the `if __name__ ...` clause below is global...
-    #
-    # Your imports go here if you want to catch import errors, which
-    # is not a bad idea, or if the modules/packages are in a directory
-    # added via `Workflow3(libraries=...)`
 
     from pyquery import PyQuery as pq
-    # import amodule
-    # import anothermodule
-
-    # Get args from Workflow3, already in normalized Unicode.
-    # This is also necessary for "magic" arguments to work.
+    
     args = wf.args
     searchString = ' '.join(args)
-    # Do stuff here ...
-    # print("searching for " + args[0])
     
     if (len(args) > 0):
         res = get_filmaffinity_suggestions(searchString).json()
@@ -96,8 +76,7 @@ def main(wf):
                 icon=filepath
             )
 
-    # Add default option to search if no result found
-
+    # Default option to search if no result found
     wf.add_item(
         title="Search",
         subtitle="Search filmaffinity for " + " ".join(args),
