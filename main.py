@@ -5,17 +5,17 @@ import os
 import re
 import sys
 import urllib
+from time import time
 
-from workflow import Workflow3, web
 from bs4 import BeautifulSoup
 
-# lets implement simple (quick & light) vs complete (slow and heavy) modes through display otpions
-
-# DISPLAY_DETAILS = re.match(r"^[Tt]rue$", str(os.getenv('MM_DISPLAY_DETAILS')))
-# DISPLAY_THUMBNAILS = re.match(r"^[Tt]rue$", str(os.getenv('MM_DISPLAY_THUMBNAILS')))
+from workflow import Workflow3, web
 
 DISPLAY_DETAILS = os.getenv('MM_DISPLAY_DETAILS').isdigit() and int(os.getenv('MM_DISPLAY_DETAILS'))
 DISPLAY_THUMBNAILS = os.getenv('MM_DISPLAY_THUMBNAILS').isdigit() and int(os.getenv('MM_DISPLAY_THUMBNAILS'))
+
+if DISPLAY_DETAILS or DISPLAY_THUMBNAILS:
+    from pyquery import PyQuery as pq
 
 URL_SEARCH_GET = "https://www.filmaffinity.com/es/search.php?stype=title&stext="
 URL_SEARCH_POST = "https://www.filmaffinity.com/es/search-ac.ajax.php?action=searchTerm&term="
@@ -25,33 +25,41 @@ def get_filmaffinity_suggestions(word):
     url = "https://www.filmaffinity.com/es/search-ac.ajax.php?action=searchTerm&term=" + urllib.quote(word)
     return web.post(url)
 
+
 def get_raw_html_for_url(url):
     res = web.get(url)
     return res.text if res.status_code == 200 else None
 
+
 def get_url_for_film_id(id):
     return "https://www.filmaffinity.com/es/film" + str(id) + ".html"
 
-# Result example
-# {
-#     u'id': 387687, 
-#     u'label': u'<div class="movie-card-ac">\r\n <img width="80" height="114" src="https://pics.filmaffinity.com/el_silencio_del_pantano-252305344-msmall.jpg" alt="El silencio del pantano "><div class="title">El silencio del pantano  <small>(2019)</small></div>\r\n<div class="cast">Pedro Alonso, Nacho Fresneda, ...</div>\r\n</div>\r\n', 
-#     u'value': u'El silencio del pantano '
-# }
+
 def get_film_detail_string(id):
     try:
         html_raw = get_raw_html_for_url(get_url_for_film_id(id))
         if html_raw is None:
             return None
-        soup = BeautifulSoup(html_raw, 'html.parser')
 
-            # get details
+        t1 = time()
+        soup = BeautifulSoup(html_raw, 'html.parser')
         rating_node = soup.find(id='movie-rat-avg')
+        t2 = time()
+        elapsed1 = t2 - t1
+        # print('Elapsed time is %f seconds.' % elapsed1)
+
+        t1 = time()
+        d = pq(html_raw)        
+        rating_node = d('div#movie-rat-avg')
+        t2 = time()
+        elapsed2 = t2 - t1
+        # print('Elapsed time is %f seconds.' % elapsed2)
+
         if rating_node is not None:
-            rating_str= (rating_node.attrs['content'] or "-") + "/10"
+            rating_str = (rating_node.attr('content') or "-") + "/10. bs4: " + str(round(elapsed1, 4)) + "s. pq" + str(round(elapsed2, 4)) + "s. "  
         
         return rating_str
-    except:
+    except e:
         print("Unexpected exception")
         return ""
 
@@ -72,10 +80,7 @@ def is_result_type_movie(result):
     return re.search(r"movie-card-ac", result['label']) is not None
 
 
-def main(wf):
-
-    from pyquery import PyQuery as pq
-    
+def main(wf):    
     args = wf.args
     searchString = ' '.join(args)
     
