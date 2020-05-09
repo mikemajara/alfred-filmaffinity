@@ -54,7 +54,7 @@
 				<key>queuedelayimmediatelyinitially</key>
 				<true/>
 				<key>queuedelaymode</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
@@ -102,7 +102,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>This workflow searches for films in filmaffinity with suggestions and displays main info on alfred display.</string>
 	<key>uidata</key>
 	<dict>
 		<key>83F28A94-40CE-4B0C-BE01-3EE066D31398</key>
@@ -120,6 +120,10 @@
 			<integer>175</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
