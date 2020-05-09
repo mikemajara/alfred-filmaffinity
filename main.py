@@ -7,6 +7,7 @@ import sys
 import urllib
 from time import time
 
+import cache
 from workflow import Workflow3, web
 
 DISPLAY_DETAILS = os.getenv('MM_DISPLAY_DETAILS').isdigit() and int(os.getenv('MM_DISPLAY_DETAILS'))
@@ -50,19 +51,6 @@ def get_film_detail_string(id):
         print("Unexpected exception")
         return ""
 
-
-def download_image_from_url(url):
-    save_directory = './cache'
-    try:
-        filename = os.path.basename(url)
-        filepath = os.path.join(save_directory, filename)
-        web.get(url).save_to_path(filepath)
-        return filename, filepath
-    except:
-        print("Unexpected exception") # On error fall back to defaults
-        return ICON_DEFAULT, os.path.join('.', ICON_DEFAULT)
-
-
 def is_result_type_movie(result):
     return re.search(r"movie-card-ac", result['label']) is not None
 
@@ -72,27 +60,40 @@ def main(wf):
     searchString = ' '.join(args)
     
     if (len(args) > 0):
-        res = get_filmaffinity_suggestions(searchString).json()
+        res = wf.cached_data(searchString, max_age=0)
+        if res is None:
+            res = get_filmaffinity_suggestions(searchString).json()
+            wf.cache_data(searchString, res)
+
         for result in res['results']:
             if not is_result_type_movie(result):
                 continue
 
             # defaults 
-            filename, filepath = ICON_DEFAULT, os.path.join('.', ICON_DEFAULT)
-            subtitle = ""
+            filepath = os.path.join('.', ICON_DEFAULT)
+            details = ""
+
 
             if DISPLAY_THUMBNAILS:
-                d = pq(result['label'])
-                thumbnail_uri = d('div img').attr('src')
-                if thumbnail_uri is not None:
-                    filename, filepath = download_image_from_url(thumbnail_uri)
+                file_id = 'thumbnail_' + str(result['id'])
+                data = cache.load(file_id)
+                if data is None:
+                    d = pq(result['label'])
+                    thumbnail_uri = d('div img').attr('src')
+                    if thumbnail_uri is not None:
+                        cache.dump(file_id, thumbnail_uri)
+
+                filepath = cache.load(file_id)
 
             if DISPLAY_DETAILS:
-                subtitle = get_film_detail_string(result['id'])
+                details = wf.cached_data(result['id'], max_age=0)
+                if details is None:
+                    details = get_film_detail_string(result['id'])
+                    wf.cache_data(result['id'], details)
             
             wf.add_item(
                 title=result['value'].encode('ascii', 'replace'),
-                subtitle=subtitle,
+                subtitle=details,
                 arg=get_url_for_film_id(result['id']),
                 valid=True,
                 icon=filepath
@@ -118,6 +119,7 @@ def main(wf):
 if __name__ == '__main__':
     # Create a global `Workflow3` object
     wf = Workflow3()
+    log = wf.logger
     # Call your entry function via `Workflow3.run()` to enable its
     # helper functions, like exception catching, ARGV normalization,
     # magic arguments etc.
