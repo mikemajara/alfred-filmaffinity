@@ -74,16 +74,18 @@ def main(wf):
 
             # defaults 
             filepath = os.path.join('.', ICON_DEFAULT)
-            result_id = str(result['id']) # TODO change result_id -> film_id
+            
+            # quick access
+            film_id_str = str(result['id'])
             details = ""
             valid = True
 
 
             if DISPLAY_THUMBNAILS:
-                filepath = cache.get(result_id)
+                filepath = cache.get(film_id_str)
                 if filepath is None:
                     run_in_background(
-                        'update_thumbnail_' + result_id,
+                        'update_thumbnail_' + film_id_str,
                         ['/usr/bin/python',
                         wf.workflowfile('update_thumbnails.py'),
                         json.dumps(result)]
@@ -91,14 +93,14 @@ def main(wf):
                     wf.rerun = REFRESH_RATE
 
             if DISPLAY_DETAILS:
-                details = wf.cached_data(result_id, max_age=0)
+                details = wf.cached_data(film_id_str, max_age=0)
                 if details is None:
                     run_in_background(
-                        'update_details_' + result_id,
+                        'update_details_' + film_id_str,
                         [
                             '/usr/bin/python',
                             wf.workflowfile('update_details.py'),
-                            result_id
+                            film_id_str
                         ]
                     )
                     details = "Loading details..."
