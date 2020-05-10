@@ -34,9 +34,7 @@ def get_url_for_film_id(id):
 
 def is_result_type_movie(result):
     return re.search(r"movie-card-ac", result['label']) is not None
-
-
-
+    
 
 def main(wf):    
     args = wf.args
@@ -54,23 +52,11 @@ def main(wf):
 
             # defaults 
             filepath = os.path.join('.', ICON_DEFAULT)
+            valid = True
+            details = ""
             
             # quick access
             film_id_str = str(result['id'])
-            details = ""
-            valid = True
-
-
-            if DISPLAY_THUMBNAILS:
-                filepath = cache.get(film_id_str)
-                if filepath is None:
-                    run_in_background(
-                        'update_thumbnail_' + film_id_str,
-                        ['/usr/bin/python',
-                        wf.workflowfile('update_thumbnails.py'),
-                        json.dumps(result)]
-                    )
-                    wf.rerun = REFRESH_RATE
 
             if DISPLAY_DETAILS:
                 details = wf.cached_data(film_id_str, max_age=0)
@@ -83,9 +69,21 @@ def main(wf):
                             film_id_str
                         ]
                     )
-                    details = "Loading details..."
+                    details = "Loading details... "
                     wf.rerun = REFRESH_RATE
                     
+            if DISPLAY_THUMBNAILS:
+                filepath = cache.get(film_id_str)
+                if filepath is None:
+                    run_in_background(
+                        'update_thumbnail_' + film_id_str,
+                        ['/usr/bin/python',
+                        wf.workflowfile('update_thumbnails.py'),
+                        json.dumps(result)]
+                    )
+                    details += "Loading thumbnail... "
+                    wf.rerun = REFRESH_RATE
+
             wf.add_item(
                 title=result['value'].encode('ascii', 'replace'),
                 subtitle=details,
