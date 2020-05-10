@@ -2,7 +2,7 @@
 
 ## Description
 
-Filmaffinity search for alfred. This workflow reaches out for filmaffinity results matching your search and quickly displays it's details and thumbnail for you to check out if the film you are searching is worth your time.
+Filmaffinity search for alfred. This workflow reaches out for [filmaffinity](https://www.filmaffinity.com/en/main.html) results matching your search and quickly displays it's details and thumbnail for you to check out if the film you are searching is worth your time.
 
 ## Features
 
@@ -14,6 +14,7 @@ Filmaffinity search for alfred. This workflow reaches out for filmaffinity resul
 ## Roadmap
 
 - [ ] Add language support
+- [ ] Add fuzzy search
 - [ ] Extend settings to choose among different information of interest.
     - [x] Thumbnail
     - [x] Score
@@ -30,7 +31,7 @@ Filmaffinity search for alfred. This workflow reaches out for filmaffinity resul
 
 ## Known Issues
 
-Special characters are not correctly displayed.
+- [ ] Special characters are not correctly displayed.
 
 ## ACK
 
