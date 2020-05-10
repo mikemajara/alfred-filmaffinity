@@ -38,29 +38,9 @@ CLASS	../lxml/html/builder.py	/^def CLASS(v): return {'class': v}$/;"	kind:funct
 CODE	../lxml/html/builder.py	/^CODE = E.code # computer code fragment$/;"	kind:variable	line:56
 COL	../lxml/html/builder.py	/^COL = E.col # table column$/;"	kind:variable	line:57
 COLGROUP	../lxml/html/builder.py	/^COLGROUP = E.colgroup # table column group$/;"	kind:variable	line:58
-COMMA_COMBINATOR	../soupsieve/css_parser.py	/^COMMA_COMBINATOR = ','$/;"	kind:variable	line:179
-COMMENTS	../soupsieve/css_parser.py	/^COMMENTS = r'(?:\/\\*[^*]*\\*+(?:[^\/*][^*]*\\*+)*\/)'$/;"	kind:variable	line:92
 CPickleSerializer	../workflow/workflow.py	/^class CPickleSerializer(object):$/;"	kind:class	line:625
-CSSMatch	../soupsieve/css_match.py	/^class CSSMatch(_DocumentNav, _Match):$/;"	kind:class	line:1428
-CSSParser	../soupsieve/css_parser.py	/^class CSSParser(object):$/;"	kind:class	line:425
 CSSSelector	../lxml/cssselect.py	/^class CSSSelector(etree.XPath):$/;"	kind:class	line:60
 CSSSelector	../lxml/html/__init__.py	/^        from lxml.cssselect import CSSSelector$/;"	kind:namespace	line:431
-CSS_CHECKED	../soupsieve/css_parser.py	/^CSS_CHECKED = CSSParser($/;"	kind:variable	line:1073
-CSS_DEFAULT	../soupsieve/css_parser.py	/^CSS_DEFAULT = CSSParser($/;"	kind:variable	line:1079
-CSS_DISABLED	../soupsieve/css_parser.py	/^CSS_DISABLED = CSSParser($/;"	kind:variable	line:1105
-CSS_ENABLED	../soupsieve/css_parser.py	/^CSS_ENABLED = CSSParser($/;"	kind:variable	line:1115
-CSS_ESCAPES	../soupsieve/css_parser.py	/^CSS_ESCAPES = r'(?:\\\\(?:[a-f0-9]{{1,6}}{ws}?|[^\\r\\n\\f]|$))'.format(ws=WS)$/;"	kind:variable	line:96
-CSS_INDETERMINATE	../soupsieve/css_parser.py	/^CSS_INDETERMINATE = CSSParser($/;"	kind:variable	line:1091
-CSS_IN_RANGE	../soupsieve/css_parser.py	/^CSS_IN_RANGE = CSSParser($/;"	kind:variable	line:1181
-CSS_LINK	../soupsieve/css_parser.py	/^CSS_LINK = CSSParser($/;"	kind:variable	line:1069
-CSS_NTH_OF_S_DEFAULT	../soupsieve/css_parser.py	/^CSS_NTH_OF_S_DEFAULT = CSSParser($/;"	kind:variable	line:1146
-CSS_OPTIONAL	../soupsieve/css_parser.py	/^CSS_OPTIONAL = CSSParser($/;"	kind:variable	line:1125
-CSS_OUT_OF_RANGE	../soupsieve/css_parser.py	/^CSS_OUT_OF_RANGE = CSSParser($/;"	kind:variable	line:1198
-CSS_PLACEHOLDER_SHOWN	../soupsieve/css_parser.py	/^CSS_PLACEHOLDER_SHOWN = CSSParser($/;"	kind:variable	line:1129
-CSS_READ_ONLY	../soupsieve/css_parser.py	/^CSS_READ_ONLY = CSSParser($/;"	kind:variable	line:1175
-CSS_READ_WRITE	../soupsieve/css_parser.py	/^CSS_READ_WRITE = CSSParser($/;"	kind:variable	line:1150
-CSS_REQUIRED	../soupsieve/css_parser.py	/^CSS_REQUIRED = CSSParser($/;"	kind:variable	line:1121
-CSS_STRING_ESCAPES	../soupsieve/css_parser.py	/^CSS_STRING_ESCAPES = r'(?:\\\\(?:[a-f0-9]{{1,6}}{ws}?|[^\\r\\n\\f]|$|{nl}))'.format(ws=WS, nl=NEWLINE)$/;"	kind:variable	line:97
 CaseInsensitiveDictionary	../workflow/web.py	/^class CaseInsensitiveDictionary(dict):$/;"	kind:class	line:108
 CheckboxGroup	../lxml/html/__init__.py	/^class CheckboxGroup(list):$/;"	kind:class	line:1520
 CheckboxValues	../lxml/html/__init__.py	/^class CheckboxValues(SetMixin):$/;"	kind:class	line:1564
@@ -69,24 +49,16 @@ Classes	../lxml/html/__init__.py	/^class Classes(MutableSet):$/;"	kind:class	lin
 Cleaner	../lxml/html/clean.py	/^class Cleaner(object):$/;"	kind:class	line:99
 CombinedSelector	../cssselect/parser.py	/^class CombinedSelector(object):$/;"	kind:class	line:344
 Comment	../lxml/sax.py	/^from lxml.etree import Comment, ProcessingInstruction$/;"	kind:namespace	line:20
-CommentsMatch	../soupsieve/css_match.py	/^class CommentsMatch(_DocumentNav):$/;"	kind:class	line:1432
 ContentHandler	../lxml/sax.py	/^from xml.sax.handler import ContentHandler$/;"	kind:namespace	line:17
-CustomSelectors	../soupsieve/css_types.py	/^class CustomSelectors(ImmutableDict):$/;"	kind:class	line:152
-DAYS_IN_WEEK	../soupsieve/css_match.py	/^DAYS_IN_WEEK = 7$/;"	kind:variable	line:54
 DD	../lxml/html/builder.py	/^DD = E.dd # definition description$/;"	kind:variable	line:59
-DEBUG	../soupsieve/__init__.py	/^from .util import DEBUG, deprecated, SelectorSyntaxError  # noqa: F401$/;"	kind:namespace	line:33
-DEBUG	../soupsieve/util.py	/^DEBUG = 0x00001$/;"	kind:variable	line:34
 DEFAULT_MAX_INCLUSION_DEPTH	../lxml/ElementInclude.py	/^DEFAULT_MAX_INCLUSION_DEPTH = 6$/;"	kind:variable	line:69
 DEFAULT_TIMEOUT	../pyquery/openers.py	/^DEFAULT_TIMEOUT = 60$/;"	kind:variable	line:22
 DEFAULT_UPDATE_FREQUENCY	../workflow/workflow.py	/^DEFAULT_UPDATE_FREQUENCY = 1$/;"	kind:variable	line:445
 DEL	../lxml/html/builder.py	/^DEL = getattr(E, 'del') # deleted text$/;"	kind:variable	line:60
 DEL_END	../lxml/html/diff.py	/^class DEL_END:$/;"	kind:class	line:259
 DEL_START	../lxml/html/diff.py	/^class DEL_START:$/;"	kind:class	line:257
-DEV_STATUS	../soupsieve/__meta__.py	/^DEV_STATUS = {$/;"	kind:variable	line:26
 DFN	../lxml/html/builder.py	/^DFN = E.dfn # instance definition$/;"	kind:variable	line:61
 DIR	../lxml/html/builder.py	/^DIR = E.dir # directory list (DEPRECATED)$/;"	kind:variable	line:62
-DIR_FLAGS	../soupsieve/css_match.py	/^DIR_FLAGS = ct.SEL_DIR_LTR | ct.SEL_DIR_RTL$/;"	kind:variable	line:29
-DIR_MAP	../soupsieve/css_match.py	/^DIR_MAP = {$/;"	kind:variable	line:32
 DISPLAY_DETAILS	../main.py	/^DISPLAY_DETAILS = os.getenv('MM_DISPLAY_DETAILS').isdigit() and int(os.getenv('MM_DISPLAY_DETAILS'))$/;"	kind:variable	line:15
 DISPLAY_THUMBNAILS	../main.py	/^DISPLAY_THUMBNAILS = os.getenv('MM_DISPLAY_THUMBNAILS').isdigit() and int(os.getenv('MM_DISPLAY_THUMBNAILS'))$/;"	kind:variable	line:16
 DIV	../lxml/html/builder.py	/^DIV = E.div # generic language\/style container$/;"	kind:variable	line:63
@@ -123,29 +95,8 @@ ExpressionError	../cssselect/__init__.py	/^from cssselect.xpath import GenericTr
 ExpressionError	../cssselect/xpath.py	/^class ExpressionError(SelectorError, RuntimeError):$/;"	kind:class	line:35
 ExpressionError	../lxml/cssselect.py	/^ExpressionError = external_cssselect.ExpressionError$/;"	kind:variable	line:21
 ExpressionError	../pyquery/cssselectpatch.py	/^from cssselect.xpath import ExpressionError$/;"	kind:namespace	line:8
-F401	../soupsieve/__init__.py	/^from .__meta__ import __version__, __version_info__  # noqa: F401$/;"	kind:namespace	line:29
-F401	../soupsieve/__init__.py	/^from .util import DEBUG, deprecated, SelectorSyntaxError  # noqa: F401$/;"	kind:namespace	line:33
-F401	../soupsieve/util.py	/^    from backports.functools_lru_cache import lru_cache  # noqa F401$/;"	kind:namespace	line:25
-F401	../soupsieve/util.py	/^    from collections import Hashable, Mapping  # noqa F401$/;"	kind:namespace	line:27
-F401	../soupsieve/util.py	/^    from collections.abc import Hashable, Mapping  # noqa F401$/;"	kind:namespace	line:18
-F401	../soupsieve/util.py	/^    from functools import lru_cache  # noqa F401$/;"	kind:namespace	line:16
-F401	../soupsieve/util.py	/^    import copy_reg as copyreg  # noqa F401$/;"	kind:namespace	line:26
-F401	../soupsieve/util.py	/^    import copyreg  # noqa F401$/;"	kind:namespace	line:17
 F401	../workflow/workflow.py	/^from util import AcquisitionError  # noqa: F401$/;"	kind:namespace	line:47
-FEB	../soupsieve/css_match.py	/^FEB = 2$/;"	kind:variable	line:49
-FEB_LEAP_MONTH	../soupsieve/css_match.py	/^FEB_LEAP_MONTH = 29$/;"	kind:variable	line:53
-FEB_MONTH	../soupsieve/css_match.py	/^FEB_MONTH = 28$/;"	kind:variable	line:52
 FIELDSET	../lxml/html/builder.py	/^FIELDSET = E.fieldset # form control group$/;"	kind:variable	line:67
-FLG_DEFAULT	../soupsieve/css_parser.py	/^FLG_DEFAULT = 0x08$/;"	kind:variable	line:187
-FLG_HTML	../soupsieve/css_parser.py	/^FLG_HTML = 0x10$/;"	kind:variable	line:188
-FLG_INDETERMINATE	../soupsieve/css_parser.py	/^FLG_INDETERMINATE = 0x20$/;"	kind:variable	line:189
-FLG_IN_RANGE	../soupsieve/css_parser.py	/^FLG_IN_RANGE = 0x80$/;"	kind:variable	line:191
-FLG_NOT	../soupsieve/css_parser.py	/^FLG_NOT = 0x02$/;"	kind:variable	line:185
-FLG_OPEN	../soupsieve/css_parser.py	/^FLG_OPEN = 0x40$/;"	kind:variable	line:190
-FLG_OUT_OF_RANGE	../soupsieve/css_parser.py	/^FLG_OUT_OF_RANGE = 0x100$/;"	kind:variable	line:192
-FLG_PLACEHOLDER_SHOWN	../soupsieve/css_parser.py	/^FLG_PLACEHOLDER_SHOWN = 0x200$/;"	kind:variable	line:193
-FLG_PSEUDO	../soupsieve/css_parser.py	/^FLG_PSEUDO = 0x01$/;"	kind:variable	line:184
-FLG_RELATIVE	../soupsieve/css_parser.py	/^FLG_RELATIVE = 0x04$/;"	kind:variable	line:186
 FONT	../lxml/html/builder.py	/^FONT = E.font # local change to font (DEPRECATED)$/;"	kind:variable	line:68
 FOR	../lxml/html/builder.py	/^def FOR(v): return {'for': v}$/;"	kind:function	line:133
 FORM	../lxml/html/builder.py	/^FORM = E.form # interactive form$/;"	kind:variable	line:69
@@ -180,8 +131,6 @@ HTMLTranslator	../cssselect/xpath.py	/^class HTMLTranslator(GenericTranslator):$
 HTTPError	../pyquery/openers.py	/^    from urllib.error import HTTPError$/;"	kind:namespace	line:9
 HTTPError	../pyquery/openers.py	/^    from urllib2 import HTTPError$/;"	kind:namespace	line:14
 Hash	../cssselect/parser.py	/^class Hash(object):$/;"	kind:class	line:323
-Hashable	../soupsieve/util.py	/^    from collections import Hashable, Mapping  # noqa F401$/;"	kind:namespace	line:27
-Hashable	../soupsieve/util.py	/^    from collections.abc import Hashable, Mapping  # noqa F401$/;"	kind:namespace	line:18
 HtmlComment	../lxml/html/__init__.py	/^class HtmlComment(etree.CommentBase, HtmlMixin):$/;"	kind:class	line:688
 HtmlElement	../lxml/html/__init__.py	/^class HtmlElement(etree.ElementBase, HtmlMixin):$/;"	kind:class	line:692
 HtmlElementClassLookup	../lxml/html/__init__.py	/^class HtmlElementClassLookup(etree.CustomElementClassLookup):$/;"	kind:class	line:706
@@ -222,12 +171,9 @@ INLINE_TAGS	../pyquery/text.py	/^INLINE_TAGS = {$/;"	kind:variable	line:22
 INPUT	../lxml/html/builder.py	/^INPUT = E.input # form control$/;"	kind:variable	line:84
 INS	../lxml/html/builder.py	/^INS = E.ins # inserted text$/;"	kind:variable	line:85
 ISINDEX	../lxml/html/builder.py	/^ISINDEX = E.isindex # single line prompt (DEPRECATED)$/;"	kind:variable	line:86
-Immutable	../soupsieve/css_types.py	/^class Immutable(object):$/;"	kind:class	line:32
-ImmutableDict	../soupsieve/css_types.py	/^class ImmutableDict(util.Mapping):$/;"	kind:class	line:89
 InputElement	../lxml/html/__init__.py	/^class InputElement(InputMixin, HtmlElement):$/;"	kind:class	line:1607
 InputGetter	../lxml/html/__init__.py	/^class InputGetter(object):$/;"	kind:class	line:1170
 InputMixin	../lxml/html/__init__.py	/^class InputMixin(object):$/;"	kind:class	line:1237
-Inputs	../soupsieve/css_match.py	/^class Inputs(object):$/;"	kind:class	line:340
 InsensitiveSequenceMatcher	../lxml/html/diff.py	/^class InsensitiveSequenceMatcher(difflib.SequenceMatcher):$/;"	kind:class	line:865
 Item	../workflow/workflow.py	/^class Item(object):$/;"	kind:class	line:709
 Item3	../workflow/workflow3.py	/^class Item3(object):$/;"	kind:class	line:252
@@ -245,13 +191,10 @@ KBD	../lxml/html/builder.py	/^KBD = E.kbd # text to be entered by the user$/;"	k
 KeychainError	../workflow/__init__.py	/^from .workflow import PasswordNotFound, KeychainError$/;"	kind:namespace	line:20
 KeychainError	../workflow/workflow.py	/^class KeychainError(Exception):$/;"	kind:class	line:453
 LABEL	../lxml/html/builder.py	/^LABEL = E.label # form field label text$/;"	kind:variable	line:88
-LC_A	../soupsieve/util.py	/^LC_A = ord('a')$/;"	kind:variable	line:38
-LC_Z	../soupsieve/util.py	/^LC_Z = ord('z')$/;"	kind:variable	line:39
 LEGEND	../lxml/html/builder.py	/^LEGEND = E.legend # fieldset legend$/;"	kind:variable	line:89
 LHTMLOutputChecker	../lxml/doctestcompare.py	/^class LHTMLOutputChecker(LXMLOutputChecker):$/;"	kind:class	line:369
 LI	../lxml/html/builder.py	/^LI = E.li # list item$/;"	kind:variable	line:90
 LINK	../lxml/html/builder.py	/^LINK = E.link # a media-independent link$/;"	kind:variable	line:91
-LONG_MONTH	../soupsieve/css_match.py	/^LONG_MONTH = 31$/;"	kind:variable	line:51
 LXMLOutputChecker	../lxml/doctestcompare.py	/^class LXMLOutputChecker(OutputChecker):$/;"	kind:class	line:81
 LXML_GET_XSLT_ENCODING	../lxml/includes/xslt.pxd	/^    cdef void LXML_GET_XSLT_ENCODING(const_xmlChar* result_var, xsltStylesheet* style)$/;"	kind:function	line:50
 LabelElement	../lxml/html/__init__.py	/^class LabelElement(HtmlElement):$/;"	kind:class	line:1704
@@ -271,10 +214,6 @@ MATCH_STARTSWITH	../workflow/workflow.py	/^MATCH_STARTSWITH = 1$/;"	kind:variabl
 MATCH_SUBSTRING	../workflow/workflow.py	/^MATCH_SUBSTRING = 32$/;"	kind:variable	line:433
 MENU	../lxml/html/builder.py	/^MENU = E.menu # menu list (DEPRECATED)$/;"	kind:variable	line:93
 META	../lxml/html/builder.py	/^META = E.meta # generic metainformation$/;"	kind:variable	line:94
-MODULE	../soupsieve/util.py	/^MODULE = os.path.dirname(__file__)$/;"	kind:variable	line:9
-MONTHS_30	../soupsieve/css_match.py	/^MONTHS_30 = (4, 6, 9, 11)  # April, June, September, and November$/;"	kind:variable	line:48
-Mapping	../soupsieve/util.py	/^    from collections import Hashable, Mapping  # noqa F401$/;"	kind:namespace	line:27
-Mapping	../soupsieve/util.py	/^    from collections.abc import Hashable, Mapping  # noqa F401$/;"	kind:namespace	line:18
 Modifier	../workflow/workflow3.py	/^class Modifier(object):$/;"	kind:class	line:112
 MultipleSelectOptions	../lxml/html/__init__.py	/^class MultipleSelectOptions(SetMixin):$/;"	kind:class	line:1406
 MutableMapping	../lxml/html/__init__.py	/^    from collections import MutableMapping, MutableSet$/;"	kind:namespace	line:51
@@ -283,7 +222,6 @@ MutableSet	../lxml/html/__init__.py	/^    from collections import MutableMapping
 MutableSet	../lxml/html/__init__.py	/^    from collections.abc import MutableMapping, MutableSet$/;"	kind:namespace	line:49
 MutableSet	../lxml/html/_setmixin.py	/^    from collections import MutableSet$/;"	kind:namespace	line:4
 MutableSet	../lxml/html/_setmixin.py	/^    from collections.abc import MutableSet$/;"	kind:namespace	line:2
-NEWLINE	../soupsieve/css_parser.py	/^NEWLINE = r'(?:\\r\\n|(?!\\r\\n)[\\n\\f\\r])'$/;"	kind:variable	line:89
 NOFRAMES	../lxml/html/builder.py	/^NOFRAMES = E.noframes # alternate content container for non frame-based rendering$/;"	kind:variable	line:95
 NOPARSE_MARKUP	../lxml/doctestcompare.py	/^NOPARSE_MARKUP = doctest.register_optionflag('NOPARSE_MARKUP')$/;"	kind:variable	line:59
 NOQA	../pyquery/__init__.py	/^from .pyquery import PyQuery  # NOQA$/;"	kind:namespace	line:7
@@ -294,10 +232,6 @@ NOQA	../pyquery/pyquery.py	/^    from urlparse import urljoin  # NOQA$/;"	kind:n
 NOSCRIPT	../lxml/html/builder.py	/^NOSCRIPT = E.noscript # alternate content container for non script-based rendering$/;"	kind:variable	line:96
 NSImage	../workflow/notify.py	/^        from AppKit import NSWorkspace, NSImage$/;"	kind:namespace	line:137
 NSWorkspace	../workflow/notify.py	/^        from AppKit import NSWorkspace, NSImage$/;"	kind:namespace	line:137
-NS_XHTML	../soupsieve/css_match.py	/^NS_XHTML = 'http:\/\/www.w3.org\/1999\/xhtml'$/;"	kind:variable	line:26
-NS_XML	../soupsieve/css_match.py	/^NS_XML = 'http:\/\/www.w3.org\/XML\/1998\/namespace'$/;"	kind:variable	line:27
-NTH	../soupsieve/css_parser.py	/^NTH = r'(?:[-+])?(?:[0-9]+n?|n)(?:(?<=n){ws}*(?:[-+]){ws}*(?:[0-9]+))?'.format(ws=WSC)$/;"	kind:variable	line:104
-Namespaces	../soupsieve/css_types.py	/^class Namespaces(ImmutableDict):$/;"	kind:class	line:133
 Negation	../cssselect/parser.py	/^class Negation(object):$/;"	kind:class	line:229
 NoDefault	../pyquery/pyquery.py	/^class NoDefault(object):$/;"	kind:class	line:135
 NoDeletes	../lxml/html/diff.py	/^class NoDeletes(Exception):$/;"	kind:class	line:262
@@ -312,28 +246,7 @@ P	../lxml/html/builder.py	/^P = E.p # paragraph$/;"	kind:variable	line:101
 PARAM	../lxml/html/builder.py	/^PARAM = E.param # named property value$/;"	kind:variable	line:102
 PARSE_HTML	../lxml/doctestcompare.py	/^PARSE_HTML = doctest.register_optionflag('PARSE_HTML')$/;"	kind:variable	line:57
 PARSE_XML	../lxml/doctestcompare.py	/^PARSE_XML = doctest.register_optionflag('PARSE_XML')$/;"	kind:variable	line:58
-PAT_ATTR	../soupsieve/css_parser.py	/^PAT_ATTR = r'\\[{ws}*(?P<ns_attr>(?:(?:{ident}|\\*)?\\|)?{ident}){attr}'.format(ws=WSC, ident=IDENTIFIER, attr=ATTR)$/;"	kind:variable	line:122
-PAT_AT_RULE	../soupsieve/css_parser.py	/^PAT_AT_RULE = r'@P{ident}'.format(ident=IDENTIFIER)$/;"	kind:variable	line:134
-PAT_CLASS	../soupsieve/css_parser.py	/^PAT_CLASS = r'\\.{ident}'.format(ident=IDENTIFIER)$/;"	kind:variable	line:118
-PAT_COMBINE	../soupsieve/css_parser.py	/^PAT_COMBINE = r'{wsc}*?(?P<relation>[,+>~]|{ws}(?![,+>~])){wsc}*'.format(ws=WS, wsc=WSC)$/;"	kind:variable	line:152
-PAT_ID	../soupsieve/css_parser.py	/^PAT_ID = r'\\#{ident}'.format(ident=IDENTIFIER)$/;"	kind:variable	line:116
-PAT_PSEUDO_CLASS	../soupsieve/css_parser.py	/^PAT_PSEUDO_CLASS = r'(?P<name>:{ident})(?P<open>\\({ws}*)?'.format(ws=WSC, ident=IDENTIFIER)$/;"	kind:variable	line:124
-PAT_PSEUDO_CLASS_CUSTOM	../soupsieve/css_parser.py	/^PAT_PSEUDO_CLASS_CUSTOM = r'(?P<name>:(?=--){ident})'.format(ident=IDENTIFIER)$/;"	kind:variable	line:128
-PAT_PSEUDO_CLASS_SPECIAL	../soupsieve/css_parser.py	/^PAT_PSEUDO_CLASS_SPECIAL = r'(?P<name>:{ident})(?P<open>\\({ws}*)'.format(ws=WSC, ident=IDENTIFIER)$/;"	kind:variable	line:126
-PAT_PSEUDO_CLOSE	../soupsieve/css_parser.py	/^PAT_PSEUDO_CLOSE = r'{ws}*\\)'.format(ws=WSC)$/;"	kind:variable	line:130
-PAT_PSEUDO_CONTAINS	../soupsieve/css_parser.py	/^PAT_PSEUDO_CONTAINS = r'{name}(?P<values>{value}(?:{ws}*,{ws}*{value})*){ws}*\\)'.format($/;"	kind:variable	line:154
-PAT_PSEUDO_DIR	../soupsieve/css_parser.py	/^PAT_PSEUDO_DIR = r'{name}(?P<dir>ltr|rtl){ws}*\\)'.format(name=PAT_PSEUDO_CLASS_SPECIAL, ws=WSC)$/;"	kind:variable	line:150
-PAT_PSEUDO_ELEMENT	../soupsieve/css_parser.py	/^PAT_PSEUDO_ELEMENT = r':{}'.format(PAT_PSEUDO_CLASS)$/;"	kind:variable	line:132
-PAT_PSEUDO_LANG	../soupsieve/css_parser.py	/^PAT_PSEUDO_LANG = r'{name}(?P<values>{value}(?:{ws}*,{ws}*{value})*){ws}*\\)'.format($/;"	kind:variable	line:146
-PAT_TAG	../soupsieve/css_parser.py	/^PAT_TAG = r'(?:(?:{ident}|\\*)?\\|)?(?:{ident}|\\*)'.format(ident=IDENTIFIER)$/;"	kind:variable	line:120
 PRE	../lxml/html/builder.py	/^PRE = E.pre # preformatted text$/;"	kind:variable	line:103
-PRE_REL_MAP	../soupsieve/__meta__.py	/^PRE_REL_MAP = {"a": 'alpha', "b": 'beta', "rc": 'candidate'}$/;"	kind:variable	line:37
-PSEUDO_COMPLEX	../soupsieve/css_parser.py	/^PSEUDO_COMPLEX = {$/;"	kind:variable	line:60
-PSEUDO_COMPLEX_NO_MATCH	../soupsieve/css_parser.py	/^PSEUDO_COMPLEX_NO_MATCH = {$/;"	kind:variable	line:69
-PSEUDO_SIMPLE	../soupsieve/css_parser.py	/^PSEUDO_SIMPLE = {$/;"	kind:variable	line:12
-PSEUDO_SIMPLE_NO_MATCH	../soupsieve/css_parser.py	/^PSEUDO_SIMPLE_NO_MATCH = {$/;"	kind:variable	line:40
-PSEUDO_SPECIAL	../soupsieve/css_parser.py	/^PSEUDO_SPECIAL = {$/;"	kind:variable	line:76
-PSEUDO_SUPPORTED	../soupsieve/css_parser.py	/^PSEUDO_SUPPORTED = PSEUDO_SIMPLE | PSEUDO_SIMPLE_NO_MATCH | PSEUDO_COMPLEX | PSEUDO_COMPLEX_NO_MATCH | PSEUDO_SPECIAL$/;"	kind:variable	line:85
 PasswordExists	../workflow/workflow.py	/^class PasswordExists(KeychainError):$/;"	kind:class	line:472
 PasswordNotFound	../workflow/__init__.py	/^from .workflow import PasswordNotFound, KeychainError$/;"	kind:namespace	line:20
 PasswordNotFound	../workflow/workflow.py	/^class PasswordNotFound(KeychainError):$/;"	kind:class	line:463
@@ -345,61 +258,20 @@ PyQuery	../pyquery/pyquery.py	/^class PyQuery(list):$/;"	kind:class	line:178
 Python	../lxml/html/soupparser.py	/^    from html.entities import name2codepoint  # Python 3$/;"	kind:namespace	line:290
 PythonElementClassLookup	../lxml/pyclasslookup.py	/^from lxml.etree import PythonElementClassLookup$/;"	kind:namespace	line:3
 Q	../lxml/html/builder.py	/^Q = E.q # short inline quotation$/;"	kind:variable	line:104
-RANGES	../soupsieve/css_match.py	/^RANGES = ct.SEL_IN_RANGE | ct.SEL_OUT_OF_RANGE$/;"	kind:variable	line:30
-REFRESH_RATE	../main.py	/^REFRESH_RATE = 0.5$/;"	kind:variable	line:17
+REFRESH_RATE	../main.py	/^REFRESH_RATE = 0.2$/;"	kind:variable	line:17
 RELAXNG_NS	../lxml/isoschematron/__init__.py	/^RELAXNG_NS = "http:\/\/relaxng.org\/ns\/structure\/1.0"$/;"	kind:variable	line:33
 RELEASES_BASE	../workflow/update.py	/^RELEASES_BASE = 'https:\/\/api.github.com\/repos\/{}\/releases'$/;"	kind:variable	line:40
-REL_CLOSE_PARENT	../soupsieve/css_match.py	/^REL_CLOSE_PARENT = '>'$/;"	kind:variable	line:16
-REL_CLOSE_SIBLING	../soupsieve/css_match.py	/^REL_CLOSE_SIBLING = '+'$/;"	kind:variable	line:18
-REL_HAS_CLOSE_PARENT	../soupsieve/css_match.py	/^REL_HAS_CLOSE_PARENT = ':>'$/;"	kind:variable	line:22
-REL_HAS_CLOSE_SIBLING	../soupsieve/css_match.py	/^REL_HAS_CLOSE_SIBLING = ':+'$/;"	kind:variable	line:24
-REL_HAS_PARENT	../soupsieve/css_match.py	/^REL_HAS_PARENT = ': '$/;"	kind:variable	line:21
-REL_HAS_SIBLING	../soupsieve/css_match.py	/^REL_HAS_SIBLING = ':~'$/;"	kind:variable	line:23
-REL_MAP	../soupsieve/__meta__.py	/^REL_MAP = {$/;"	kind:variable	line:15
-REL_PARENT	../soupsieve/css_match.py	/^REL_PARENT = ' '$/;"	kind:variable	line:15
-REL_SIBLING	../soupsieve/css_match.py	/^REL_SIBLING = '~'$/;"	kind:variable	line:17
 RESPONSES	../workflow/web.py	/^RESPONSES = {$/;"	kind:variable	line:33
-RE_CSS_ESC	../soupsieve/css_parser.py	/^RE_CSS_ESC = re.compile(r'(?:(\\\\[a-f0-9]{{1,6}}{ws}?)|(\\\\[^\\r\\n\\f])|(\\\\$))'.format(ws=WSC), re.I)$/;"	kind:variable	line:160
-RE_CSS_STR_ESC	../soupsieve/css_parser.py	/^RE_CSS_STR_ESC = re.compile($/;"	kind:variable	line:161
-RE_CUSTOM	../soupsieve/css_parser.py	/^RE_CUSTOM = re.compile(r'^{}$'.format(PAT_PSEUDO_CLASS_CUSTOM), re.X)$/;"	kind:variable	line:175
-RE_DATE	../soupsieve/css_match.py	/^RE_DATE = re.compile(r'^(?P<year>[0-9]{4,})-(?P<month>[0-9]{2})-(?P<day>[0-9]{2})$')$/;"	kind:variable	line:42
-RE_DATETIME	../soupsieve/css_match.py	/^RE_DATETIME = re.compile($/;"	kind:variable	line:43
-RE_MONTH	../soupsieve/css_match.py	/^RE_MONTH = re.compile(r'^(?P<year>[0-9]{4,})-(?P<month>[0-9]{2})$')$/;"	kind:variable	line:40
-RE_NOT_EMPTY	../soupsieve/css_match.py	/^RE_NOT_EMPTY = re.compile('[^ \\t\\r\\n\\f]')$/;"	kind:variable	line:10
-RE_NOT_WS	../soupsieve/css_match.py	/^RE_NOT_WS = re.compile('[^ \\t\\r\\n\\f]+')$/;"	kind:variable	line:12
-RE_NTH	../soupsieve/css_parser.py	/^RE_NTH = re.compile($/;"	kind:variable	line:165
-RE_NUM	../soupsieve/css_match.py	/^RE_NUM = re.compile(r"^(?P<value>-?(?:[0-9]{1,}(\\.[0-9]+)?|\\.[0-9]+))$")$/;"	kind:variable	line:38
-RE_PATTERN_LINE_SPLIT	../soupsieve/util.py	/^RE_PATTERN_LINE_SPLIT = re.compile(r'(?:\\r\\n|(?!\\r\\n)[\\n\\r])|$')$/;"	kind:variable	line:36
-RE_TIME	../soupsieve/css_match.py	/^RE_TIME = re.compile(r'^(?P<hour>[0-9]{2}):(?P<minutes>[0-9]{2})$')$/;"	kind:variable	line:39
-RE_VALUES	../soupsieve/css_parser.py	/^RE_VALUES = re.compile(r'(?:(?P<value>{value})|(?P<split>{ws}*,{ws}*))'.format(ws=WSC, value=VALUE), re.X)$/;"	kind:variable	line:170
-RE_VER	../soupsieve/__meta__.py	/^RE_VER = re.compile($/;"	kind:variable	line:6
-RE_WEEK	../soupsieve/css_match.py	/^RE_WEEK = re.compile(r'^(?P<year>[0-9]{4,})-W(?P<week>[0-9]{2})$')$/;"	kind:variable	line:41
-RE_WILD_STRIP	../soupsieve/css_match.py	/^RE_WILD_STRIP = re.compile(r'(?:(?:-\\*-)(?:\\*(?:-|$))*|-\\*$)')$/;"	kind:variable	line:46
-RE_WS	../soupsieve/css_parser.py	/^RE_WS = re.compile(WS)$/;"	kind:variable	line:172
-RE_WS_BEGIN	../soupsieve/css_parser.py	/^RE_WS_BEGIN = re.compile('^{}*'.format(WSC))$/;"	kind:variable	line:173
-RE_WS_END	../soupsieve/css_parser.py	/^RE_WS_END = re.compile('{}*$'.format(WSC))$/;"	kind:variable	line:174
 RLock	../backports/functools_lru_cache.py	/^from threading import RLock$/;"	kind:namespace	line:5
 RadioGroup	../lxml/html/__init__.py	/^class RadioGroup(list):$/;"	kind:class	line:1467
 Response	../workflow/web.py	/^class Response(object):$/;"	kind:class	line:181
 S	../lxml/html/builder.py	/^S = E.s # strike-through text style (DEPRECATED)$/;"	kind:variable	line:105
 SAMP	../lxml/html/builder.py	/^SAMP = E.samp # sample program output, scripts, etc.$/;"	kind:variable	line:106
-SAVE_DIR	../cache.py	/^SAVE_DIR = '.\/cache'$/;"	kind:variable	line:3
+SAVE_DIR	../cache.py	/^SAVE_DIR = '.\/cache'$/;"	kind:variable	line:5
 SCHEMATRON_NS	../lxml/isoschematron/__init__.py	/^SCHEMATRON_NS = "http:\/\/purl.oclc.org\/dsdl\/schematron"$/;"	kind:variable	line:34
 SCRIPT	../lxml/html/builder.py	/^SCRIPT = E.script # script statements$/;"	kind:variable	line:107
 SELECT	../lxml/html/builder.py	/^SELECT = E.select # option selector$/;"	kind:variable	line:108
-SEL_DEFAULT	../soupsieve/css_types.py	/^SEL_DEFAULT = 0x4$/;"	kind:variable	line:21
-SEL_DEFINED	../soupsieve/css_types.py	/^SEL_DEFINED = 0x200$/;"	kind:variable	line:28
-SEL_DIR_LTR	../soupsieve/css_types.py	/^SEL_DIR_LTR = 0x20$/;"	kind:variable	line:24
-SEL_DIR_RTL	../soupsieve/css_types.py	/^SEL_DIR_RTL = 0x40$/;"	kind:variable	line:25
-SEL_EMPTY	../soupsieve/css_types.py	/^SEL_EMPTY = 0x1$/;"	kind:variable	line:19
-SEL_INDETERMINATE	../soupsieve/css_types.py	/^SEL_INDETERMINATE = 0x8$/;"	kind:variable	line:22
-SEL_IN_RANGE	../soupsieve/css_types.py	/^SEL_IN_RANGE = 0x80$/;"	kind:variable	line:26
-SEL_OUT_OF_RANGE	../soupsieve/css_types.py	/^SEL_OUT_OF_RANGE = 0x100$/;"	kind:variable	line:27
-SEL_PLACEHOLDER_SHOWN	../soupsieve/css_types.py	/^SEL_PLACEHOLDER_SHOWN = 0x400$/;"	kind:variable	line:29
-SEL_ROOT	../soupsieve/css_types.py	/^SEL_ROOT = 0x2$/;"	kind:variable	line:20
-SEL_SCOPE	../soupsieve/css_types.py	/^SEL_SCOPE = 0x10$/;"	kind:variable	line:23
 SEPARATORS	../pyquery/text.py	/^SEPARATORS = {'br'}$/;"	kind:variable	line:29
-SHORT_MONTH	../soupsieve/css_match.py	/^SHORT_MONTH = 30$/;"	kind:variable	line:50
 SMALL	../lxml/html/builder.py	/^SMALL = E.small # small text style$/;"	kind:variable	line:109
 SOUNDS	../workflow/notify.py	/^SOUNDS = ($/;"	kind:variable	line:45
 SPAN	../lxml/html/builder.py	/^SPAN = E.span # generic language\/style container$/;"	kind:variable	line:110
@@ -414,30 +286,15 @@ Schematron	../lxml/isoschematron/__init__.py	/^class Schematron(_etree._Validato
 SelectElement	../lxml/html/__init__.py	/^class SelectElement(InputMixin, HtmlElement):$/;"	kind:class	line:1303
 Selector	../cssselect/__init__.py	/^from cssselect.parser import (parse, Selector, FunctionalPseudoElement,$/;"	kind:namespace	line:16
 Selector	../cssselect/parser.py	/^class Selector(object):$/;"	kind:class	line:48
-Selector	../soupsieve/css_types.py	/^class Selector(Immutable):$/;"	kind:class	line:171
-SelectorAttribute	../soupsieve/css_types.py	/^class SelectorAttribute(Immutable):$/;"	kind:class	line:223
-SelectorContains	../soupsieve/css_types.py	/^class SelectorContains(Immutable):$/;"	kind:class	line:239
 SelectorError	../cssselect/parser.py	/^class SelectorError(Exception):$/;"	kind:class	line:33
 SelectorError	../cssselect/xpath.py	/^from cssselect.parser import parse, parse_series, SelectorError$/;"	kind:namespace	line:18
 SelectorError	../lxml/cssselect.py	/^SelectorError = external_cssselect.SelectorError$/;"	kind:variable	line:22
-SelectorLang	../soupsieve/css_types.py	/^class SelectorLang(Immutable):$/;"	kind:class	line:270
-SelectorList	../soupsieve/css_types.py	/^class SelectorList(Immutable):$/;"	kind:class	line:298
-SelectorNth	../soupsieve/css_types.py	/^class SelectorNth(Immutable):$/;"	kind:class	line:252
-SelectorNull	../soupsieve/css_types.py	/^class SelectorNull(Immutable):$/;"	kind:class	line:200
-SelectorPattern	../soupsieve/css_parser.py	/^class SelectorPattern(object):$/;"	kind:class	line:289
 SelectorSyntaxError	../cssselect/parser.py	/^class SelectorSyntaxError(SelectorError, SyntaxError):$/;"	kind:class	line:42
 SelectorSyntaxError	../lxml/cssselect.py	/^SelectorSyntaxError = external_cssselect.SelectorSyntaxError$/;"	kind:variable	line:20
-SelectorSyntaxError	../soupsieve/__init__.py	/^from .util import DEBUG, deprecated, SelectorSyntaxError  # noqa: F401$/;"	kind:namespace	line:33
-SelectorSyntaxError	../soupsieve/css_parser.py	/^from .util import SelectorSyntaxError$/;"	kind:namespace	line:7
-SelectorSyntaxError	../soupsieve/util.py	/^class SelectorSyntaxError(SyntaxError):$/;"	kind:class	line:85
-SelectorTag	../soupsieve/css_types.py	/^class SelectorTag(Immutable):$/;"	kind:class	line:209
 SerializerManager	../workflow/workflow.py	/^class SerializerManager(object):$/;"	kind:class	line:506
 SetMixin	../lxml/html/__init__.py	/^from ._setmixin import SetMixin$/;"	kind:namespace	line:55
 SetMixin	../lxml/html/_setmixin.py	/^class SetMixin(MutableSet):$/;"	kind:class	line:7
 Settings	../workflow/workflow.py	/^class Settings(dict):$/;"	kind:class	line:802
-SoupSieve	../soupsieve/__init__.py	/^SoupSieve = cm.SoupSieve$/;"	kind:variable	line:41
-SoupSieve	../soupsieve/css_match.py	/^class SoupSieve(ct.Immutable):$/;"	kind:class	line:1456
-SpecialPseudoPattern	../soupsieve/css_parser.py	/^class SpecialPseudoPattern(SelectorPattern):$/;"	kind:class	line:314
 SubElement	../lxml/sax.py	/^from lxml.etree import ElementTree, SubElement$/;"	kind:namespace	line:19
 TABLE	../lxml/html/builder.py	/^TABLE = E.table # $/;"	kind:variable	line:116
 TBODY	../lxml/html/builder.py	/^TBODY = E.tbody # table body$/;"	kind:variable	line:117
@@ -456,32 +313,26 @@ TokenStream	../cssselect/parser.py	/^class TokenStream(object):$/;"	kind:class	l
 TreeBuilder	../lxml/html/_html5builder.py	/^class TreeBuilder(_base.TreeBuilder):$/;"	kind:class	line:32
 TreeBuilder	../lxml/html/html5parser.py	/^from html5lib.treebuilders.etree_lxml import TreeBuilder$/;"	kind:namespace	line:8
 U	../lxml/html/builder.py	/^U = E.u # underlined text style (DEPRECATED)$/;"	kind:variable	line:126
-UC_A	../soupsieve/util.py	/^UC_A = ord('A')$/;"	kind:variable	line:40
-UC_Z	../soupsieve/util.py	/^UC_Z = ord('Z')$/;"	kind:variable	line:41
 UL	../lxml/html/builder.py	/^UL = E.ul # unordered list$/;"	kind:variable	line:127
-UNICODE_REPLACEMENT_CHAR	../soupsieve/css_parser.py	/^UNICODE_REPLACEMENT_CHAR = 0xFFFD$/;"	kind:variable	line:9
 UNSET	../workflow/workflow.py	/^UNSET = object()$/;"	kind:variable	line:56
 USER_AGENT	../workflow/web.py	/^USER_AGENT = u'Alfred-Workflow\/1.36 (+http:\/\/www.deanishe.net\/alfred-workflow)'$/;"	kind:variable	line:27
 VAR	../lxml/html/builder.py	/^VAR = E.var # instance of a variable or program argument$/;"	kind:variable	line:128
 VERSION	../cssselect/__init__.py	/^VERSION = '1.1.0'$/;"	kind:variable	line:21
 Variables	../workflow/__init__.py	/^from .workflow3 import Variables, Workflow3$/;"	kind:namespace	line:17
 Variables	../workflow/workflow3.py	/^class Variables(dict):$/;"	kind:class	line:35
-Version	../soupsieve/__meta__.py	/^class Version(namedtuple("Version", ["major", "minor", "micro", "release", "pre", "post", "dev"])):$/;"	kind:class	line:40
 Version	../workflow/update.py	/^class Version(object):$/;"	kind:class	line:201
 Version	../workflow/workflow.py	/^                from update import Version$/;"	kind:namespace	line:1174
 Version	../workflow/workflow.py	/^                from update import Version$/;"	kind:namespace	line:2220
 Version	../workflow/workflow.py	/^            from update import Version$/;"	kind:namespace	line:2249
 Version	../workflow/workflow.py	/^        from update import Version$/;"	kind:namespace	line:999
 WHITESPACE_RE	../pyquery/text.py	/^WHITESPACE_RE = re.compile(u'[\\x20\\x09\\x0C\\u200B\\x0A\\x0D]+')$/;"	kind:variable	line:34
-WS	../soupsieve/css_parser.py	/^WS = r'(?:[ \\t]|{})'.format(NEWLINE)$/;"	kind:variable	line:90
-WSC	../soupsieve/css_parser.py	/^WSC = r'(?:{ws}|{comments})'.format(ws=WS, comments=COMMENTS)$/;"	kind:variable	line:94
-WS_COMBINATOR	../soupsieve/css_parser.py	/^WS_COMBINATOR = " "$/;"	kind:variable	line:181
 Workflow	../update_details.py	/^from workflow import Workflow, web$/;"	kind:namespace	line:6
 Workflow	../update_thumbnails.py	/^from workflow import Workflow, web$/;"	kind:namespace	line:7
 Workflow	../workflow/__init__.py	/^from .workflow import Workflow, manager$/;"	kind:namespace	line:16
 Workflow	../workflow/background.py	/^from workflow import Workflow$/;"	kind:namespace	line:28
 Workflow	../workflow/workflow.py	/^class Workflow(object):$/;"	kind:class	line:889
 Workflow	../workflow/workflow3.py	/^from .workflow import ICON_WARNING, Workflow$/;"	kind:namespace	line:32
+Workflow3	../cache.py	/^from workflow import web, Workflow3$/;"	kind:namespace	line:2
 Workflow3	../main.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:12
 Workflow3	../workflow/__init__.py	/^from .workflow3 import Variables, Workflow3$/;"	kind:namespace	line:17
 Workflow3	../workflow/workflow3.py	/^class Workflow3(Workflow):$/;"	kind:class	line:449
@@ -1449,16 +1300,11 @@ XPathExprOrig	../pyquery/cssselectpatch.py	/^XPathExprOrig = cssselect_xpath.XPa
 _CacheInfo	../backports/functools_lru_cache.py	/^_CacheInfo = namedtuple("CacheInfo", ["hits", "misses", "maxsize", "currsize"])$/;"	kind:variable	line:7
 _DECLARATION_OR_DOCTYPE	../lxml/html/soupparser.py	/^    _DECLARATION_OR_DOCTYPE = (Declaration, Doctype)$/;"	kind:variable	line:13
 _DECLARATION_OR_DOCTYPE	../lxml/html/soupparser.py	/^    _DECLARATION_OR_DOCTYPE = Declaration$/;"	kind:variable	line:18
-_DocumentNav	../soupsieve/css_match.py	/^class _DocumentNav(object):$/;"	kind:class	line:77
-_FakeParent	../soupsieve/css_match.py	/^class _FakeParent(object):$/;"	kind:class	line:57
 _HTMLParser	../lxml/html/html5parser.py	/^from html5lib import HTMLParser as _HTMLParser$/;"	kind:namespace	line:7
 _HashedSeq	../backports/functools_lru_cache.py	/^class _HashedSeq(list):$/;"	kind:class	line:28
-_MAXCACHE	../soupsieve/css_parser.py	/^_MAXCACHE = 500$/;"	kind:variable	line:196
-_Match	../soupsieve/css_match.py	/^class _Match(object):$/;"	kind:class	line:441
 _MethodFunc	../lxml/html/__init__.py	/^class _MethodFunc(object):$/;"	kind:class	line:644
 _PseudoTag	../lxml/html/soupparser.py	/^class _PseudoTag:$/;"	kind:class	line:94
 _RestoreChecker	../lxml/doctestcompare.py	/^class _RestoreChecker(object):$/;"	kind:class	line:424
-_Selector	../soupsieve/css_parser.py	/^class _Selector(object):$/;"	kind:class	line:356
 _XHTMLParser	../lxml/html/html5parser.py	/^    from html5lib import XHTMLParser as _XHTMLParser$/;"	kind:namespace	line:35
 __add__	../pyquery/pyquery.py	/^    def __add__(self, other):$/;"	kind:member	line:308
 __all__	../lxml/cssselect.py	/^__all__ = ['SelectorSyntaxError', 'ExpressionError', 'SelectorError',$/;"	kind:variable	line:25
@@ -1470,12 +1316,9 @@ __all__	../lxml/html/diff.py	/^__all__ = ['html_annotate', 'htmldiff']$/;"	kind:
 __all__	../lxml/html/formfill.py	/^__all__ = ['FormNotFound', 'fill_form', 'fill_form_html',$/;"	kind:variable	line:13
 __all__	../lxml/html/soupparser.py	/^__all__ = ["fromstring", "parse", "convert_tree"]$/;"	kind:variable	line:4
 __all__	../lxml/isoschematron/__init__.py	/^__all__ = ['extract_xsd', 'extract_rng', 'iso_dsdl_include',$/;"	kind:variable	line:23
-__all__	../soupsieve/__init__.py	/^__all__ = ($/;"	kind:variable	line:35
-__all__	../soupsieve/css_types.py	/^__all__ = ($/;"	kind:variable	line:5
 __all__	../workflow/__init__.py	/^__all__ = [$/;"	kind:variable	line:69
 __all__	../workflow/background.py	/^__all__ = ['is_running', 'run_in_background']$/;"	kind:variable	line:30
 __author__	../workflow/__init__.py	/^__author__ = 'Dean Jackson'$/;"	kind:variable	line:65
-__base__	../soupsieve/css_types.py	/^    def __base__(cls):$/;"	kind:member	line:48
 __bytes_replace_meta_content_type	../lxml/html/__init__.py	/^__bytes_replace_meta_content_type = re.compile($/;"	kind:variable	line:1777
 __call__	../lxml/builder.py	/^    def __call__(self, tag, *children, **attrib):$/;"	kind:member	line:203
 __call__	../lxml/doctestcompare.py	/^    def __call__(self, *args, **kw):$/;"	kind:member	line:463
@@ -1498,7 +1341,6 @@ __delitem__	../lxml/html/__init__.py	/^    def __delitem__(self, item):$/;"	kind
 __delitem__	../pyquery/pyquery.py	/^            def __delitem__(prop, name):$/;"	kind:member	line:160
 __delitem__	../workflow/workflow.py	/^    def __delitem__(self, key):$/;"	kind:member	line:872
 __enter__	../workflow/util.py	/^    def __enter__(self):$/;"	kind:member	line:484
-__eq__	../soupsieve/css_types.py	/^    def __eq__(self, other):$/;"	kind:member	line:53
 __eq__	../workflow/update.py	/^    def __eq__(self, other):$/;"	kind:member	line:181
 __eq__	../workflow/update.py	/^    def __eq__(self, other):$/;"	kind:member	line:307
 __exit__	../workflow/util.py	/^    def __exit__(self, typ, value, traceback):$/;"	kind:member	line:489
@@ -1509,14 +1351,9 @@ __get__	../workflow/util.py	/^    def __get__(self, obj=None, klass=None):$/;"	k
 __getattr__	../lxml/builder.py	/^    def __getattr__(self, tag):$/;"	kind:member	line:234
 __getitem__	../lxml/html/__init__.py	/^    def __getitem__(self, item):$/;"	kind:member	line:1148
 __getitem__	../lxml/html/__init__.py	/^    def __getitem__(self, name):$/;"	kind:member	line:1200
-__getitem__	../soupsieve/css_types.py	/^    def __getitem__(self, index):  # pragma: no cover$/;"	kind:member	line:292
-__getitem__	../soupsieve/css_types.py	/^    def __getitem__(self, index):$/;"	kind:member	line:322
-__getitem__	../soupsieve/css_types.py	/^    def __getitem__(self, key):$/;"	kind:member	line:116
 __getitem__	../workflow/web.py	/^    def __getitem__(self, key):$/;"	kind:member	line:133
 __gt__	../workflow/update.py	/^    def __gt__(self, other):$/;"	kind:member	line:317
 __hash__	../backports/functools_lru_cache.py	/^    def __hash__(self):$/;"	kind:member	line:35
-__hash__	../soupsieve/css_types.py	/^    def __hash__(self):$/;"	kind:member	line:120
-__hash__	../soupsieve/css_types.py	/^    def __hash__(self):$/;"	kind:member	line:69
 __html__	../pyquery/pyquery.py	/^    def __html__(self):$/;"	kind:member	line:390
 __init__	../backports/functools_lru_cache.py	/^    def __init__(self, tup, hash=hash):$/;"	kind:member	line:31
 __init__	../cssselect/parser.py	/^    def __init__(self, name, arguments):$/;"	kind:member	line:159
@@ -1559,27 +1396,6 @@ __init__	../lxml/sax.py	/^    def __init__(self, makeelement=None):$/;"	kind:mem
 __init__	../pyquery/cssselectpatch.py	/^    def __init__(self, path='', element='*', condition='', star_prefix=False):$/;"	kind:member	line:15
 __init__	../pyquery/pyquery.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:184
 __init__	../pyquery/pyquery.py	/^    def __init__(self, pget, pset=no_default, pdel=no_default):$/;"	kind:member	line:147
-__init__	../soupsieve/css_match.py	/^    def __init__(self, el):$/;"	kind:member	line:1435
-__init__	../soupsieve/css_match.py	/^    def __init__(self, element):$/;"	kind:member	line:66
-__init__	../soupsieve/css_match.py	/^    def __init__(self, pattern, selectors, namespaces, custom, flags):$/;"	kind:member	line:1461
-__init__	../soupsieve/css_match.py	/^    def __init__(self, selectors, scope, namespaces, flags):$/;"	kind:member	line:444
-__init__	../soupsieve/css_parser.py	/^    def __init__(self, **kwargs):$/;"	kind:member	line:365
-__init__	../soupsieve/css_parser.py	/^    def __init__(self, name, pattern):$/;"	kind:member	line:292
-__init__	../soupsieve/css_parser.py	/^    def __init__(self, patterns):$/;"	kind:member	line:317
-__init__	../soupsieve/css_parser.py	/^    def __init__(self, selector, custom=None, flags=0):$/;"	kind:member	line:450
-__init__	../soupsieve/css_types.py	/^    def __init__($/;"	kind:member	line:179
-__init__	../soupsieve/css_types.py	/^    def __init__(self):$/;"	kind:member	line:203
-__init__	../soupsieve/css_types.py	/^    def __init__(self, **kwargs):$/;"	kind:member	line:37
-__init__	../soupsieve/css_types.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:136
-__init__	../soupsieve/css_types.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:155
-__init__	../soupsieve/css_types.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:92
-__init__	../soupsieve/css_types.py	/^    def __init__(self, a, n, b, of_type, last, selectors):$/;"	kind:member	line:257
-__init__	../soupsieve/css_types.py	/^    def __init__(self, attribute, prefix, pattern, xml_type_pattern):$/;"	kind:member	line:228
-__init__	../soupsieve/css_types.py	/^    def __init__(self, languages):$/;"	kind:member	line:275
-__init__	../soupsieve/css_types.py	/^    def __init__(self, name, prefix):$/;"	kind:member	line:214
-__init__	../soupsieve/css_types.py	/^    def __init__(self, selectors=tuple(), is_not=False, is_html=False):$/;"	kind:member	line:303
-__init__	../soupsieve/css_types.py	/^    def __init__(self, text):$/;"	kind:member	line:244
-__init__	../soupsieve/util.py	/^    def __init__(self, msg, pattern=None, index=None):$/;"	kind:member	line:88
 __init__	../workflow/update.py	/^    def __init__(self, url, filename, version, prerelease=False):$/;"	kind:member	line:135
 __init__	../workflow/update.py	/^    def __init__(self, vstr):$/;"	kind:member	line:227
 __init__	../workflow/util.py	/^    def __init__(self, func, class_name=''):$/;"	kind:member	line:519
@@ -1602,7 +1418,6 @@ __init__.py	../lxml/html/__init__.py	1;"	kind:file	line:1
 __init__.py	../lxml/includes/__init__.py	1;"	kind:file	line:1
 __init__.py	../lxml/isoschematron/__init__.py	1;"	kind:file	line:1
 __init__.py	../pyquery/__init__.py	1;"	kind:file	line:1
-__init__.py	../soupsieve/__init__.py	1;"	kind:file	line:1
 __init__.py	../workflow/__init__.py	1;"	kind:file	line:1
 __iter__	../lxml/html/__init__.py	/^    def __iter__(self):$/;"	kind:member	line:1159
 __iter__	../lxml/html/__init__.py	/^    def __iter__(self):$/;"	kind:member	line:1231
@@ -1610,29 +1425,19 @@ __iter__	../lxml/html/__init__.py	/^    def __iter__(self):$/;"	kind:member	line
 __iter__	../lxml/html/__init__.py	/^    def __iter__(self):$/;"	kind:member	line:1573
 __iter__	../lxml/html/__init__.py	/^    def __iter__(self):$/;"	kind:member	line:195
 __iter__	../lxml/html/soupparser.py	/^    def __iter__(self):$/;"	kind:member	line:101
-__iter__	../soupsieve/css_types.py	/^    def __iter__(self):$/;"	kind:member	line:106
-__iter__	../soupsieve/css_types.py	/^    def __iter__(self):$/;"	kind:member	line:282
-__iter__	../soupsieve/css_types.py	/^    def __iter__(self):$/;"	kind:member	line:312
 __le__	../workflow/update.py	/^    def __le__(self, other):$/;"	kind:member	line:323
 __len__	../lxml/html/__init__.py	/^    def __len__(self):$/;"	kind:member	line:1161
 __len__	../lxml/html/__init__.py	/^    def __len__(self):$/;"	kind:member	line:198
 __len__	../lxml/html/_setmixin.py	/^    def __len__(self):$/;"	kind:member	line:13
-__len__	../soupsieve/css_match.py	/^    def __len__(self):$/;"	kind:member	line:71
-__len__	../soupsieve/css_types.py	/^    def __len__(self):  # pragma: no cover$/;"	kind:member	line:287
-__len__	../soupsieve/css_types.py	/^    def __len__(self):$/;"	kind:member	line:111
-__len__	../soupsieve/css_types.py	/^    def __len__(self):$/;"	kind:member	line:317
 __licence__	../workflow/__init__.py	/^__licence__ = 'MIT'$/;"	kind:variable	line:66
 __lt__	../workflow/update.py	/^    def __lt__(self, other):$/;"	kind:member	line:194
 __lt__	../workflow/update.py	/^    def __lt__(self, other):$/;"	kind:member	line:289
-__meta__.py	../soupsieve/__meta__.py	1;"	kind:file	line:1
-__ne__	../soupsieve/css_types.py	/^    def __ne__(self, other):$/;"	kind:member	line:61
 __ne__	../workflow/update.py	/^    def __ne__(self, other):$/;"	kind:member	line:190
 __ne__	../workflow/update.py	/^    def __ne__(self, other):$/;"	kind:member	line:313
 __new__	../cssselect/parser.py	/^    def __new__(cls, pos):$/;"	kind:member	line:672
 __new__	../cssselect/parser.py	/^    def __new__(cls, type_, value, pos):$/;"	kind:member	line:650
 __new__	../lxml/html/diff.py	/^    def __new__(cls, tag, data, html_repr, pre_tags=None, $/;"	kind:member	line:488
 __new__	../lxml/html/diff.py	/^    def __new__(cls, text, pre_tags=None, post_tags=None, trailing_whitespace=""):$/;"	kind:member	line:458
-__new__	../soupsieve/__meta__.py	/^    def __new__(cls, major, minor, micro, release="final", pre=0, post=0, dev=0):$/;"	kind:member	line:83
 __path__	../backports/__init__.py	/^__path__ = __import__('pkgutil').extend_path(__path__, __name__)$/;"	kind:variable	line:1
 __repr__	../cssselect/parser.py	/^    def __repr__(self):$/;"	kind:member	line:129
 __repr__	../cssselect/parser.py	/^    def __repr__(self):$/;"	kind:member	line:163
@@ -1660,35 +1465,17 @@ __repr__	../lxml/html/diff.py	/^    def __repr__(self):$/;"	kind:member	line:499
 __repr__	../pyquery/pyquery.py	/^            def __repr__(prop):$/;"	kind:member	line:167
 __repr__	../pyquery/pyquery.py	/^    def __repr__(self):$/;"	kind:member	line:136
 __repr__	../pyquery/pyquery.py	/^    def __repr__(self):$/;"	kind:member	line:402
-__repr__	../soupsieve/css_match.py	/^    def __repr__(self):  # pragma: no cover$/;"	kind:member	line:1529
-__repr__	../soupsieve/css_parser.py	/^    __repr__ = __str__$/;"	kind:variable	line:422
-__repr__	../soupsieve/css_types.py	/^    def __repr__(self):  # pragma: no cover$/;"	kind:member	line:125
-__repr__	../soupsieve/css_types.py	/^    def __repr__(self):  # pragma: no cover$/;"	kind:member	line:79
 __repr__	../workflow/update.py	/^    def __repr__(self):$/;"	kind:member	line:177
 __repr__	../workflow/update.py	/^    def __repr__(self):$/;"	kind:member	line:342
 __set__	../pyquery/pyquery.py	/^    def __set__(self, instance, value):$/;"	kind:member	line:171
 __setattr__	../pyquery/pyquery.py	/^        def __setattr__(self, name, func):$/;"	kind:member	line:1518
-__setattr__	../soupsieve/css_types.py	/^    def __setattr__(self, name, value):$/;"	kind:member	line:74
 __setitem__	../lxml/html/__init__.py	/^    def __setitem__(self, item, value):$/;"	kind:member	line:1150
 __setitem__	../workflow/web.py	/^    def __setitem__(self, key, value):$/;"	kind:member	line:136
 __setitem__	../workflow/workflow.py	/^    def __setitem__(self, key, value):$/;"	kind:member	line:866
 __slots__	../backports/functools_lru_cache.py	/^    __slots__ = 'hashvalue'$/;"	kind:variable	line:29
-__slots__	../soupsieve/css_match.py	/^    __slots__ = ("pattern", "selectors", "namespaces", "custom", "flags", "_hash")$/;"	kind:variable	line:1459
-__slots__	../soupsieve/css_types.py	/^    __slots__ = ("a", "n", "b", "of_type", "last", "selectors", "_hash")$/;"	kind:variable	line:255
-__slots__	../soupsieve/css_types.py	/^    __slots__ = ("attribute", "prefix", "pattern", "xml_type_pattern", "_hash")$/;"	kind:variable	line:226
-__slots__	../soupsieve/css_types.py	/^    __slots__ = ("languages", "_hash",)$/;"	kind:variable	line:273
-__slots__	../soupsieve/css_types.py	/^    __slots__ = ("name", "prefix", "_hash")$/;"	kind:variable	line:212
-__slots__	../soupsieve/css_types.py	/^    __slots__ = ("selectors", "is_not", "is_html", "_hash")$/;"	kind:variable	line:301
-__slots__	../soupsieve/css_types.py	/^    __slots__ = ("text", "_hash")$/;"	kind:variable	line:242
-__slots__	../soupsieve/css_types.py	/^    __slots__ = ($/;"	kind:variable	line:174
-__slots__	../soupsieve/css_types.py	/^    __slots__ = ('_hash',)$/;"	kind:variable	line:35
 __str__	../cssselect/xpath.py	/^    def __str__(self):$/;"	kind:member	line:48
 __str__	../pyquery/cssselectpatch.py	/^    def __str__(self):$/;"	kind:member	line:28
 __str__	../pyquery/pyquery.py	/^    def __str__(self):$/;"	kind:member	line:373
-__str__	../soupsieve/css_match.py	/^    __str__ = __repr__$/;"	kind:variable	line:1539
-__str__	../soupsieve/css_parser.py	/^    def __str__(self):  # pragma: no cover$/;"	kind:member	line:411
-__str__	../soupsieve/css_types.py	/^    __str__ = __repr__$/;"	kind:variable	line:130
-__str__	../soupsieve/css_types.py	/^    __str__ = __repr__$/;"	kind:variable	line:86
 __str__	../workflow/update.py	/^    def __str__(self):$/;"	kind:member	line:168
 __str__	../workflow/update.py	/^    def __str__(self):$/;"	kind:member	line:333
 __str__	../workflow/workflow3.py	/^    def __str__(self):$/;"	kind:member	line:102
@@ -1699,11 +1486,7 @@ __unicode__	../pyquery/pyquery.py	/^    def __unicode__(self):$/;"	kind:member	l
 __unicode__	../workflow/workflow3.py	/^    def __unicode__(self):$/;"	kind:member	line:87
 __version__	../cssselect/__init__.py	/^__version__ = VERSION$/;"	kind:variable	line:22
 __version__	../lxml/__init__.py	/^__version__ = "4.5.0"$/;"	kind:variable	line:3
-__version__	../soupsieve/__init__.py	/^from .__meta__ import __version__, __version_info__  # noqa: F401$/;"	kind:namespace	line:29
-__version__	../soupsieve/__meta__.py	/^__version__ = __version_info__._get_canonical()$/;"	kind:variable	line:190
 __version__	../workflow/__init__.py	/^__version__ = open(os.path.join(os.path.dirname(__file__), 'version')).read()$/;"	kind:variable	line:64
-__version_info__	../soupsieve/__init__.py	/^from .__meta__ import __version__, __version_info__  # noqa: F401$/;"	kind:namespace	line:29
-__version_info__	../soupsieve/__meta__.py	/^__version_info__ = Version(1, 9, 5, "final")$/;"	kind:variable	line:189
 _add_class	../lxml/html/formfill.py	/^def _add_class(el, class_name):$/;"	kind:function	line:271
 _all_xpath	../lxml/html/__init__.py	/^    _all_xpath = etree.XPath(".\/\/*[local-name() = 'select' or local-name() = 'input' or local-name() = 'textarea']")$/;"	kind:variable	line:1187
 _append	../pyquery/pyquery.py	/^    _append = list.append$/;"	kind:variable	line:304
@@ -1727,7 +1510,6 @@ _buildTag	../lxml/sax.py	/^    def _buildTag(self, ns_name_tuple):$/;"	kind:memb
 _build_path_iterator	../lxml/_elementpath.py	/^def _build_path_iterator(path, namespaces):$/;"	kind:function	line:254
 _build_qname	../lxml/sax.py	/^    def _build_qname(self, ns_uri, local_name, nsmap, preferred_prefix, is_attribute):$/;"	kind:member	line:250
 _cache	../lxml/_elementpath.py	/^_cache = {}$/;"	kind:variable	line:251
-_cached_css_compile	../soupsieve/css_parser.py	/^def _cached_css_compile(pattern, namespaces, custom, flags):$/;"	kind:function	line:200
 _call_security	../workflow/workflow.py	/^    def _call_security(self, action, service, account, *args):$/;"	kind:member	line:2785
 _camel_case_aliases	../pyquery/pyquery.py	/^_camel_case_aliases = set()$/;"	kind:variable	line:70
 _check	../lxml/html/formfill.py	/^def _check(el, check):$/;"	kind:function	line:114
@@ -1746,7 +1528,6 @@ _create	../workflow/workflow.py	/^    def _create(self, dirpath):$/;"	kind:membe
 _css_import_re	../lxml/html/clean.py	/^_css_import_re = re.compile($/;"	kind:variable	line:68
 _css_javascript_re	../lxml/html/clean.py	/^_css_javascript_re = re.compile($/;"	kind:variable	line:64
 _css_to_xpath	../pyquery/pyquery.py	/^    def _css_to_xpath(self, selector, prefix='descendant-or-self::'):$/;"	kind:member	line:280
-_decorator	../soupsieve/util.py	/^    def _decorator(func):$/;"	kind:function	line:110
 _default_cachedir	../workflow/workflow.py	/^    def _default_cachedir(self):$/;"	kind:member	line:1247
 _default_cachedir	../workflow/workflow3.py	/^    def _default_cachedir(self):$/;"	kind:member	line:478
 _default_datadir	../workflow/workflow.py	/^    def _default_datadir(self):$/;"	kind:member	line:1283
@@ -1788,14 +1569,10 @@ _form_name_xpath	../lxml/html/formfill.py	/^_form_name_xpath = XPath('descendant
 _format_disabled_xpath	../pyquery/cssselectpatch.py	/^    def _format_disabled_xpath(self, disabled=True):$/;"	kind:member	line:130
 _forms_xpath	../lxml/html/__init__.py	/^_forms_xpath = etree.XPath("descendant-or-self::form|descendant-or-self::x:form",$/;"	kind:variable	line:91
 _forms_xpath	../lxml/html/formfill.py	/^from lxml.html import _forms_xpath, _options_xpath, _nons, _transform_result$/;"	kind:namespace	line:3
-_freeze_relations	../soupsieve/css_parser.py	/^    def _freeze_relations(self, relations):$/;"	kind:member	line:381
 _from_iterable	../lxml/html/_setmixin.py	/^    def _from_iterable(cls, it):$/;"	kind:member	line:55
-_func	../soupsieve/util.py	/^        def _func(*args, **kwargs):$/;"	kind:function	line:112
 _getNs	../lxml/includes/etreepublic.pxd	/^    cdef const_xmlChar* _getNs(tree.xmlNode* node) nogil$/;"	kind:function	line:14
 _getNs	../lxml/includes/tree.pxd	/^    cdef const_xmlChar* _getNs(xmlNode* node) nogil$/;"	kind:function	line:472
 _getNsTag	../lxml/sax.py	/^def _getNsTag(tag):$/;"	kind:function	line:28
-_get_canonical	../soupsieve/__meta__.py	/^    def _get_canonical(self):$/;"	kind:member	line:139
-_get_dev_status	../soupsieve/__meta__.py	/^    def _get_dev_status(self):  # pragma: no cover$/;"	kind:member	line:134
 _get_encoding	../workflow/web.py	/^    def _get_encoding(self):$/;"	kind:member	line:416
 _get_etree	../lxml/sax.py	/^    def _get_etree(self):$/;"	kind:member	line:50
 _get_root	../pyquery/pyquery.py	/^    def _get_root(self, value):$/;"	kind:member	line:1217
@@ -1817,12 +1594,9 @@ _insert_error	../lxml/html/formfill.py	/^def _insert_error(el, error, error_clas
 _isElement	../lxml/includes/etreepublic.pxd	/^    cdef bint _isElement(tree.xmlNode* c_node) nogil$/;"	kind:function	line:11
 _isElement	../lxml/includes/tree.pxd	/^    cdef bint _isElement(xmlNode* node) nogil$/;"	kind:function	line:470
 _isElementOrXInclude	../lxml/includes/tree.pxd	/^    cdef bint _isElementOrXInclude(xmlNode* node) nogil$/;"	kind:function	line:471
-_is_dev	../soupsieve/__meta__.py	/^    def _is_dev(self):$/;"	kind:member	line:124
 _is_image_dataurl	../lxml/html/clean.py	/^_is_image_dataurl = re.compile($/;"	kind:variable	line:73
 _is_javascript_scheme	../lxml/html/clean.py	/^def _is_javascript_scheme(s):$/;"	kind:function	line:78
 _is_possibly_malicious_scheme	../lxml/html/clean.py	/^_is_possibly_malicious_scheme = re.compile($/;"	kind:variable	line:75
-_is_post	../soupsieve/__meta__.py	/^    def _is_post(self):$/;"	kind:member	line:129
-_is_pre	../soupsieve/__meta__.py	/^    def _is_pre(self):$/;"	kind:member	line:119
 _is_session_file	../workflow/workflow3.py	/^        def _is_session_file(filename):$/;"	kind:function	line:665
 _iter_css_imports	../lxml/html/__init__.py	/^_iter_css_imports = re.compile(r'@import "(.*?)"').finditer$/;"	kind:variable	line:98
 _iter_css_urls	../lxml/html/__init__.py	/^_iter_css_urls = re.compile(r'url\\(('+'["][^"]*["]|'+"['][^']*[']|"+r'[^)]*)\\)', re.I).finditer$/;"	kind:variable	line:97
@@ -1870,11 +1644,9 @@ _parse	../workflow/update.py	/^    def _parse(self, vstr):$/;"	kind:member	line:
 _parse_doctype_declaration	../lxml/html/soupparser.py	/^_parse_doctype_declaration = re.compile($/;"	kind:variable	line:87
 _parse_dotted_string	../workflow/update.py	/^    def _parse_dotted_string(self, s):$/;"	kind:member	line:274
 _parse_meta_refresh_url	../lxml/html/__init__.py	/^_parse_meta_refresh_url = re.compile($/;"	kind:variable	line:102
-_pickle	../soupsieve/css_types.py	/^def _pickle(p):$/;"	kind:function	line:328
 _pid_file	../workflow/background.py	/^def _pid_file(name):$/;"	kind:function	line:58
 _prev_all	../pyquery/pyquery.py	/^    def _prev_all(self):$/;"	kind:member	line:513
 _process_exists	../workflow/background.py	/^def _process_exists(pid):$/;"	kind:function	line:70
-_purge_cache	../soupsieve/css_parser.py	/^def _purge_cache():$/;"	kind:function	line:213
 _query	../pyquery/openers.py	/^def _query(url, method, kwargs):$/;"	kind:function	line:30
 _recursive_saxify	../lxml/sax.py	/^    def _recursive_saxify(self, element, parent_nsmap):$/;"	kind:member	line:196
 _register_default_magic	../workflow/workflow.py	/^    def _register_default_magic(self):$/;"	kind:member	line:2489
@@ -1987,7 +1759,6 @@ argument_types	../cssselect/parser.py	/^    def argument_types(self):$/;"	kind:m
 argument_types	../cssselect/parser.py	/^    def argument_types(self):$/;"	kind:member	line:195
 argv	../workflow/update.py	/^    argv = sys.argv[:]$/;"	kind:variable	line:539
 ascii_lower	../cssselect/parser.py	/^def ascii_lower(string):$/;"	kind:function	line:28
-assert_valid_input	../soupsieve/css_match.py	/^    def assert_valid_input(cls, tag):$/;"	kind:member	line:81
 assigned	../backports/functools_lru_cache.py	/^    assigned = tuple(attr for attr in assigned if hasattr(wrapped, attr))$/;"	kind:variable	line:21
 atexit	../workflow/util.py	/^import atexit$/;"	kind:namespace	line:15
 atomic_writer	../workflow/util.py	/^def atomic_writer(fpath, mode):$/;"	kind:function	line:349
@@ -2019,16 +1790,6 @@ block_tags	../lxml/html/defs.py	/^block_tags = general_block_tags | list_tags | 
 body	../lxml/html/__init__.py	/^    def body(self):$/;"	kind:member	line:284
 body_end_re	../lxml/html/_diffcommand.py	/^body_end_re = re.compile($/;"	kind:variable	line:70
 body_start_re	../lxml/html/_diffcommand.py	/^body_start_re = re.compile($/;"	kind:variable	line:68
-bs4	../soupsieve/css_match.py	/^        import bs4$/;"	kind:namespace	line:106
-bs4	../soupsieve/css_match.py	/^        import bs4$/;"	kind:namespace	line:113
-bs4	../soupsieve/css_match.py	/^        import bs4$/;"	kind:namespace	line:120
-bs4	../soupsieve/css_match.py	/^        import bs4$/;"	kind:namespace	line:127
-bs4	../soupsieve/css_match.py	/^        import bs4$/;"	kind:namespace	line:134
-bs4	../soupsieve/css_match.py	/^        import bs4$/;"	kind:namespace	line:141
-bs4	../soupsieve/css_match.py	/^        import bs4$/;"	kind:namespace	line:92
-bs4	../soupsieve/css_match.py	/^        import bs4$/;"	kind:namespace	line:99
-bstr	../soupsieve/util.py	/^    bstr = bytes$/;"	kind:variable	line:21
-bstr	../soupsieve/util.py	/^    bstr = str$/;"	kind:variable	line:30
 build_api_url	../workflow/update.py	/^def build_api_url(repo):$/;"	kind:function	line:374
 build_camel_case_aliases	../pyquery/pyquery.py	/^def build_camel_case_aliases(PyQuery):$/;"	kind:function	line:73
 builder.py	../lxml/builder.py	1;"	kind:file	line:1
@@ -2081,18 +1842,14 @@ clean_html	../lxml/html/clean.py	/^    def clean_html(self, html):$/;"	kind:memb
 clean_html	../lxml/html/clean.py	/^clean_html = clean.clean_html$/;"	kind:variable	line:537
 cleanup_delete	../lxml/html/diff.py	/^def cleanup_delete(chunks):$/;"	kind:function	line:274
 cleanup_html	../lxml/html/diff.py	/^def cleanup_html(html):$/;"	kind:function	line:561
-clear	../cache.py	/^def clear():$/;"	kind:function	line:20
+clear	../cache.py	/^def clear():$/;"	kind:function	line:24
 clear_cache	../workflow/workflow.py	/^    def clear_cache(self, filter_func=lambda f: True):$/;"	kind:member	line:2599
 clear_data	../workflow/workflow.py	/^    def clear_data(self, filter_func=lambda f: True):$/;"	kind:member	line:2611
 clear_session_cache	../workflow/workflow3.py	/^    def clear_session_cache(self, current=False):$/;"	kind:member	line:651
 clear_settings	../workflow/workflow.py	/^    def clear_settings(self):$/;"	kind:member	line:2623
+clear_workflow_cache	../cache.py	/^def clear_workflow_cache():$/;"	kind:function	line:35
 clone	../pyquery/pyquery.py	/^    def clone(self):$/;"	kind:member	line:1460
 closest	../pyquery/pyquery.py	/^    def closest(self, selector=None):$/;"	kind:member	line:571
-closest	../soupsieve/__init__.py	/^def closest(select, tag, namespaces=None, flags=0, **kwargs):$/;"	kind:function	line:72
-closest	../soupsieve/css_match.py	/^    def closest(self):$/;"	kind:member	line:1405
-closest	../soupsieve/css_match.py	/^    def closest(self, tag):$/;"	kind:member	line:1477
-cm	../soupsieve/__init__.py	/^from . import css_match as cm$/;"	kind:namespace	line:31
-cm	../soupsieve/css_parser.py	/^from . import css_match as cm$/;"	kind:namespace	line:5
 codecs	../workflow/web.py	/^import codecs$/;"	kind:namespace	line:12
 collectAttributes	../lxml/includes/etreepublic.pxd	/^    cdef list collectAttributes(tree.xmlNode* c_element, int keysvalues)$/;"	kind:function	line:119
 collect_diff	../lxml/doctestcompare.py	/^    def collect_diff(self, want, got, html, indent):$/;"	kind:member	line:289
@@ -2102,10 +1859,7 @@ collect_diff_text	../lxml/doctestcompare.py	/^    def collect_diff_text(self, wa
 combinator_mapping	../cssselect/xpath.py	/^    combinator_mapping = {$/;"	kind:variable	line:124
 commentClass	../lxml/html/_html5builder.py	/^    commentClass = None$/;"	kind:variable	line:36
 comments	../lxml/html/clean.py	/^    comments = True$/;"	kind:variable	line:196
-comments	../soupsieve/__init__.py	/^def comments(tag, limit=0, flags=0, **kwargs):$/;"	kind:function	line:91
-comments	../soupsieve/css_match.py	/^    def comments(self, tag, limit=0):$/;"	kind:member	line:1500
 compare_docs	../lxml/doctestcompare.py	/^    def compare_docs(self, want, got):$/;"	kind:member	line:132
-compile	../soupsieve/__init__.py	/^def compile(pattern, namespaces=None, flags=0, **kwargs):  # noqa: A001$/;"	kind:function	line:44
 compress_merge_back	../lxml/html/diff.py	/^def compress_merge_back(tokens, tok): $/;"	kind:function	line:119
 compress_tokens	../lxml/html/diff.py	/^def compress_tokens(tokens):$/;"	kind:function	line:104
 config.pxd	../lxml/includes/config.pxd	1;"	kind:file	line:1
@@ -2135,32 +1889,19 @@ copy	../lxml/html/_setmixin.py	/^    def copy(self):$/;"	kind:member	line:33
 copy	../lxml/html/clean.py	/^import copy$/;"	kind:namespace	line:12
 copy	../lxml/html/formfill.py	/^import copy$/;"	kind:namespace	line:5
 copy_annotations	../lxml/html/diff.py	/^def copy_annotations(src, dest): $/;"	kind:function	line:96
-copyreg	../soupsieve/util.py	/^    import copy_reg as copyreg  # noqa F401$/;"	kind:namespace	line:26
-copyreg	../soupsieve/util.py	/^    import copyreg  # noqa F401$/;"	kind:namespace	line:17
-cp	../soupsieve/__init__.py	/^from . import css_parser as cp$/;"	kind:namespace	line:30
-create_fake_parent	../soupsieve/css_match.py	/^    def create_fake_parent(el):$/;"	kind:member	line:151
 css	../cssselect/parser.py	/^    def css(self):$/;"	kind:member	line:664
 css	../pyquery/pyquery.py	/^    css = FlexibleElement(pget=css, pset=css)$/;"	kind:variable	line:962
 css	../pyquery/pyquery.py	/^    def css(self, *args, **kwargs):$/;"	kind:member	line:923
-css_match.py	../soupsieve/css_match.py	1;"	kind:file	line:1
-css_parser.py	../soupsieve/css_parser.py	1;"	kind:file	line:1
 css_to_xpath	../cssselect/xpath.py	/^    def css_to_xpath(self, css, prefix='descendant-or-self::'):$/;"	kind:member	line:171
-css_tokens	../soupsieve/css_parser.py	/^    css_tokens = ($/;"	kind:variable	line:428
-css_types.py	../soupsieve/css_types.py	1;"	kind:file	line:1
-css_unescape	../soupsieve/css_parser.py	/^def css_unescape(content, string=False):$/;"	kind:function	line:234
 cssselect	../lxml/html/__init__.py	/^    cssselect = HtmlMixin.cssselect$/;"	kind:variable	line:694
 cssselect	../lxml/html/__init__.py	/^    def cssselect(self, expr, translator='html'):$/;"	kind:member	line:421
 cssselect.py	../lxml/cssselect.py	1;"	kind:file	line:1
 cssselect_xpath	../pyquery/cssselectpatch.py	/^from cssselect import xpath as cssselect_xpath$/;"	kind:namespace	line:7
 cssselectpatch.py	../pyquery/cssselectpatch.py	1;"	kind:file	line:1
-ct	../soupsieve/__init__.py	/^from . import css_types as ct$/;"	kind:namespace	line:32
-ct	../soupsieve/css_match.py	/^from .import css_types as ct$/;"	kind:namespace	line:6
-ct	../soupsieve/css_parser.py	/^from . import css_types as ct$/;"	kind:namespace	line:6
 data_serializer	../workflow/workflow.py	/^    def data_serializer(self):$/;"	kind:member	line:1517
 data_serializer	../workflow/workflow.py	/^    def data_serializer(self, serializer_name):$/;"	kind:member	line:1534
 datadir	../workflow/workflow.py	/^    def datadir(self):$/;"	kind:member	line:1256
 datafile	../workflow/workflow.py	/^    def datafile(self, filename):$/;"	kind:member	line:1346
-datetime	../soupsieve/css_match.py	/^from datetime import datetime$/;"	kind:namespace	line:3
 debugging	../workflow/workflow.py	/^    def debugging(self):$/;"	kind:member	line:1108
 decode	../workflow/workflow.py	/^    def decode(self, text, encoding=None, normalization=None):$/;"	kind:member	line:2671
 decode_stream	../workflow/web.py	/^        def decode_stream(iterator, r):$/;"	kind:function	line:355
@@ -2182,8 +1923,6 @@ delAttribute	../lxml/includes/etreepublic.pxd	/^    cdef int delAttribute(_Eleme
 delAttributeFromNsName	../lxml/includes/etreepublic.pxd	/^    cdef int delAttributeFromNsName(tree.xmlNode* c_element,$/;"	kind:function	line:131
 delete_password	../workflow/workflow.py	/^    def delete_password(self, account, service=None):$/;"	kind:member	line:2465
 delete_paths	../workflow/workflow.py	/^        def delete_paths(paths):$/;"	kind:function	line:1624
-deprecated	../soupsieve/__init__.py	/^from .util import DEBUG, deprecated, SelectorSyntaxError  # noqa: F401$/;"	kind:namespace	line:33
-deprecated	../soupsieve/util.py	/^def deprecated(message, stacklevel=2):  # pragma: no cover$/;"	kind:function	line:103
 deprecated_tags	../lxml/html/defs.py	/^deprecated_tags = frozenset([$/;"	kind:variable	line:13
 description	../lxml/html/_diffcommand.py	/^    description=description,$/;"	kind:variable	line:15
 dest	../lxml/html/_diffcommand.py	/^    dest="annotation",$/;"	kind:variable	line:29
@@ -2225,8 +1964,6 @@ empty	../pyquery/pyquery.py	/^    def empty(self):$/;"	kind:member	line:1465
 empty_tags	../lxml/doctestcompare.py	/^    empty_tags = ($/;"	kind:variable	line:83
 empty_tags	../lxml/html/defs.py	/^empty_tags = frozenset([$/;"	kind:variable	line:9
 empty_tags	../lxml/html/diff.py	/^empty_tags = ($/;"	kind:variable	line:639
-enabled	../soupsieve/css_parser.py	/^    def enabled(self, flags):$/;"	kind:member	line:303
-enabled	../soupsieve/css_parser.py	/^    def enabled(self, flags):$/;"	kind:member	line:335
 encode_multipart_formdata	../workflow/web.py	/^def encode_multipart_formdata(fields, files):$/;"	kind:function	line:605
 encoding	../pyquery/pyquery.py	/^    def encoding(self):$/;"	kind:member	line:432
 encoding	../workflow/web.py	/^    def encoding(self):$/;"	kind:member	line:284
@@ -2243,8 +1980,6 @@ error_block_class	../lxml/html/formfill.py	/^    error_block_class = 'error-bloc
 error_container_tag	../lxml/html/formfill.py	/^    error_container_tag = 'div'$/;"	kind:variable	line:185
 error_message_class	../lxml/html/formfill.py	/^    error_message_class = 'error-message'$/;"	kind:variable	line:186
 escape	../cssselect/parser.py	/^    escape = unicode_escape + r'|\\\\[^\\n\\r\\f0-9a-f]'$/;"	kind:variable	line:684
-escape	../soupsieve/__init__.py	/^def escape(ident):$/;"	kind:function	line:124
-escape	../soupsieve/css_parser.py	/^def escape(ident):$/;"	kind:function	line:261
 etree	../lxml/ElementInclude.py	/^from lxml import etree$/;"	kind:namespace	line:53
 etree	../lxml/cssselect.py	/^from . import etree$/;"	kind:namespace	line:11
 etree	../lxml/doctestcompare.py	/^from lxml import etree$/;"	kind:namespace	line:38
@@ -2269,7 +2004,6 @@ exsltRegisterAll	../lxml/includes/xslt.pxd	/^    cdef void exsltRegisterAll() no
 exsltSetsXpathCtxtRegister	../lxml/includes/xslt.pxd	/^    cdef int exsltSetsXpathCtxtRegister(xmlXPathContext* ctxt, const_xmlChar* prefix)$/;"	kind:function	line:188
 exsltStrXpathCtxtRegister	../lxml/includes/xslt.pxd	/^    cdef int exsltStrXpathCtxtRegister(xmlXPathContext* ctxt, const_xmlChar* prefix)$/;"	kind:function	line:190
 extend	../pyquery/pyquery.py	/^    def extend(self, other):$/;"	kind:member	line:312
-extended_language_filter	../soupsieve/css_match.py	/^    def extended_language_filter(self, lang_range, lang_tag):$/;"	kind:member	line:549
 external_cssselect	../lxml/cssselect.py	/^    import cssselect as external_cssselect$/;"	kind:namespace	line:13
 extract_rng	../lxml/isoschematron/__init__.py	/^extract_rng = _etree.XSLT(_etree.parse($/;"	kind:variable	line:47
 extract_text	../pyquery/pyquery.py	/^from .text import extract_text$/;"	kind:namespace	line:9
@@ -2283,9 +2017,6 @@ file	../lxml/isoschematron/__init__.py	/^    file=os.path.join(_resources_dir, '
 fill_form	../lxml/html/formfill.py	/^def fill_form($/;"	kind:function	line:29
 fill_form_html	../lxml/html/formfill.py	/^def fill_form_html(html, values, form_id=None, form_index=None):$/;"	kind:function	line:38
 filter	../pyquery/pyquery.py	/^    def filter(self, selector):$/;"	kind:member	line:606
-filter	../soupsieve/__init__.py	/^def filter(select, iterable, namespaces=None, flags=0, **kwargs):  # noqa: A001$/;"	kind:function	line:84
-filter	../soupsieve/css_match.py	/^    def filter(self):  # noqa A001$/;"	kind:member	line:1417
-filter	../soupsieve/css_match.py	/^    def filter(self, iterable):  # noqa A001$/;"	kind:member	line:1482
 filter	../workflow/workflow.py	/^    def filter(self, query, items, key=lambda x: x, ascending=False,$/;"	kind:member	line:1765
 find	../lxml/_elementpath.py	/^def find(elem, path, namespaces=None):$/;"	kind:function	line:322
 find	../pyquery/pyquery.py	/^    def find(self, selector):$/;"	kind:member	line:667
@@ -2294,7 +2025,6 @@ findChildBackwards	../lxml/includes/etreepublic.pxd	/^    cdef tree.xmlNode* fin
 findChildForwards	../lxml/includes/etreepublic.pxd	/^    cdef tree.xmlNode* findChildForwards(tree.xmlNode* c_node,$/;"	kind:function	line:145
 findOrBuildNodeNsPrefix	../lxml/includes/etreepublic.pxd	/^    cdef tree.xmlNs* findOrBuildNodeNsPrefix($/;"	kind:function	line:230
 find_best_converter	../lxml/html/soupparser.py	/^    def find_best_converter(node):$/;"	kind:function	line:202
-find_bidi	../soupsieve/css_match.py	/^    def find_bidi(self, el):$/;"	kind:member	line:513
 find_class	../lxml/html/__init__.py	/^    def find_class(self, class_name):$/;"	kind:member	line:388
 find_class	../lxml/html/__init__.py	/^find_class = _MethodFunc('find_class', copy=False)$/;"	kind:variable	line:681
 find_rel_links	../lxml/html/__init__.py	/^    def find_rel_links(self, rel):$/;"	kind:member	line:380
@@ -2333,7 +2063,6 @@ fragments_fromstring	../lxml/html/__init__.py	/^def fragments_fromstring(html, n
 fragments_fromstring	../lxml/html/html5parser.py	/^def fragments_fromstring(html, no_leading_text=False,$/;"	kind:function	line:79
 frame_tags	../lxml/html/defs.py	/^frame_tags = frozenset([$/;"	kind:variable	line:113
 frames	../lxml/html/clean.py	/^    frames = True$/;"	kind:variable	line:204
-freeze	../soupsieve/css_parser.py	/^    def freeze(self):$/;"	kind:member	line:391
 from_dict	../workflow/update.py	/^    def from_dict(cls, d):$/;"	kind:member	line:71
 from_releases	../workflow/update.py	/^    def from_releases(cls, js):$/;"	kind:member	line:78
 fromstring	../lxml/html/__init__.py	/^def fromstring(html, base_url=None, parser=None, **kw):$/;"	kind:function	line:860
@@ -2351,7 +2080,7 @@ functools	../workflow/util.py	/^import functools$/;"	kind:namespace	line:20
 functools_lru_cache.py	../backports/functools_lru_cache.py	1;"	kind:file	line:1
 general_block_tags	../lxml/html/defs.py	/^general_block_tags = frozenset([$/;"	kind:variable	line:57
 generate	../workflow/web.py	/^        def generate():$/;"	kind:function	line:367
-get	../cache.py	/^def get(film_id):$/;"	kind:function	line:16
+get	../cache.py	/^def get(film_id):$/;"	kind:function	line:19
 get	../workflow/web.py	/^    def get(self, key, default=None):$/;"	kind:member	line:139
 get	../workflow/web.py	/^def get(url, params=None, headers=None, cookies=None, auth=None,$/;"	kind:function	line:582
 getAttributeValue	../lxml/includes/etreepublic.pxd	/^    cdef object getAttributeValue(_Element element, key, default)$/;"	kind:function	line:112
@@ -2359,42 +2088,20 @@ getDocument	../lxml/html/_html5builder.py	/^    def getDocument(self):$/;"	kind:
 getFragment	../lxml/html/_html5builder.py	/^    def getFragment(self):$/;"	kind:member	line:55
 getNsTag	../lxml/includes/etreepublic.pxd	/^    cdef tuple getNsTag(object tag)$/;"	kind:function	line:191
 getNsTagWithEmptyNs	../lxml/includes/etreepublic.pxd	/^    cdef tuple getNsTagWithEmptyNs(object tag)$/;"	kind:function	line:194
-get_attribute_by_name	../soupsieve/css_match.py	/^    def get_attribute_by_name(el, name, default=None):$/;"	kind:member	line:300
-get_children	../soupsieve/css_match.py	/^    def get_children(self, el, start=None, reverse=False, tags=True, no_iframe=False):$/;"	kind:member	line:187
-get_classes	../soupsieve/css_match.py	/^    def get_classes(cls, el):$/;"	kind:member	line:324
-get_comments	../soupsieve/css_match.py	/^    def get_comments(self, limit=0):$/;"	kind:member	line:1441
 get_content_type	../workflow/web.py	/^    def get_content_type(filename):$/;"	kind:function	line:630
-get_contents	../soupsieve/css_match.py	/^    def get_contents(self, el, no_iframe=False):$/;"	kind:member	line:181
 get_default_parser	../lxml/doctestcompare.py	/^    def get_default_parser(self):$/;"	kind:member	line:370
 get_default_parser	../lxml/doctestcompare.py	/^    def get_default_parser(self):$/;"	kind:member	line:87
-get_descendants	../soupsieve/css_match.py	/^    def get_descendants(self, el, tags=True, no_iframe=False):$/;"	kind:member	line:206
 get_downloads	../workflow/update.py	/^def get_downloads(repo):$/;"	kind:function	line:390
 get_element_by_id	../lxml/html/__init__.py	/^    def get_element_by_id(self, id, *default):$/;"	kind:member	line:394
-get_film_detail_string	../main.py	/^def get_film_detail_string(id):$/;"	kind:function	line:40
 get_film_detail_string	../update_details.py	/^def get_film_detail_string(id):$/;"	kind:function	line:17
 get_filmaffinity_suggestions	../main.py	/^def get_filmaffinity_suggestions(word):$/;"	kind:function	line:26
 get_include	../lxml/__init__.py	/^def get_include():$/;"	kind:function	line:6
 get_matching_blocks	../lxml/html/diff.py	/^    def get_matching_blocks(self):$/;"	kind:member	line:873
-get_name	../soupsieve/css_parser.py	/^    def get_name(self):$/;"	kind:member	line:298
-get_name	../soupsieve/css_parser.py	/^    def get_name(self):$/;"	kind:member	line:330
-get_next	../soupsieve/css_match.py	/^    def get_next(cls, el, tags=True):$/;"	kind:member	line:264
-get_parent	../soupsieve/css_match.py	/^    def get_parent(self, el, no_iframe=False):$/;"	kind:member	line:237
-get_parent_form	../soupsieve/css_match.py	/^        def get_parent_form(el):$/;"	kind:function	line:1021
 get_parser	../lxml/doctestcompare.py	/^    def get_parser(self, want, got, optionflags):$/;"	kind:member	line:111
 get_password	../workflow/workflow.py	/^    def get_password(self, account, service=None):$/;"	kind:member	line:2426
-get_pattern_context	../soupsieve/util.py	/^def get_pattern_context(pattern, index):$/;"	kind:function	line:133
-get_prefix	../soupsieve/css_match.py	/^    def get_prefix(self, el):$/;"	kind:member	line:507
-get_prefix_name	../soupsieve/css_match.py	/^    def get_prefix_name(el):$/;"	kind:member	line:252
-get_previous	../soupsieve/css_match.py	/^    def get_previous(cls, el, tags=True):$/;"	kind:member	line:273
-get_raw_html_for_url	../main.py	/^def get_raw_html_for_url(url):$/;"	kind:function	line:31
 get_raw_html_for_url	../update_details.py	/^def get_raw_html_for_url(url):$/;"	kind:function	line:8
-get_tag	../soupsieve/css_match.py	/^    def get_tag(self, el):$/;"	kind:member	line:501
-get_tag_name	../soupsieve/css_match.py	/^    def get_tag_name(el):$/;"	kind:member	line:246
-get_tag_ns	../soupsieve/css_match.py	/^    def get_tag_ns(self, el):$/;"	kind:member	line:484
-get_text	../soupsieve/css_match.py	/^    def get_text(self, el, no_iframe=False):$/;"	kind:member	line:332
 get_thumbnail_url	../update_thumbnails.py	/^def get_thumbnail_url(film_dict):$/;"	kind:function	line:9
-get_uri	../soupsieve/css_match.py	/^    def get_uri(el):$/;"	kind:member	line:258
-get_url_for_film_id	../main.py	/^def get_url_for_film_id(id):$/;"	kind:function	line:36
+get_url_for_film_id	../main.py	/^def get_url_for_film_id(id):$/;"	kind:function	line:31
 get_url_for_film_id	../update_details.py	/^def get_url_for_film_id(id):$/;"	kind:function	line:13
 getargspec	../pyquery/pyquery.py	/^    def getargspec(func):$/;"	kind:function	line:32
 getargspec	../pyquery/pyquery.py	/^    def getargspec(func):$/;"	kind:function	line:51
@@ -2409,7 +2116,6 @@ hasChild	../lxml/includes/etreepublic.pxd	/^    cdef bint hasChild(tree.xmlNode*
 hasTail	../lxml/includes/etreepublic.pxd	/^    cdef bint hasTail(tree.xmlNode* c_node) nogil$/;"	kind:function	line:206
 hasText	../lxml/includes/etreepublic.pxd	/^    cdef bint hasText(tree.xmlNode* c_node) nogil$/;"	kind:function	line:203
 has_class	../pyquery/pyquery.py	/^    def has_class(self, name):$/;"	kind:member	line:846
-has_html_ns	../soupsieve/css_match.py	/^    def has_html_ns(el):$/;"	kind:member	line:282
 head	../lxml/html/__init__.py	/^    def head(self):$/;"	kind:member	line:292
 head_tags	../lxml/html/defs.py	/^head_tags = frozenset([$/;"	kind:variable	line:53
 height	../pyquery/pyquery.py	/^    def height(self, value=no_default):$/;"	kind:member	line:835
@@ -2460,8 +2166,6 @@ htmldiff	../lxml/html/_diffcommand.py	/^from .diff import htmldiff$/;"	kind:name
 htmldiff	../lxml/html/diff.py	/^def htmldiff(old_html, new_html):$/;"	kind:function	line:158
 htmldiff_tokens	../lxml/html/diff.py	/^def htmldiff_tokens(html1_tokens, html2_tokens):$/;"	kind:function	line:181
 htmlparser.pxd	../lxml/includes/htmlparser.pxd	1;"	kind:file	line:1
-icomments	../soupsieve/__init__.py	/^def icomments(tag, limit=0, flags=0, **kwargs):$/;"	kind:function	line:98
-icomments	../soupsieve/css_match.py	/^    def icomments(self, tag, limit=0):$/;"	kind:member	line:1506
 id_attribute	../cssselect/xpath.py	/^    id_attribute = 'id'$/;"	kind:variable	line:144
 ignorableWhitespace	../lxml/sax.py	/^    ignorableWhitespace = characters$/;"	kind:variable	line:156
 import_lxml__etree	../lxml/includes/etreepublic.pxd	/^    cdef int import_lxml__etree() except -1$/;"	kind:function	line:25
@@ -2487,33 +2191,18 @@ install_update	../workflow/update.py	/^def install_update():$/;"	kind:function	l
 intersection	../lxml/html/_setmixin.py	/^    intersection = MutableSet.__and__$/;"	kind:variable	line:29
 intersection_update	../lxml/html/_setmixin.py	/^    def intersection_update(self, other):$/;"	kind:member	line:39
 is_	../pyquery/pyquery.py	/^    def is_(self, selector):$/;"	kind:member	line:649
-is_cdata	../soupsieve/css_match.py	/^    def is_cdata(obj):$/;"	kind:member	line:117
-is_comment	../soupsieve/css_match.py	/^    def is_comment(obj):$/;"	kind:member	line:103
-is_content_string	../soupsieve/css_match.py	/^    def is_content_string(cls, obj):$/;"	kind:member	line:145
-is_declaration	../soupsieve/css_match.py	/^    def is_declaration(obj):  # pragma: no cover$/;"	kind:member	line:110
 is_delim	../cssselect/parser.py	/^    def is_delim(self, *values):$/;"	kind:member	line:658
-is_doc	../soupsieve/css_match.py	/^    def is_doc(obj):$/;"	kind:member	line:89
 is_end_tag	../lxml/html/diff.py	/^def is_end_tag(tok):$/;"	kind:function	line:745
-is_html_tag	../soupsieve/css_match.py	/^    def is_html_tag(self, el):$/;"	kind:member	line:496
-is_iframe	../soupsieve/css_match.py	/^    def is_iframe(self, el):$/;"	kind:member	line:162
-is_navigable_string	../soupsieve/css_match.py	/^    def is_navigable_string(obj):$/;"	kind:member	line:131
 is_non_whitespace	../cssselect/xpath.py	/^is_non_whitespace = re.compile(r'^[^ \\t\\r\\n\\f]+$').match$/;"	kind:variable	line:98
-is_processing_instruction	../soupsieve/css_match.py	/^    def is_processing_instruction(obj):  # pragma: no cover$/;"	kind:member	line:124
-is_result_type_movie	../main.py	/^def is_result_type_movie(result):$/;"	kind:function	line:57
-is_root	../soupsieve/css_match.py	/^    def is_root(self, el):$/;"	kind:member	line:167
+is_result_type_movie	../main.py	/^def is_result_type_movie(result):$/;"	kind:function	line:35
 is_running	../main.py	/^from workflow.background import run_in_background, is_running$/;"	kind:namespace	line:13
 is_running	../workflow/background.py	/^def is_running(name):$/;"	kind:function	line:111
 is_safe_name	../cssselect/xpath.py	/^is_safe_name = re.compile('^[a-zA-Z_][a-zA-Z0-9_.-]*$').match$/;"	kind:variable	line:95
-is_special_string	../soupsieve/css_match.py	/^    def is_special_string(obj):$/;"	kind:member	line:138
 is_start_tag	../lxml/html/diff.py	/^def is_start_tag(tok):$/;"	kind:function	line:748
 is_string	../pyquery/text.py	/^    def is_string(s):$/;"	kind:function	line:14
 is_string	../pyquery/text.py	/^    def is_string(s):$/;"	kind:function	line:17
-is_tag	../soupsieve/css_match.py	/^    def is_tag(obj):$/;"	kind:member	line:96
 is_word	../lxml/html/diff.py	/^def is_word(tok):$/;"	kind:function	line:742
-is_xml_tree	../soupsieve/css_match.py	/^    def is_xml_tree(el):$/;"	kind:member	line:157
 isascii	../workflow/workflow.py	/^def isascii(text):$/;"	kind:function	line:486
-iselect	../soupsieve/__init__.py	/^def iselect(select, tag, namespaces=None, limit=0, flags=0, **kwargs):$/;"	kind:function	line:117
-iselect	../soupsieve/css_match.py	/^    def iselect(self, tag, limit=0):$/;"	kind:member	line:1523
 iso_abstract_expand	../lxml/isoschematron/__init__.py	/^iso_abstract_expand = _etree.XSLT(_etree.parse($/;"	kind:variable	line:52
 iso_dsdl_include	../lxml/isoschematron/__init__.py	/^iso_dsdl_include = _etree.XSLT(_etree.parse($/;"	kind:variable	line:49
 iso_svrl_for_xslt1	../lxml/isoschematron/__init__.py	/^iso_svrl_for_xslt1 = _etree.XSLT(_etree.parse($/;"	kind:variable	line:55
@@ -2523,7 +2212,6 @@ item_class	../workflow/workflow.py	/^    item_class = Item$/;"	kind:variable	lin
 item_class	../workflow/workflow3.py	/^    item_class = Item3$/;"	kind:variable	line:461
 items	../pyquery/pyquery.py	/^    def items(self, selector=None):$/;"	kind:member	line:318
 items	../workflow/web.py	/^    def items(self):$/;"	kind:member	line:153
-iter_attributes	../soupsieve/css_match.py	/^    def iter_attributes(el):$/;"	kind:member	line:317
 iter_content	../workflow/web.py	/^    def iter_content(self, chunk_size=4096, decode_unicode=False):$/;"	kind:member	line:334
 iteratorStoreNext	../lxml/includes/etreepublic.pxd	/^    cdef void iteratorStoreNext(_ElementIterator iterator, _Element node)$/;"	kind:function	line:175
 iterattributes	../lxml/includes/etreepublic.pxd	/^    cdef object iterattributes(_Element element, int keysvalues)$/;"	kind:function	line:116
@@ -2575,7 +2263,7 @@ load	../workflow/workflow.py	/^    def load(cls, file_obj):$/;"	kind:member	line
 locate_unbalanced_end	../lxml/html/diff.py	/^def locate_unbalanced_end(unbalanced_end, pre_delete, post_delete):$/;"	kind:function	line:415
 locate_unbalanced_start	../lxml/html/diff.py	/^def locate_unbalanced_start(unbalanced_start, pre_delete, post_delete):$/;"	kind:function	line:365
 locked	../workflow/util.py	/^    def locked(self):$/;"	kind:member	line:415
-log	../main.py	/^    log = wf.logger$/;"	kind:variable	line:135
+log	../main.py	/^    log = wf.logger$/;"	kind:variable	line:115
 log	../update_details.py	/^    log = wf.logger$/;"	kind:variable	line:44
 log	../update_thumbnails.py	/^    log = wf.logger$/;"	kind:variable	line:38
 log	../workflow/notify.py	/^def log():$/;"	kind:function	line:75
@@ -2587,13 +2275,10 @@ logging	../workflow/workflow.py	/^import logging.handlers$/;"	kind:namespace	lin
 lookup	../lxml/html/__init__.py	/^    def lookup(self, node_type, document, namespace, name):$/;"	kind:member	line:735
 lookupDefaultElementClass	../lxml/includes/etreepublic.pxd	/^    cdef object lookupDefaultElementClass(_1, _Document _2,$/;"	kind:function	line:88
 lookupNamespaceElementClass	../lxml/includes/etreepublic.pxd	/^    cdef object lookupNamespaceElementClass(_1, _Document _2,$/;"	kind:function	line:93
-lower	../soupsieve/util.py	/^def lower(string):$/;"	kind:function	line:44
 lower_case_attribute_names	../cssselect/xpath.py	/^    lower_case_attribute_names = False$/;"	kind:variable	line:165
 lower_case_attribute_values	../cssselect/xpath.py	/^    lower_case_attribute_values = False$/;"	kind:variable	line:166
 lower_case_element_names	../cssselect/xpath.py	/^    lower_case_element_names = False$/;"	kind:variable	line:164
 lru_cache	../backports/functools_lru_cache.py	/^def lru_cache(maxsize=100, typed=False):$/;"	kind:function	line:66
-lru_cache	../soupsieve/util.py	/^    from backports.functools_lru_cache import lru_cache  # noqa F401$/;"	kind:namespace	line:25
-lru_cache	../soupsieve/util.py	/^    from functools import lru_cache  # noqa F401$/;"	kind:namespace	line:16
 lxml	../lxml/builder.py	/^import lxml.etree as ET$/;"	kind:namespace	line:44
 lxml	../lxml/includes/etreepublic.pxd	/^             [ object LxmlFallbackElementClassLookup ]:$/;"	kind:class	line:48
 lxml	../lxml/includes/etreepublic.pxd	/^    cdef class lxml.etree.ElementBase(_Element) [ object LxmlElementBase ]:$/;"	kind:class	line:37
@@ -2605,7 +2290,7 @@ lxml	../lxml/includes/etreepublic.pxd	/^    cdef class lxml.etree._ElementTagMat
 lxml	../lxml/includes/etreepublic.pxd	/^    cdef class lxml.etree._ElementTree [ object LxmlElementTree ]:$/;"	kind:class	line:40
 lxml	../pyquery/pyquery.py	/^import lxml.html$/;"	kind:namespace	line:12
 main	../lxml/html/_diffcommand.py	/^def main(args=None):$/;"	kind:function	line:32
-main	../main.py	/^def main(wf):    $/;"	kind:function	line:61
+main	../main.py	/^def main(wf):    $/;"	kind:function	line:39
 main	../update_details.py	/^def main(wf):$/;"	kind:function	line:35
 main	../update_thumbnails.py	/^def main(wf):$/;"	kind:function	line:13
 main	../workflow/background.py	/^def main(wf):  # pragma: no cover$/;"	kind:function	line:248
@@ -2620,37 +2305,6 @@ manager	../workflow/workflow.py	/^manager = SerializerManager()$/;"	kind:variabl
 map	../pyquery/pyquery.py	/^    def map(self, func):$/;"	kind:member	line:722
 map_attrs	../lxml/html/soupparser.py	/^    def map_attrs(bs_attrs):$/;"	kind:function	line:218
 markup_serialize_tokens	../lxml/html/diff.py	/^def markup_serialize_tokens(tokens, markup_func):$/;"	kind:function	line:137
-match	../soupsieve/__init__.py	/^def match(select, tag, namespaces=None, flags=0, **kwargs):$/;"	kind:function	line:78
-match	../soupsieve/css_match.py	/^    def match(self, el):$/;"	kind:member	line:1422
-match	../soupsieve/css_match.py	/^    def match(self, tag):$/;"	kind:member	line:1472
-match	../soupsieve/css_parser.py	/^    def match(self, selector, index):$/;"	kind:member	line:308
-match	../soupsieve/css_parser.py	/^    def match(self, selector, index):$/;"	kind:member	line:340
-match_attribute_name	../soupsieve/css_match.py	/^    def match_attribute_name(self, el, attr, prefix):$/;"	kind:member	line:600
-match_attributes	../soupsieve/css_match.py	/^    def match_attributes(self, el, attributes):$/;"	kind:member	line:669
-match_classes	../soupsieve/css_match.py	/^    def match_classes(self, el, classes):$/;"	kind:member	line:786
-match_contains	../soupsieve/css_match.py	/^    def match_contains(self, el, contains):$/;"	kind:member	line:959
-match_default	../soupsieve/css_match.py	/^    def match_default(self, el):$/;"	kind:member	line:976
-match_defined	../soupsieve/css_match.py	/^    def match_defined(self, el):$/;"	kind:member	line:1271
-match_dir	../soupsieve/css_match.py	/^    def match_dir(self, el, directionality):$/;"	kind:member	line:1162
-match_empty	../soupsieve/css_match.py	/^    def match_empty(self, el):$/;"	kind:member	line:937
-match_future_child	../soupsieve/css_match.py	/^    def match_future_child(self, parent, relation, recursive=False):$/;"	kind:member	line:734
-match_future_relations	../soupsieve/css_match.py	/^    def match_future_relations(self, el, relation):$/;"	kind:member	line:745
-match_id	../soupsieve/css_match.py	/^    def match_id(self, el, ids):$/;"	kind:member	line:776
-match_indeterminate	../soupsieve/css_match.py	/^    def match_indeterminate(self, el):$/;"	kind:member	line:1015
-match_lang	../soupsieve/css_match.py	/^    def match_lang(self, el, langs):$/;"	kind:member	line:1076
-match_namespace	../soupsieve/css_match.py	/^    def match_namespace(self, el, tag):$/;"	kind:member	line:648
-match_nth	../soupsieve/css_match.py	/^    def match_nth(self, el, nth):$/;"	kind:member	line:836
-match_nth_tag_type	../soupsieve/css_match.py	/^    def match_nth_tag_type(self, el, child):$/;"	kind:member	line:828
-match_past_relations	../soupsieve/css_match.py	/^    def match_past_relations(self, el, relation):$/;"	kind:member	line:710
-match_placeholder_shown	../soupsieve/css_match.py	/^    def match_placeholder_shown(self, el):$/;"	kind:member	line:1292
-match_range	../soupsieve/css_match.py	/^    def match_range(self, el, condition):$/;"	kind:member	line:1225
-match_relations	../soupsieve/css_match.py	/^    def match_relations(self, el, relation):$/;"	kind:member	line:764
-match_root	../soupsieve/css_match.py	/^    def match_root(self, el):$/;"	kind:member	line:797
-match_scope	../soupsieve/css_match.py	/^    def match_scope(self, el):$/;"	kind:member	line:823
-match_selectors	../soupsieve/css_match.py	/^    def match_selectors(self, el, selectors):$/;"	kind:member	line:1307
-match_subselectors	../soupsieve/css_match.py	/^    def match_subselectors(self, el, selectors):$/;"	kind:member	line:950
-match_tag	../soupsieve/css_match.py	/^    def match_tag(self, el, tag):$/;"	kind:member	line:698
-match_tagname	../soupsieve/css_match.py	/^    def match_tagname(self, el, tag):$/;"	kind:member	line:689
 match_version	../workflow/update.py	/^    match_version = re.compile(r'([0-9][0-9\\.]*)(.+)?').match$/;"	kind:variable	line:225
 match_workflow	../workflow/update.py	/^match_workflow = re.compile(r'\\.alfred(\\d+)?workflow$').search$/;"	kind:variable	line:41
 merge_delete	../lxml/html/diff.py	/^def merge_delete(del_chunks, doc):$/;"	kind:function	line:266
@@ -2669,7 +2323,6 @@ name	../workflow/workflow.py	/^    def name(self):$/;"	kind:member	line:1118
 name2codepoint	../lxml/html/soupparser.py	/^    from html.entities import name2codepoint  # Python 3$/;"	kind:namespace	line:290
 name2codepoint	../lxml/html/soupparser.py	/^    from htmlentitydefs import name2codepoint$/;"	kind:namespace	line:292
 namedtuple	../backports/functools_lru_cache.py	/^from collections import namedtuple$/;"	kind:namespace	line:4
-namedtuple	../soupsieve/__meta__.py	/^from collections import namedtuple$/;"	kind:namespace	line:3
 namedtuple	../workflow/util.py	/^from collections import namedtuple$/;"	kind:namespace	line:16
 namespacedName	../lxml/includes/etreepublic.pxd	/^    cdef object namespacedName(tree.xmlNode* c_node)$/;"	kind:function	line:197
 namespacedNameFromNsName	../lxml/includes/etreepublic.pxd	/^    cdef object namespacedNameFromNsName(const_xmlChar* c_ns, const_xmlChar* c_tag)$/;"	kind:function	line:200
@@ -2692,14 +2345,6 @@ nmstart	../cssselect/parser.py	/^    nmstart = '[_a-z]|%s|%s' % (escape, nonasci
 no_default	../pyquery/pyquery.py	/^no_default = NoDefault()$/;"	kind:variable	line:141
 nonascii	../cssselect/parser.py	/^    nonascii = r'[^\\0-\\177]'$/;"	kind:variable	line:686
 nonstandard_tags	../lxml/html/defs.py	/^nonstandard_tags = frozenset(['blink', 'marquee'])$/;"	kind:variable	line:126
-noqa	../soupsieve/__init__.py	/^from .__meta__ import __version__, __version_info__  # noqa: F401$/;"	kind:namespace	line:29
-noqa	../soupsieve/__init__.py	/^from .util import DEBUG, deprecated, SelectorSyntaxError  # noqa: F401$/;"	kind:namespace	line:33
-noqa	../soupsieve/util.py	/^    from backports.functools_lru_cache import lru_cache  # noqa F401$/;"	kind:namespace	line:25
-noqa	../soupsieve/util.py	/^    from collections import Hashable, Mapping  # noqa F401$/;"	kind:namespace	line:27
-noqa	../soupsieve/util.py	/^    from collections.abc import Hashable, Mapping  # noqa F401$/;"	kind:namespace	line:18
-noqa	../soupsieve/util.py	/^    from functools import lru_cache  # noqa F401$/;"	kind:namespace	line:16
-noqa	../soupsieve/util.py	/^    import copy_reg as copyreg  # noqa F401$/;"	kind:namespace	line:26
-noqa	../soupsieve/util.py	/^    import copyreg  # noqa F401$/;"	kind:namespace	line:17
 noqa	../workflow/workflow.py	/^from util import AcquisitionError  # noqa: F401$/;"	kind:namespace	line:47
 norm_whitespace	../lxml/doctestcompare.py	/^def norm_whitespace(v):$/;"	kind:function	line:69
 normalize	../workflow/notify.py	/^    from unicodedata import normalize$/;"	kind:namespace	line:301
@@ -2734,7 +2379,6 @@ os	../lxml/html/__init__.py	/^    import os$/;"	kind:namespace	line:1864
 os	../lxml/html/_diffcommand.py	/^import os$/;"	kind:namespace	line:6
 os	../lxml/isoschematron/__init__.py	/^import os.path$/;"	kind:namespace	line:6
 os	../main.py	/^import os$/;"	kind:namespace	line:4
-os	../soupsieve/util.py	/^import os$/;"	kind:namespace	line:7
 os	../workflow/__init__.py	/^import os$/;"	kind:namespace	line:13
 os	../workflow/background.py	/^import os$/;"	kind:namespace	line:24
 os	../workflow/notify.py	/^import os$/;"	kind:namespace	line:28
@@ -2758,27 +2402,12 @@ parse	../lxml/html/html5parser.py	/^def parse(filename_url_or_file, guess_charse
 parse	../lxml/html/soupparser.py	/^def parse(file, beautifulsoup=None, makeelement=None, **bsargs):$/;"	kind:function	line:36
 parse_arguments	../cssselect/parser.py	/^def parse_arguments(stream):$/;"	kind:function	line:552
 parse_attrib	../cssselect/parser.py	/^def parse_attrib(selector, stream):$/;"	kind:function	line:567
-parse_attribute_selector	../soupsieve/css_parser.py	/^    def parse_attribute_selector(self, sel, m, has_selector):$/;"	kind:member	line:458
-parse_class_id	../soupsieve/css_parser.py	/^    def parse_class_id(self, sel, m, has_selector):$/;"	kind:member	line:806
-parse_combinator	../soupsieve/css_parser.py	/^    def parse_combinator(self, sel, m, has_selector, selectors, relations, is_pseudo, index):$/;"	kind:member	line:776
-parse_has_combinator	../soupsieve/css_parser.py	/^    def parse_has_combinator(self, sel, m, has_selector, selectors, rel_type, index):$/;"	kind:member	line:734
 parse_html	../lxml/html/diff.py	/^def parse_html(html, cleanup=True):$/;"	kind:function	line:544
-parse_pseudo_class	../soupsieve/css_parser.py	/^    def parse_pseudo_class(self, sel, m, has_selector, iselector, is_html):$/;"	kind:member	line:574
-parse_pseudo_class_custom	../soupsieve/css_parser.py	/^    def parse_pseudo_class_custom(self, sel, m, has_selector):$/;"	kind:member	line:546
-parse_pseudo_contains	../soupsieve/css_parser.py	/^    def parse_pseudo_contains(self, sel, m, has_selector):$/;"	kind:member	line:817
-parse_pseudo_dir	../soupsieve/css_parser.py	/^    def parse_pseudo_dir(self, sel, m, has_selector):$/;"	kind:member	line:856
-parse_pseudo_lang	../soupsieve/css_parser.py	/^    def parse_pseudo_lang(self, sel, m, has_selector):$/;"	kind:member	line:835
-parse_pseudo_nth	../soupsieve/css_parser.py	/^    def parse_pseudo_nth(self, sel, m, has_selector, iselector):$/;"	kind:member	line:662
-parse_pseudo_open	../soupsieve/css_parser.py	/^    def parse_pseudo_open(self, sel, name, has_selector, iselector, index):$/;"	kind:member	line:721
 parse_selector	../cssselect/parser.py	/^def parse_selector(stream):$/;"	kind:function	line:435
 parse_selector_group	../cssselect/parser.py	/^def parse_selector_group(stream):$/;"	kind:function	line:425
-parse_selectors	../soupsieve/css_parser.py	/^    def parse_selectors(self, iselector, index=0, flags=0):$/;"	kind:member	line:864
 parse_series	../cssselect/parser.py	/^def parse_series(tokens):$/;"	kind:function	line:612
 parse_series	../cssselect/xpath.py	/^from cssselect.parser import parse, parse_series, SelectorError$/;"	kind:namespace	line:18
 parse_simple_selector	../cssselect/parser.py	/^def parse_simple_selector(stream, inside_negation=False):$/;"	kind:function	line:459
-parse_tag_pattern	../soupsieve/css_parser.py	/^    def parse_tag_pattern(self, sel, m, has_selector):$/;"	kind:member	line:532
-parse_value	../soupsieve/css_match.py	/^    def parse_value(cls, itype, value):$/;"	kind:member	line:388
-parse_version	../soupsieve/__meta__.py	/^def parse_version(ver, pre=False):$/;"	kind:function	line:157
 parser	../lxml/html/_diffcommand.py	/^parser = optparse.OptionParser($/;"	kind:variable	line:12
 parser.py	../cssselect/parser.py	1;"	kind:file	line:1
 partial	../lxml/builder.py	/^from functools import partial$/;"	kind:namespace	line:46
@@ -2788,7 +2417,6 @@ peek	../cssselect/parser.py	/^    def peek(self):$/;"	kind:member	line:810
 phrase_tags	../lxml/html/defs.py	/^phrase_tags = frozenset([$/;"	kind:variable	line:104
 pickle	../workflow/background.py	/^import pickle$/;"	kind:namespace	line:26
 pickle	../workflow/workflow.py	/^import pickle$/;"	kind:namespace	line:31
-pickle_register	../soupsieve/css_types.py	/^def pickle_register(obj):$/;"	kind:function	line:332
 plistlib	../workflow/notify.py	/^import plistlib$/;"	kind:namespace	line:29
 plistlib	../workflow/workflow.py	/^import plistlib$/;"	kind:namespace	line:32
 png_to_icns	../workflow/notify.py	/^def png_to_icns(png_path, icns_path):$/;"	kind:function	line:237
@@ -2817,13 +2445,10 @@ print_function	../workflow/update.py	/^from __future__ import print_function, un
 print_function	../workflow/util.py	/^from __future__ import print_function, absolute_import$/;"	kind:namespace	line:13
 print_function	../workflow/workflow.py	/^from __future__ import print_function, unicode_literals$/;"	kind:namespace	line:22
 print_function	../workflow/workflow3.py	/^from __future__ import print_function, unicode_literals, absolute_import$/;"	kind:namespace	line:26
-process_custom	../soupsieve/css_parser.py	/^def process_custom(custom):$/;"	kind:function	line:219
-process_selectors	../soupsieve/css_parser.py	/^    def process_selectors(self, index=0, flags=0):$/;"	kind:member	line:1059
 processingInstruction	../lxml/sax.py	/^    def processingInstruction(self, target, data):$/;"	kind:member	line:123
 processing_instructions	../lxml/html/clean.py	/^    processing_instructions = True$/;"	kind:variable	line:202
 pseudo_never_matches	../cssselect/xpath.py	/^    def pseudo_never_matches(self, xpath):$/;"	kind:member	line:584
-purge	../soupsieve/__init__.py	/^def purge():$/;"	kind:function	line:66
-put	../cache.py	/^def put(film_id, url):$/;"	kind:function	line:5
+put	../cache.py	/^def put(film_id, url):$/;"	kind:function	line:8
 pyclasslookup.py	../lxml/pyclasslookup.py	1;"	kind:file	line:1
 pyquery.py	../pyquery/pyquery.py	1;"	kind:file	line:1
 pyunicode	../lxml/includes/etreepublic.pxd	/^    cdef object pyunicode(const_xmlChar* s)$/;"	kind:function	line:185
@@ -2840,10 +2465,6 @@ re	../lxml/html/diff.py	/^import re$/;"	kind:namespace	line:8
 re	../lxml/html/soupparser.py	/^import re$/;"	kind:namespace	line:6
 re	../main.py	/^import re$/;"	kind:namespace	line:5
 re	../pyquery/text.py	/^import re$/;"	kind:namespace	line:1
-re	../soupsieve/__meta__.py	/^import re$/;"	kind:namespace	line:4
-re	../soupsieve/css_match.py	/^import re$/;"	kind:namespace	line:5
-re	../soupsieve/css_parser.py	/^import re$/;"	kind:namespace	line:3
-re	../soupsieve/util.py	/^import re$/;"	kind:namespace	line:8
 re	../workflow/update.py	/^import re$/;"	kind:namespace	line:31
 re	../workflow/web.py	/^import re$/;"	kind:namespace	line:17
 re	../workflow/workflow.py	/^import re$/;"	kind:namespace	line:33
@@ -2863,7 +2484,6 @@ remove_tags	../lxml/html/clean.py	/^    remove_tags = None$/;"	kind:variable	lin
 remove_unknown_tags	../lxml/html/clean.py	/^    remove_unknown_tags = True$/;"	kind:variable	line:210
 rep	../pyquery/pyquery.py	/^            def rep(i, e):$/;"	kind:function	line:1678
 repl	../pyquery/pyquery.py	/^        def repl(attr):$/;"	kind:function	line:1677
-replace	../soupsieve/css_parser.py	/^    def replace(m):$/;"	kind:function	line:241
 replace_all	../pyquery/pyquery.py	/^    def replace_all(self, expr):$/;"	kind:member	line:1451
 replace_with	../pyquery/pyquery.py	/^    def replace_with(self, value):$/;"	kind:member	line:1423
 repo	../workflow/update.py	/^    repo = argv[2]$/;"	kind:variable	line:551
@@ -2913,12 +2533,6 @@ select	../lxml/_elementpath.py	/^    def select(result):$/;"	kind:function	line:
 select	../lxml/_elementpath.py	/^    def select(result):$/;"	kind:function	line:115
 select	../lxml/_elementpath.py	/^    def select(result):$/;"	kind:function	line:127
 select	../lxml/_elementpath.py	/^    def select(result):$/;"	kind:function	line:134
-select	../soupsieve/__init__.py	/^def select(select, tag, namespaces=None, limit=0, flags=0, **kwargs):$/;"	kind:function	line:111
-select	../soupsieve/css_match.py	/^    def select(self, limit=0):$/;"	kind:member	line:1391
-select	../soupsieve/css_match.py	/^    def select(self, tag, limit=0):$/;"	kind:member	line:1518
-select_one	../soupsieve/__init__.py	/^def select_one(select, tag, namespaces=None, flags=0, **kwargs):$/;"	kind:function	line:105
-select_one	../soupsieve/css_match.py	/^    def select_one(self, tag):$/;"	kind:member	line:1512
-selector_iter	../soupsieve/css_parser.py	/^    def selector_iter(self, pattern):$/;"	kind:member	line:1016
 selector_to_xpath	../cssselect/xpath.py	/^    def selector_to_xpath(self, selector, prefix='descendant-or-self::',$/;"	kind:member	line:194
 send_feedback	../workflow/workflow.py	/^    def send_feedback(self):$/;"	kind:member	line:2176
 send_feedback	../workflow/workflow3.py	/^    def send_feedback(self):$/;"	kind:member	line:718
@@ -2977,7 +2591,6 @@ specificity	../cssselect/parser.py	/^    def specificity(self):$/;"	kind:member	
 split_at_single_quotes	../cssselect/xpath.py	/^split_at_single_quotes = re.compile("('+)").split$/;"	kind:variable	line:90
 split_body	../lxml/html/_diffcommand.py	/^def split_body(html):$/;"	kind:function	line:73
 split_delete	../lxml/html/diff.py	/^def split_delete(chunks):$/;"	kind:function	line:353
-split_namespace	../soupsieve/css_match.py	/^    def split_namespace(el, attr_name):$/;"	kind:member	line:294
 split_on_delimiters	../workflow/workflow.py	/^split_on_delimiters = re.compile('[^a-zA-Z0-9]').split$/;"	kind:variable	line:416
 split_trailing_whitespace	../lxml/html/diff.py	/^def split_trailing_whitespace(word):$/;"	kind:function	line:577
 split_unbalanced	../lxml/html/diff.py	/^def split_unbalanced(chunks):$/;"	kind:function	line:313
@@ -2998,15 +2611,12 @@ str_dict	../workflow/web.py	/^def str_dict(dic):$/;"	kind:function	line:77
 stream	../workflow/web.py	/^    def stream(self):$/;"	kind:member	line:257
 stream	../workflow/web.py	/^    def stream(self, value):$/;"	kind:member	line:267
 string	../lxml/html/html5parser.py	/^import string$/;"	kind:namespace	line:5
-string	../soupsieve/util.py	/^    string = basestring  # noqa: F821$/;"	kind:variable	line:32
-string	../soupsieve/util.py	/^    string = str$/;"	kind:variable	line:23
 string	../workflow/web.py	/^import string$/;"	kind:namespace	line:19
 string	../workflow/workflow.py	/^import string$/;"	kind:namespace	line:35
 string_escape	../cssselect/parser.py	/^    string_escape = r'\\\\(?:\\n|\\r\\n|\\r|\\f)|' + escape$/;"	kind:variable	line:685
 string_types	../pyquery/pyquery.py	/^    string_types = (str,)$/;"	kind:variable	line:29
 string_types	../pyquery/pyquery.py	/^    string_types = (unicode, str)$/;"	kind:variable	line:48
 strip	../lxml/doctestcompare.py	/^def strip(v):$/;"	kind:function	line:63
-struct	../soupsieve/util.py	/^import struct$/;"	kind:namespace	line:6
 style	../lxml/html/clean.py	/^    style = False$/;"	kind:variable	line:197
 stylesheet_params	../lxml/isoschematron/__init__.py	/^def stylesheet_params(**kwargs):$/;"	kind:function	line:70
 submit_form	../lxml/html/__init__.py	/^def submit_form(form, extra_values=None, open_http=None):$/;"	kind:function	line:1083
@@ -3015,7 +2625,6 @@ subprocess	../workflow/notify.py	/^import subprocess$/;"	kind:namespace	line:31
 subprocess	../workflow/update.py	/^import subprocess$/;"	kind:namespace	line:32
 subprocess	../workflow/util.py	/^import subprocess$/;"	kind:namespace	line:24
 subprocess	../workflow/workflow.py	/^import subprocess$/;"	kind:namespace	line:36
-supports_namespaces	../soupsieve/css_match.py	/^    def supports_namespaces(self):$/;"	kind:member	line:479
 svrl_validation_errors	../lxml/isoschematron/__init__.py	/^svrl_validation_errors = _etree.XPath($/;"	kind:variable	line:61
 symmetric_difference	../lxml/html/_setmixin.py	/^    symmetric_difference = MutableSet.__xor__$/;"	kind:variable	line:31
 symmetric_difference_update	../lxml/html/_setmixin.py	/^    def symmetric_difference_update(self, other):$/;"	kind:member	line:45
@@ -3032,7 +2641,6 @@ sys	../main.py	/^import sys$/;"	kind:namespace	line:6
 sys	../pyquery/openers.py	/^import sys$/;"	kind:namespace	line:2
 sys	../pyquery/pyquery.py	/^import sys$/;"	kind:namespace	line:15
 sys	../pyquery/text.py	/^import sys$/;"	kind:namespace	line:2
-sys	../soupsieve/util.py	/^import sys$/;"	kind:namespace	line:5
 sys	../update_details.py	/^import sys$/;"	kind:namespace	line:3
 sys	../update_thumbnails.py	/^import sys$/;"	kind:namespace	line:3
 sys	../workflow/background.py	/^import sys$/;"	kind:namespace	line:23
@@ -3083,12 +2691,9 @@ type	../cssselect/parser.py	/^    type = property(operator.itemgetter(0))$/;"	ki
 type	../lxml/html/__init__.py	/^    def type(self):$/;"	kind:member	line:1660
 type	../lxml/html/__init__.py	/^    def type(self, value):$/;"	kind:member	line:1667
 types	../pyquery/pyquery.py	/^import types$/;"	kind:namespace	line:14
-uchr	../soupsieve/util.py	/^def uchr(i):$/;"	kind:function	line:64
 unescape	../lxml/html/soupparser.py	/^def unescape(string):$/;"	kind:function	line:305
 unescape_entity	../lxml/html/soupparser.py	/^    def unescape_entity(m):$/;"	kind:function	line:309
 unescape_ident	../cssselect/parser.py	/^def unescape_ident(value):$/;"	kind:function	line:716
-unichar	../soupsieve/util.py	/^    unichar = chr$/;"	kind:variable	line:22
-unichar	../soupsieve/util.py	/^    unichar = unichr  # noqa: F821$/;"	kind:variable	line:31
 unichr	../lxml/html/clean.py	/^    unichr = chr$/;"	kind:variable	line:28
 unichr	../lxml/html/soupparser.py	/^    unichr = chr$/;"	kind:variable	line:302
 unicode	../lxml/builder.py	/^    unicode = str$/;"	kind:variable	line:56
@@ -3099,18 +2704,11 @@ unicode	../pyquery/pyquery.py	/^    unicode = str$/;"	kind:variable	line:23
 unicode	../pyquery/text.py	/^    unicode = str$/;"	kind:variable	line:10
 unicode_escape	../cssselect/parser.py	/^    unicode_escape = r'\\\\([0-9a-f]{1,6})(?:\\r\\n|[ \\n\\r\\t\\f])?'$/;"	kind:variable	line:683
 unicode_literals	../pyquery/cssselectpatch.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:6
-unicode_literals	../soupsieve/__init__.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:28
-unicode_literals	../soupsieve/__meta__.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
-unicode_literals	../soupsieve/css_match.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
-unicode_literals	../soupsieve/css_parser.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
-unicode_literals	../soupsieve/css_types.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
-unicode_literals	../soupsieve/util.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
 unicode_literals	../workflow/background.py	/^from __future__ import print_function, unicode_literals$/;"	kind:namespace	line:20
 unicode_literals	../workflow/notify.py	/^from __future__ import print_function, unicode_literals$/;"	kind:namespace	line:26
 unicode_literals	../workflow/update.py	/^from __future__ import print_function, unicode_literals$/;"	kind:namespace	line:24
 unicode_literals	../workflow/workflow.py	/^from __future__ import print_function, unicode_literals$/;"	kind:namespace	line:22
 unicode_literals	../workflow/workflow3.py	/^from __future__ import print_function, unicode_literals, absolute_import$/;"	kind:namespace	line:26
-unicodedata	../soupsieve/css_match.py	/^import unicodedata$/;"	kind:namespace	line:7
 unicodedata	../workflow/web.py	/^import unicodedata$/;"	kind:namespace	line:20
 unicodedata	../workflow/workflow.py	/^import unicodedata$/;"	kind:namespace	line:39
 unicodify	../workflow/util.py	/^def unicodify(s, encoding='utf-8', norm=None):$/;"	kind:function	line:94
@@ -3123,7 +2721,6 @@ unquote_plus	../lxml/html/clean.py	/^    from urllib import unquote_plus$/;"	kin
 unquote_plus	../lxml/html/clean.py	/^    from urllib.parse import urlsplit, unquote_plus$/;"	kind:namespace	line:18
 unregister	../workflow/workflow.py	/^    def unregister(self, name):$/;"	kind:member	line:559
 unset_config	../workflow/util.py	/^def unset_config(name, bundleid=None):$/;"	kind:function	line:295
-uord	../soupsieve/util.py	/^def uord(c):$/;"	kind:function	line:73
 update	../lxml/html/__init__.py	/^    def update(self, values):$/;"	kind:member	line:203
 update	../lxml/html/_setmixin.py	/^    def update(self, other):$/;"	kind:member	line:36
 update	../workflow/web.py	/^    def update(self, other):$/;"	kind:member	line:148
@@ -3136,7 +2733,6 @@ update_off	../workflow/workflow.py	/^        def update_off():$/;"	kind:function
 update_on	../workflow/workflow.py	/^        def update_on():$/;"	kind:function	line:2538
 update_thumbnails.py	../update_thumbnails.py	1;"	kind:file	line:1
 update_wrapper	../backports/functools_lru_cache.py	/^def update_wrapper($/;"	kind:function	line:11
-upper	../soupsieve/util.py	/^def upper(string):  # pragma: no cover$/;"	kind:function	line:54
 uri.pxd	../lxml/includes/uri.pxd	1;"	kind:file	line:1
 url_opener	../pyquery/openers.py	/^def url_opener(url, kwargs):$/;"	kind:function	line:82
 url_opener	../pyquery/pyquery.py	/^from .openers import url_opener$/;"	kind:namespace	line:8
@@ -3171,26 +2767,14 @@ urlsplit	../lxml/html/clean.py	/^    from urlparse import urlsplit$/;"	kind:name
 usage	../lxml/html/_diffcommand.py	/^    usage="%prog [OPTIONS] FILE1 FILE2\\n"$/;"	kind:variable	line:13
 usedoctest.py	../lxml/html/usedoctest.py	1;"	kind:file	line:1
 usedoctest.py	../lxml/usedoctest.py	1;"	kind:file	line:1
-ustr	../soupsieve/util.py	/^    ustr = str$/;"	kind:variable	line:20
-ustr	../soupsieve/util.py	/^    ustr = unicode  # noqa: F821$/;"	kind:variable	line:29
 ustr	../workflow/notify.py	/^    def ustr(s):$/;"	kind:function	line:303
 utf8	../lxml/includes/etreepublic.pxd	/^    cdef bytes utf8(object s)$/;"	kind:function	line:188
 utf8ify	../workflow/util.py	/^def utf8ify(s):$/;"	kind:function	line:121
-util	../soupsieve/css_match.py	/^from . import util$/;"	kind:namespace	line:4
-util	../soupsieve/css_parser.py	/^from . import util$/;"	kind:namespace	line:4
-util	../soupsieve/css_types.py	/^from . import util$/;"	kind:namespace	line:3
-util.py	../soupsieve/util.py	1;"	kind:file	line:1
 util.py	../workflow/util.py	1;"	kind:file	line:1
 uuid	../workflow/notify.py	/^import uuid$/;"	kind:namespace	line:35
 uuid4	../workflow/workflow3.py	/^            from uuid import uuid4$/;"	kind:namespace	line:519
 val	../pyquery/pyquery.py	/^    def val(self, value=no_default):$/;"	kind:member	line:988
-validate_day	../soupsieve/css_match.py	/^    def validate_day(year, month, day):$/;"	kind:member	line:344
-validate_hour	../soupsieve/css_match.py	/^    def validate_hour(hour):$/;"	kind:member	line:376
-validate_minutes	../soupsieve/css_match.py	/^    def validate_minutes(minutes):$/;"	kind:member	line:382
-validate_month	../soupsieve/css_match.py	/^    def validate_month(month):$/;"	kind:member	line:364
 validate_sound	../workflow/notify.py	/^def validate_sound(sound):$/;"	kind:function	line:153
-validate_week	../soupsieve/css_match.py	/^    def validate_week(year, week):$/;"	kind:member	line:355
-validate_year	../soupsieve/css_match.py	/^    def validate_year(year):$/;"	kind:member	line:370
 validation_report	../lxml/isoschematron/__init__.py	/^    def validation_report(self):$/;"	kind:member	line:330
 validator	../lxml/isoschematron/__init__.py	/^from lxml import etree as _etree # due to validator __init__ signature$/;"	kind:namespace	line:7
 validator_xslt	../lxml/isoschematron/__init__.py	/^    def validator_xslt(self):$/;"	kind:member	line:323
@@ -3217,17 +2801,15 @@ value_options	../lxml/html/__init__.py	/^    def value_options(self):$/;"	kind:m
 values	../workflow/web.py	/^    def values(self):$/;"	kind:member	line:161
 version	../workflow/update.py	/^    version = argv[3]$/;"	kind:variable	line:552
 version	../workflow/workflow.py	/^    def version(self):$/;"	kind:member	line:1134
-warn_deprecated	../soupsieve/util.py	/^def warn_deprecated(message, stacklevel=2):  # pragma: no cover$/;"	kind:function	line:123
 warn_empty	../workflow/workflow3.py	/^    def warn_empty(self, title, subtitle=u'', icon=None):$/;"	kind:member	line:692
-warnings	../soupsieve/util.py	/^import warnings$/;"	kind:namespace	line:4
-web	../cache.py	/^from workflow import web$/;"	kind:namespace	line:2
+web	../cache.py	/^from workflow import web, Workflow3$/;"	kind:namespace	line:2
 web	../main.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:12
 web	../update_details.py	/^from workflow import Workflow, web$/;"	kind:namespace	line:6
 web	../update_thumbnails.py	/^from workflow import Workflow, web$/;"	kind:namespace	line:7
 web	../workflow/update.py	/^import web$/;"	kind:namespace	line:35
 web.py	../workflow/web.py	1;"	kind:file	line:1
 webbrowser	../lxml/html/__init__.py	/^    import webbrowser$/;"	kind:namespace	line:1865
-wf	../main.py	/^    wf = Workflow3()$/;"	kind:variable	line:134
+wf	../main.py	/^    wf = Workflow3()$/;"	kind:variable	line:114
 wf	../update_details.py	/^    wf = Workflow()$/;"	kind:variable	line:43
 wf	../update_thumbnails.py	/^    wf = Workflow()$/;"	kind:variable	line:37
 wf	../workflow/background.py	/^def wf():$/;"	kind:function	line:35
@@ -3251,7 +2833,6 @@ wrapper	../backports/functools_lru_cache.py	/^            def wrapper(*args, **k
 wrapper	../backports/functools_lru_cache.py	/^            def wrapper(*args, **kwds):$/;"	kind:function	line:131
 wrapper	../backports/functools_lru_cache.py	/^    wrapper = functools.update_wrapper(wrapper, wrapped, assigned, updated)$/;"	kind:variable	line:22
 wrapper	../workflow/workflow.py	/^            def wrapper():$/;"	kind:function	line:2494
-wraps	../soupsieve/util.py	/^from functools import wraps$/;"	kind:namespace	line:3
 xhtml_parser	../lxml/html/__init__.py	/^xhtml_parser = XHTMLParser()$/;"	kind:variable	line:1926
 xhtml_parser	../lxml/html/html5parser.py	/^    xhtml_parser = XHTMLParser()$/;"	kind:variable	line:45
 xhtml_to_html	../lxml/html/__init__.py	/^def xhtml_to_html(xhtml):$/;"	kind:function	line:1759

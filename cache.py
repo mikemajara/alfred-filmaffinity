@@ -1,5 +1,5 @@
 import os, shutil
-from workflow import web
+from workflow import web, Workflow3
 
 
 SAVE_DIR = './cache'
@@ -31,3 +31,6 @@ def clear():
                 shutil.rmtree(file_path)
         except Exception as e:
             print('Failed to delete %s. Reason: %s' % (file_path, e))
+
+def clear_workflow_cache():
+    Workflow3().clear_cache()

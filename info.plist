@@ -8,11 +8,37 @@
 	<string>Internet</string>
 	<key>connections</key>
 	<dict>
+		<key>73B590C2-74F3-4404-A768-A6C0A545A35D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>94C0FE01-8104-438E-BFA2-10604C3583D0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>83F28A94-40CE-4B0C-BE01-3EE066D31398</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>F7D6EB52-6019-4DF9-B0EC-DFF0554F33AE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>EDD1258F-38AB-452D-AC67-4679BCDD7935</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>73B590C2-74F3-4404-A768-A6C0A545A35D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -32,6 +58,90 @@
 	<string>Filmaffinity</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Text Cache cleared</string>
+				<key>title</key>
+				<string>Title Cache cleared</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>94C0FE01-8104-438E-BFA2-10604C3583D0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python -c "import cache; cache.clear(); cache.clear_workflow_cache()"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>73B590C2-74F3-4404-A768-A6C0A545A35D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>ffclear</string>
+				<key>subtext</key>
+				<string>Subtext Cache Clear</string>
+				<key>text</key>
+				<string>Title Cache Clear</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>EDD1258F-38AB-452D-AC67-4679BCDD7935</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>F7D6EB52-6019-4DF9-B0EC-DFF0554F33AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -81,36 +191,38 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>F7D6EB52-6019-4DF9-B0EC-DFF0554F33AE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>This workflow searches for films in filmaffinity with suggestions and displays main info on alfred display.</string>
 	<key>uidata</key>
 	<dict>
+		<key>73B590C2-74F3-4404-A768-A6C0A545A35D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>380</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
 		<key>83F28A94-40CE-4B0C-BE01-3EE066D31398</key>
 		<dict>
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
 			<integer>175</integer>
+		</dict>
+		<key>94C0FE01-8104-438E-BFA2-10604C3583D0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>555</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>EDD1258F-38AB-452D-AC67-4679BCDD7935</key>
+		<dict>
+			<key>xpos</key>
+			<integer>185</integer>
+			<key>ypos</key>
+			<integer>40</integer>
 		</dict>
 		<key>F7D6EB52-6019-4DF9-B0EC-DFF0554F33AE</key>
 		<dict>
