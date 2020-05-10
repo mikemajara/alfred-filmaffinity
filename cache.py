@@ -1,6 +1,9 @@
 import os, shutil
 from workflow import web
+
+
 SAVE_DIR = './cache'
+
 
 def put(film_id, url):
     save_directory = SAVE_DIR
@@ -11,11 +14,12 @@ def put(film_id, url):
         return filepath
     except Exception as e:
         raise e
-        return
+
 
 def get(film_id):
     filepath = os.path.join(SAVE_DIR, film_id)
     return filepath if os.path.isfile(filepath) else None
+
 
 def clear():
     for filename in os.listdir(SAVE_DIR):
