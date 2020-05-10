@@ -87,8 +87,8 @@ DFN	../lxml/html/builder.py	/^DFN = E.dfn # instance definition$/;"	kind:variabl
 DIR	../lxml/html/builder.py	/^DIR = E.dir # directory list (DEPRECATED)$/;"	kind:variable	line:62
 DIR_FLAGS	../soupsieve/css_match.py	/^DIR_FLAGS = ct.SEL_DIR_LTR | ct.SEL_DIR_RTL$/;"	kind:variable	line:29
 DIR_MAP	../soupsieve/css_match.py	/^DIR_MAP = {$/;"	kind:variable	line:32
-DISPLAY_DETAILS	../main.py	/^DISPLAY_DETAILS = os.getenv('MM_DISPLAY_DETAILS').isdigit() and int(os.getenv('MM_DISPLAY_DETAILS'))$/;"	kind:variable	line:14
-DISPLAY_THUMBNAILS	../main.py	/^DISPLAY_THUMBNAILS = os.getenv('MM_DISPLAY_THUMBNAILS').isdigit() and int(os.getenv('MM_DISPLAY_THUMBNAILS'))$/;"	kind:variable	line:15
+DISPLAY_DETAILS	../main.py	/^DISPLAY_DETAILS = os.getenv('MM_DISPLAY_DETAILS').isdigit() and int(os.getenv('MM_DISPLAY_DETAILS'))$/;"	kind:variable	line:15
+DISPLAY_THUMBNAILS	../main.py	/^DISPLAY_THUMBNAILS = os.getenv('MM_DISPLAY_THUMBNAILS').isdigit() and int(os.getenv('MM_DISPLAY_THUMBNAILS'))$/;"	kind:variable	line:16
 DIV	../lxml/html/builder.py	/^DIV = E.div # generic language\/style container$/;"	kind:variable	line:63
 DL	../lxml/html/builder.py	/^DL = E.dl # definition list$/;"	kind:variable	line:64
 DT	../lxml/html/builder.py	/^DT = E.dt # definition term$/;"	kind:variable	line:65
@@ -194,7 +194,7 @@ ICON_BURN	../workflow/workflow.py	/^ICON_BURN = os.path.join(ICON_ROOT, 'Burning
 ICON_CLOCK	../workflow/workflow.py	/^ICON_CLOCK = os.path.join(ICON_ROOT, 'Clock.icns')$/;"	kind:variable	line:75
 ICON_COLOR	../workflow/workflow.py	/^ICON_COLOR = os.path.join(ICON_ROOT, 'ProfileBackgroundColor.icns')$/;"	kind:variable	line:76
 ICON_COLOUR	../workflow/workflow.py	/^ICON_COLOUR = ICON_COLOR  # Queen's English, if you please$/;"	kind:variable	line:77
-ICON_DEFAULT	../main.py	/^ICON_DEFAULT = "icon.png"$/;"	kind:variable	line:23
+ICON_DEFAULT	../main.py	/^ICON_DEFAULT = "icon.png"$/;"	kind:variable	line:24
 ICON_EJECT	../workflow/workflow.py	/^ICON_EJECT = os.path.join(ICON_ROOT, 'EjectMediaIcon.icns')$/;"	kind:variable	line:78
 ICON_ERROR	../workflow/workflow.py	/^ICON_ERROR = os.path.join(ICON_ROOT, 'AlertStopIcon.icns')$/;"	kind:variable	line:80
 ICON_FAVORITE	../workflow/workflow.py	/^ICON_FAVORITE = os.path.join(ICON_ROOT, 'ToolbarFavoritesIcon.icns')$/;"	kind:variable	line:81
@@ -346,7 +346,7 @@ Python	../lxml/html/soupparser.py	/^    from html.entities import name2codepoint
 PythonElementClassLookup	../lxml/pyclasslookup.py	/^from lxml.etree import PythonElementClassLookup$/;"	kind:namespace	line:3
 Q	../lxml/html/builder.py	/^Q = E.q # short inline quotation$/;"	kind:variable	line:104
 RANGES	../soupsieve/css_match.py	/^RANGES = ct.SEL_IN_RANGE | ct.SEL_OUT_OF_RANGE$/;"	kind:variable	line:30
-REFRESH_RATE	../main.py	/^REFRESH_RATE = 0.5$/;"	kind:variable	line:16
+REFRESH_RATE	../main.py	/^REFRESH_RATE = 0.5$/;"	kind:variable	line:17
 RELAXNG_NS	../lxml/isoschematron/__init__.py	/^RELAXNG_NS = "http:\/\/relaxng.org\/ns\/structure\/1.0"$/;"	kind:variable	line:33
 RELEASES_BASE	../workflow/update.py	/^RELEASES_BASE = 'https:\/\/api.github.com\/repos\/{}\/releases'$/;"	kind:variable	line:40
 REL_CLOSE_PARENT	../soupsieve/css_match.py	/^REL_CLOSE_PARENT = '>'$/;"	kind:variable	line:16
@@ -477,11 +477,12 @@ WS	../soupsieve/css_parser.py	/^WS = r'(?:[ \\t]|{})'.format(NEWLINE)$/;"	kind:v
 WSC	../soupsieve/css_parser.py	/^WSC = r'(?:{ws}|{comments})'.format(ws=WS, comments=COMMENTS)$/;"	kind:variable	line:94
 WS_COMBINATOR	../soupsieve/css_parser.py	/^WS_COMBINATOR = " "$/;"	kind:variable	line:181
 Workflow	../update_details.py	/^from workflow import Workflow, web$/;"	kind:namespace	line:6
+Workflow	../update_thumbnails.py	/^from workflow import Workflow, web$/;"	kind:namespace	line:7
 Workflow	../workflow/__init__.py	/^from .workflow import Workflow, manager$/;"	kind:namespace	line:16
 Workflow	../workflow/background.py	/^from workflow import Workflow$/;"	kind:namespace	line:28
 Workflow	../workflow/workflow.py	/^class Workflow(object):$/;"	kind:class	line:889
 Workflow	../workflow/workflow3.py	/^from .workflow import ICON_WARNING, Workflow$/;"	kind:namespace	line:32
-Workflow3	../main.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:11
+Workflow3	../main.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:12
 Workflow3	../workflow/__init__.py	/^from .workflow3 import Variables, Workflow3$/;"	kind:namespace	line:17
 Workflow3	../workflow/workflow3.py	/^class Workflow3(Workflow):$/;"	kind:class	line:449
 XHTMLParser	../lxml/html/__init__.py	/^class XHTMLParser(etree.XMLParser):$/;"	kind:class	line:1894
@@ -2035,7 +2036,8 @@ builder.py	../lxml/html/builder.py	1;"	kind:file	line:1
 bundleid	../workflow/workflow.py	/^    def bundleid(self):$/;"	kind:member	line:1092
 c14n.pxd	../lxml/includes/c14n.pxd	1;"	kind:file	line:1
 cPickle	../workflow/workflow.py	/^import cPickle$/;"	kind:namespace	line:25
-cache	../main.py	/^import cache$/;"	kind:namespace	line:10
+cache	../main.py	/^import cache$/;"	kind:namespace	line:11
+cache	../update_thumbnails.py	/^import cache$/;"	kind:namespace	line:5
 cache.py	../cache.py	1;"	kind:file	line:1
 cache_clear	../backports/functools_lru_cache.py	/^        def cache_clear():$/;"	kind:function	line:183
 cache_data	../workflow/workflow.py	/^    def cache_data(self, name, data):$/;"	kind:member	line:1706
@@ -2210,7 +2212,6 @@ drop_tree	../lxml/html/__init__.py	/^    def drop_tree(self):$/;"	kind:member	li
 dtdvalid.pxd	../lxml/includes/dtdvalid.pxd	1;"	kind:file	line:1
 due	../lxml/isoschematron/__init__.py	/^from lxml import etree as _etree # due to validator __init__ signature$/;"	kind:namespace	line:7
 dumbify_punctuation	../workflow/workflow.py	/^    def dumbify_punctuation(self, text):$/;"	kind:member	line:2724
-dump	../cache.py	/^def dump(file_id, url):$/;"	kind:function	line:5
 dump	../workflow/workflow.py	/^    def dump(cls, obj, file_obj):$/;"	kind:member	line:611
 dump	../workflow/workflow.py	/^    def dump(cls, obj, file_obj):$/;"	kind:member	line:650
 dump	../workflow/workflow.py	/^    def dump(cls, obj, file_obj):$/;"	kind:member	line:688
@@ -2350,6 +2351,7 @@ functools	../workflow/util.py	/^import functools$/;"	kind:namespace	line:20
 functools_lru_cache.py	../backports/functools_lru_cache.py	1;"	kind:file	line:1
 general_block_tags	../lxml/html/defs.py	/^general_block_tags = frozenset([$/;"	kind:variable	line:57
 generate	../workflow/web.py	/^        def generate():$/;"	kind:function	line:367
+get	../cache.py	/^def get(film_id):$/;"	kind:function	line:16
 get	../workflow/web.py	/^    def get(self, key, default=None):$/;"	kind:member	line:139
 get	../workflow/web.py	/^def get(url, params=None, headers=None, cookies=None, auth=None,$/;"	kind:function	line:582
 getAttributeValue	../lxml/includes/etreepublic.pxd	/^    cdef object getAttributeValue(_Element element, key, default)$/;"	kind:function	line:112
@@ -2368,9 +2370,9 @@ get_default_parser	../lxml/doctestcompare.py	/^    def get_default_parser(self):
 get_descendants	../soupsieve/css_match.py	/^    def get_descendants(self, el, tags=True, no_iframe=False):$/;"	kind:member	line:206
 get_downloads	../workflow/update.py	/^def get_downloads(repo):$/;"	kind:function	line:390
 get_element_by_id	../lxml/html/__init__.py	/^    def get_element_by_id(self, id, *default):$/;"	kind:member	line:394
-get_film_detail_string	../main.py	/^def get_film_detail_string(id):$/;"	kind:function	line:39
+get_film_detail_string	../main.py	/^def get_film_detail_string(id):$/;"	kind:function	line:40
 get_film_detail_string	../update_details.py	/^def get_film_detail_string(id):$/;"	kind:function	line:17
-get_filmaffinity_suggestions	../main.py	/^def get_filmaffinity_suggestions(word):$/;"	kind:function	line:25
+get_filmaffinity_suggestions	../main.py	/^def get_filmaffinity_suggestions(word):$/;"	kind:function	line:26
 get_include	../lxml/__init__.py	/^def get_include():$/;"	kind:function	line:6
 get_matching_blocks	../lxml/html/diff.py	/^    def get_matching_blocks(self):$/;"	kind:member	line:873
 get_name	../soupsieve/css_parser.py	/^    def get_name(self):$/;"	kind:member	line:298
@@ -2384,14 +2386,15 @@ get_pattern_context	../soupsieve/util.py	/^def get_pattern_context(pattern, inde
 get_prefix	../soupsieve/css_match.py	/^    def get_prefix(self, el):$/;"	kind:member	line:507
 get_prefix_name	../soupsieve/css_match.py	/^    def get_prefix_name(el):$/;"	kind:member	line:252
 get_previous	../soupsieve/css_match.py	/^    def get_previous(cls, el, tags=True):$/;"	kind:member	line:273
-get_raw_html_for_url	../main.py	/^def get_raw_html_for_url(url):$/;"	kind:function	line:30
+get_raw_html_for_url	../main.py	/^def get_raw_html_for_url(url):$/;"	kind:function	line:31
 get_raw_html_for_url	../update_details.py	/^def get_raw_html_for_url(url):$/;"	kind:function	line:8
 get_tag	../soupsieve/css_match.py	/^    def get_tag(self, el):$/;"	kind:member	line:501
 get_tag_name	../soupsieve/css_match.py	/^    def get_tag_name(el):$/;"	kind:member	line:246
 get_tag_ns	../soupsieve/css_match.py	/^    def get_tag_ns(self, el):$/;"	kind:member	line:484
 get_text	../soupsieve/css_match.py	/^    def get_text(self, el, no_iframe=False):$/;"	kind:member	line:332
+get_thumbnail_url	../update_thumbnails.py	/^def get_thumbnail_url(film_dict):$/;"	kind:function	line:9
 get_uri	../soupsieve/css_match.py	/^    def get_uri(el):$/;"	kind:member	line:258
-get_url_for_film_id	../main.py	/^def get_url_for_film_id(id):$/;"	kind:function	line:35
+get_url_for_film_id	../main.py	/^def get_url_for_film_id(id):$/;"	kind:function	line:36
 get_url_for_film_id	../update_details.py	/^def get_url_for_film_id(id):$/;"	kind:function	line:13
 getargspec	../pyquery/pyquery.py	/^    def getargspec(func):$/;"	kind:function	line:32
 getargspec	../pyquery/pyquery.py	/^    def getargspec(func):$/;"	kind:function	line:51
@@ -2496,9 +2499,9 @@ is_iframe	../soupsieve/css_match.py	/^    def is_iframe(self, el):$/;"	kind:memb
 is_navigable_string	../soupsieve/css_match.py	/^    def is_navigable_string(obj):$/;"	kind:member	line:131
 is_non_whitespace	../cssselect/xpath.py	/^is_non_whitespace = re.compile(r'^[^ \\t\\r\\n\\f]+$').match$/;"	kind:variable	line:98
 is_processing_instruction	../soupsieve/css_match.py	/^    def is_processing_instruction(obj):  # pragma: no cover$/;"	kind:member	line:124
-is_result_type_movie	../main.py	/^def is_result_type_movie(result):$/;"	kind:function	line:56
+is_result_type_movie	../main.py	/^def is_result_type_movie(result):$/;"	kind:function	line:57
 is_root	../soupsieve/css_match.py	/^    def is_root(self, el):$/;"	kind:member	line:167
-is_running	../main.py	/^from workflow.background import run_in_background, is_running$/;"	kind:namespace	line:12
+is_running	../main.py	/^from workflow.background import run_in_background, is_running$/;"	kind:namespace	line:13
 is_running	../workflow/background.py	/^def is_running(name):$/;"	kind:function	line:111
 is_safe_name	../cssselect/xpath.py	/^is_safe_name = re.compile('^[a-zA-Z_][a-zA-Z0-9_.-]*$').match$/;"	kind:variable	line:95
 is_special_string	../soupsieve/css_match.py	/^    def is_special_string(obj):$/;"	kind:member	line:138
@@ -2533,7 +2536,9 @@ itervalues	../workflow/web.py	/^    def itervalues(self):$/;"	kind:member	line:1
 javascript	../lxml/html/clean.py	/^    javascript = True$/;"	kind:variable	line:195
 join	../cssselect/xpath.py	/^    def join(self, combiner, other):$/;"	kind:member	line:79
 join	../pyquery/cssselectpatch.py	/^    def join(self, combiner, other):$/;"	kind:member	line:34
+json	../main.py	/^import json$/;"	kind:namespace	line:7
 json	../update_details.py	/^import json$/;"	kind:namespace	line:4
+json	../update_thumbnails.py	/^import json$/;"	kind:namespace	line:4
 json	../workflow/update.py	/^import json$/;"	kind:namespace	line:28
 json	../workflow/util.py	/^import json$/;"	kind:namespace	line:21
 json	../workflow/web.py	/^    def json(self):$/;"	kind:member	line:274
@@ -2563,7 +2568,6 @@ link_repl	../lxml/html/__init__.py	/^            def link_repl(href):$/;"	kind:f
 links	../lxml/html/clean.py	/^    links = True$/;"	kind:variable	line:199
 list_magic	../workflow/workflow.py	/^        def list_magic():$/;"	kind:function	line:2580
 list_tags	../lxml/html/defs.py	/^list_tags = frozenset([$/;"	kind:variable	line:77
-load	../cache.py	/^def load(file_id):$/;"	kind:function	line:16
 load	../lxml/ElementInclude.py	/^    def load(href, parse, encoding=None, parser=None):$/;"	kind:function	line:133
 load	../workflow/workflow.py	/^    def load(cls, file_obj):$/;"	kind:member	line:597
 load	../workflow/workflow.py	/^    def load(cls, file_obj):$/;"	kind:member	line:636
@@ -2571,8 +2575,9 @@ load	../workflow/workflow.py	/^    def load(cls, file_obj):$/;"	kind:member	line
 locate_unbalanced_end	../lxml/html/diff.py	/^def locate_unbalanced_end(unbalanced_end, pre_delete, post_delete):$/;"	kind:function	line:415
 locate_unbalanced_start	../lxml/html/diff.py	/^def locate_unbalanced_start(unbalanced_start, pre_delete, post_delete):$/;"	kind:function	line:365
 locked	../workflow/util.py	/^    def locked(self):$/;"	kind:member	line:415
-log	../main.py	/^    log = wf.logger$/;"	kind:variable	line:144
+log	../main.py	/^    log = wf.logger$/;"	kind:variable	line:135
 log	../update_details.py	/^    log = wf.logger$/;"	kind:variable	line:44
+log	../update_thumbnails.py	/^    log = wf.logger$/;"	kind:variable	line:38
 log	../workflow/notify.py	/^def log():$/;"	kind:function	line:75
 logfile	../workflow/workflow.py	/^    def logfile(self):$/;"	kind:member	line:1372
 logger	../workflow/workflow.py	/^    def logger(self):$/;"	kind:member	line:1382
@@ -2600,8 +2605,9 @@ lxml	../lxml/includes/etreepublic.pxd	/^    cdef class lxml.etree._ElementTagMat
 lxml	../lxml/includes/etreepublic.pxd	/^    cdef class lxml.etree._ElementTree [ object LxmlElementTree ]:$/;"	kind:class	line:40
 lxml	../pyquery/pyquery.py	/^import lxml.html$/;"	kind:namespace	line:12
 main	../lxml/html/_diffcommand.py	/^def main(args=None):$/;"	kind:function	line:32
-main	../main.py	/^def main(wf):    $/;"	kind:function	line:60
+main	../main.py	/^def main(wf):    $/;"	kind:function	line:61
 main	../update_details.py	/^def main(wf):$/;"	kind:function	line:35
+main	../update_thumbnails.py	/^def main(wf):$/;"	kind:function	line:13
 main	../workflow/background.py	/^def main(wf):  # pragma: no cover$/;"	kind:function	line:248
 main.py	../main.py	1;"	kind:file	line:1
 makeElement	../lxml/includes/etreepublic.pxd	/^    cdef _Element makeElement(tag, _Document doc, parser,$/;"	kind:function	line:69
@@ -2787,8 +2793,9 @@ plistlib	../workflow/notify.py	/^import plistlib$/;"	kind:namespace	line:29
 plistlib	../workflow/workflow.py	/^import plistlib$/;"	kind:namespace	line:32
 png_to_icns	../workflow/notify.py	/^def png_to_icns(png_path, icns_path):$/;"	kind:function	line:237
 post	../workflow/web.py	/^def post(url, params=None, data=None, headers=None, cookies=None, files=None,$/;"	kind:function	line:594
-pq	../main.py	/^    from pyquery import PyQuery as pq$/;"	kind:namespace	line:19
+pq	../main.py	/^    from pyquery import PyQuery as pq$/;"	kind:namespace	line:20
 pq	../update_details.py	/^from pyquery import PyQuery as pq$/;"	kind:namespace	line:5
+pq	../update_thumbnails.py	/^from pyquery import PyQuery as pq$/;"	kind:namespace	line:6
 prepare_child	../lxml/_elementpath.py	/^def prepare_child(next, token):$/;"	kind:function	line:99
 prepare_descendant	../lxml/_elementpath.py	/^def prepare_descendant(next, token):$/;"	kind:function	line:119
 prepare_parent	../lxml/_elementpath.py	/^def prepare_parent(next, token):$/;"	kind:function	line:133
@@ -2816,6 +2823,7 @@ processingInstruction	../lxml/sax.py	/^    def processingInstruction(self, targe
 processing_instructions	../lxml/html/clean.py	/^    processing_instructions = True$/;"	kind:variable	line:202
 pseudo_never_matches	../cssselect/xpath.py	/^    def pseudo_never_matches(self, xpath):$/;"	kind:member	line:584
 purge	../soupsieve/__init__.py	/^def purge():$/;"	kind:function	line:66
+put	../cache.py	/^def put(film_id, url):$/;"	kind:function	line:5
 pyclasslookup.py	../lxml/pyclasslookup.py	1;"	kind:file	line:1
 pyquery.py	../pyquery/pyquery.py	1;"	kind:file	line:1
 pyunicode	../lxml/includes/etreepublic.pxd	/^    cdef object pyunicode(const_xmlChar* s)$/;"	kind:function	line:185
@@ -2875,7 +2883,7 @@ rootNodeOrRaise	../lxml/includes/etreepublic.pxd	/^    cdef _Element rootNodeOrR
 run	../workflow/workflow.py	/^    def run(self, func, text_errors=False):$/;"	kind:member	line:2031
 run_applescript	../workflow/util.py	/^def run_applescript(script, *args, **kwargs):$/;"	kind:function	line:187
 run_command	../workflow/util.py	/^def run_command(cmd, **kwargs):$/;"	kind:function	line:167
-run_in_background	../main.py	/^from workflow.background import run_in_background, is_running$/;"	kind:namespace	line:12
+run_in_background	../main.py	/^from workflow.background import run_in_background, is_running$/;"	kind:namespace	line:13
 run_in_background	../workflow/background.py	/^def run_in_background(name, args, **kwargs):$/;"	kind:function	line:199
 run_in_background	../workflow/workflow.py	/^            from background import run_in_background$/;"	kind:namespace	line:2327
 run_in_background	../workflow/workflow.py	/^        from background import run_in_background$/;"	kind:namespace	line:2366
@@ -3026,6 +3034,7 @@ sys	../pyquery/pyquery.py	/^import sys$/;"	kind:namespace	line:15
 sys	../pyquery/text.py	/^import sys$/;"	kind:namespace	line:2
 sys	../soupsieve/util.py	/^import sys$/;"	kind:namespace	line:5
 sys	../update_details.py	/^import sys$/;"	kind:namespace	line:3
+sys	../update_thumbnails.py	/^import sys$/;"	kind:namespace	line:3
 sys	../workflow/background.py	/^import sys$/;"	kind:namespace	line:23
 sys	../workflow/notify.py	/^import sys$/;"	kind:namespace	line:32
 sys	../workflow/update.py	/^    import sys$/;"	kind:namespace	line:529
@@ -3052,7 +3061,7 @@ text_content	../lxml/html/__init__.py	/^    def text_content(self):$/;"	kind:mem
 text_type	../pyquery/pyquery.py	/^    text_type = str$/;"	kind:variable	line:30
 text_type	../pyquery/pyquery.py	/^    text_type = unicode$/;"	kind:variable	line:49
 threshold	../lxml/html/diff.py	/^    threshold = 2$/;"	kind:variable	line:871
-time	../main.py	/^from time import time$/;"	kind:namespace	line:8
+time	../main.py	/^from time import time$/;"	kind:namespace	line:9
 time	../workflow/util.py	/^import time$/;"	kind:namespace	line:27
 time	../workflow/workflow.py	/^import time$/;"	kind:namespace	line:38
 to	../lxml/isoschematron/__init__.py	/^from lxml import etree as _etree # due to validator __init__ signature$/;"	kind:namespace	line:7
@@ -3125,6 +3134,7 @@ update_available	../workflow/workflow.py	/^    def update_available(self):$/;"	k
 update_details.py	../update_details.py	1;"	kind:file	line:1
 update_off	../workflow/workflow.py	/^        def update_off():$/;"	kind:function	line:2542
 update_on	../workflow/workflow.py	/^        def update_on():$/;"	kind:function	line:2538
+update_thumbnails.py	../update_thumbnails.py	1;"	kind:file	line:1
 update_wrapper	../backports/functools_lru_cache.py	/^def update_wrapper($/;"	kind:function	line:11
 upper	../soupsieve/util.py	/^def upper(string):  # pragma: no cover$/;"	kind:function	line:54
 uri.pxd	../lxml/includes/uri.pxd	1;"	kind:file	line:1
@@ -3142,7 +3152,7 @@ urljoin	../lxml/html/__init__.py	/^    from urllib.parse import urljoin$/;"	kind
 urljoin	../lxml/html/__init__.py	/^    from urlparse import urljoin$/;"	kind:namespace	line:58
 urljoin	../pyquery/pyquery.py	/^    from urllib.parse import urljoin$/;"	kind:namespace	line:27
 urljoin	../pyquery/pyquery.py	/^    from urlparse import urljoin  # NOQA$/;"	kind:namespace	line:47
-urllib	../main.py	/^import urllib$/;"	kind:namespace	line:7
+urllib	../main.py	/^import urllib$/;"	kind:namespace	line:8
 urllib	../workflow/web.py	/^import urllib$/;"	kind:namespace	line:21
 urllib2	../workflow/web.py	/^import urllib2$/;"	kind:namespace	line:22
 urlopen	../lxml/ElementInclude.py	/^    from urllib.request import urlopen$/;"	kind:namespace	line:60
@@ -3211,13 +3221,15 @@ warn_deprecated	../soupsieve/util.py	/^def warn_deprecated(message, stacklevel=2
 warn_empty	../workflow/workflow3.py	/^    def warn_empty(self, title, subtitle=u'', icon=None):$/;"	kind:member	line:692
 warnings	../soupsieve/util.py	/^import warnings$/;"	kind:namespace	line:4
 web	../cache.py	/^from workflow import web$/;"	kind:namespace	line:2
-web	../main.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:11
+web	../main.py	/^from workflow import Workflow3, web$/;"	kind:namespace	line:12
 web	../update_details.py	/^from workflow import Workflow, web$/;"	kind:namespace	line:6
+web	../update_thumbnails.py	/^from workflow import Workflow, web$/;"	kind:namespace	line:7
 web	../workflow/update.py	/^import web$/;"	kind:namespace	line:35
 web.py	../workflow/web.py	1;"	kind:file	line:1
 webbrowser	../lxml/html/__init__.py	/^    import webbrowser$/;"	kind:namespace	line:1865
-wf	../main.py	/^    wf = Workflow3()$/;"	kind:variable	line:143
+wf	../main.py	/^    wf = Workflow3()$/;"	kind:variable	line:134
 wf	../update_details.py	/^    wf = Workflow()$/;"	kind:variable	line:43
+wf	../update_thumbnails.py	/^    wf = Workflow()$/;"	kind:variable	line:37
 wf	../workflow/background.py	/^def wf():$/;"	kind:function	line:35
 wf	../workflow/notify.py	/^def wf():$/;"	kind:function	line:63
 wf	../workflow/update.py	/^def wf():$/;"	kind:function	line:46

@@ -2,19 +2,19 @@ import os, shutil
 from workflow import web
 SAVE_DIR = './cache'
 
-def dump(file_id, url):
+def put(film_id, url):
     save_directory = SAVE_DIR
     try:
         _, ext = os.path.splitext(os.path.basename(url))
-        filepath = os.path.join(save_directory, file_id)#, ext) # <- Let's try without extension it might work :)
+        filepath = os.path.join(save_directory, film_id)#, ext) # <- Let's try without extension it might work :)
         web.get(url).save_to_path(filepath)
         return filepath
-    except:
-        print("Unexpected exception") # On error fall back to defaults
-        return ICON_DEFAULT, os.path.join('.', ICON_DEFAULT)
+    except Exception as e:
+        raise e
+        return
 
-def load(file_id):
-    filepath = os.path.join(SAVE_DIR, file_id)
+def get(film_id):
+    filepath = os.path.join(SAVE_DIR, film_id)
     return filepath if os.path.isfile(filepath) else None
 
 def clear():

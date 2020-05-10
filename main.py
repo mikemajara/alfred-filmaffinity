@@ -4,6 +4,7 @@
 import os
 import re
 import sys
+import json
 import urllib
 from time import time
 
@@ -73,21 +74,21 @@ def main(wf):
 
             # defaults 
             filepath = os.path.join('.', ICON_DEFAULT)
-            result_id = str(result['id'])
+            result_id = str(result['id']) # TODO change result_id -> film_id
             details = ""
             valid = True
 
 
             if DISPLAY_THUMBNAILS:
-                file_id = 'thumbnail_' + result_id
-                data = cache.load(file_id)
-                if data is None:
-                    d = pq(result['label'])
-                    thumbnail_uri = d('div img').attr('src')
-                    if thumbnail_uri is not None:
-                        cache.dump(file_id, thumbnail_uri)
-
-                filepath = cache.load(file_id)
+                filepath = cache.get(result_id)
+                if filepath is None:
+                    run_in_background(
+                        'update_thumbnail_' + result_id,
+                        ['/usr/bin/python',
+                        wf.workflowfile('update_thumbnails.py'),
+                        json.dumps(result)]
+                    )
+                    wf.rerun = REFRESH_RATE
 
             if DISPLAY_DETAILS:
                 details = wf.cached_data(result_id, max_age=0)
