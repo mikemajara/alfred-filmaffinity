@@ -17,9 +17,6 @@ DISPLAY_THUMBNAILS = os.getenv('MM_DISPLAY_THUMBNAILS').isdigit() and int(os.get
 REFRESH_RATE = 0.2
 DEFAULT_LANGUAGE = 'en'
 
-if DISPLAY_DETAILS or DISPLAY_THUMBNAILS:
-    from pyquery import PyQuery as pq
-
 URL_SEARCH_GET = "https://www.filmaffinity.com/"+DEFAULT_LANGUAGE+"/search.php?stype=title&stext="
 URL_SEARCH_POST = "https://www.filmaffinity.com/"+DEFAULT_LANGUAGE+"/search-ac.ajax.php?action=searchTerm&term="
 ICON_DEFAULT = "icon.png"
@@ -37,7 +34,11 @@ def is_result_type_movie(result):
     return re.search(r"movie-card-ac", result['label']) is not None
 
 
-def main(wf):    
+def main(wf):
+
+    if DISPLAY_DETAILS or DISPLAY_THUMBNAILS:
+        from pyquery import PyQuery as pq
+
     args = wf.args
     searchString = ' '.join(args)
     
@@ -112,7 +113,8 @@ def main(wf):
 
 if __name__ == '__main__':
     # Create a global `Workflow3` object
-    wf = Workflow3()
+    wf = Workflow3(libraries=[os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib'))])
+    # wf = Workflow3(libraries=[os.path.join(os.path.dirname(__file__), 'lib')])
     log = wf.logger
     # Call your entry function via `Workflow3.run()` to enable its
     # helper functions, like exception catching, ARGV normalization,

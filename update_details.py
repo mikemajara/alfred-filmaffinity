@@ -1,9 +1,9 @@
 ﻿# encoding: utf-8
 
+import os
 import sys
 import json
-from pyquery import PyQuery as pq
-from workflow import Workflow, web
+from workflow import Workflow3, web
 
 def get_raw_html_for_url(url):
     res = web.get(url)
@@ -34,12 +34,12 @@ def get_film_detail_string(id):
 
 def main(wf):
     args = wf.args
-    
     details = get_film_detail_string(args[0])
     log.debug('caching: ' + args[0] + " -- " + details)
     wf.cache_data(args[0], details)
     
 if __name__ == '__main__':
-    wf = Workflow()
+    wf = Workflow3(libraries=[os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib'))])
+    from pyquery import PyQuery as pq # define immediately after for global use
     log = wf.logger
     wf.run(main)

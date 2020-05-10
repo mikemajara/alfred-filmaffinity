@@ -245,8 +245,6 @@ To activate / deactivate this functionality set the workflow variables to 1 / 0 
 		<key>MM_DISPLAY_THUMBNAILS</key>
 		<string>1</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>0.1.0</string>
 	<key>webaddress</key>
