@@ -31,6 +31,7 @@ BODY	../lxml/html/builder.py	/^BODY = E.body # document body$/;"	kind:variable	l
 BOUNDARY_CHARS	../workflow/web.py	/^BOUNDARY_CHARS = string.digits + string.ascii_letters$/;"	kind:variable	line:30
 BR	../lxml/html/builder.py	/^BR = E.br # forced line break$/;"	kind:variable	line:51
 BUTTON	../lxml/html/builder.py	/^BUTTON = E.button # push button$/;"	kind:variable	line:52
+CACHE_LIMIT	../cache.py	/^CACHE_LIMIT = 500 #limits number of files.$/;"	kind:variable	line:6
 CAPTION	../lxml/html/builder.py	/^CAPTION = E.caption # table caption$/;"	kind:variable	line:53
 CENTER	../lxml/html/builder.py	/^CENTER = E.center # shorthand for DIV align=center (DEPRECATED)$/;"	kind:variable	line:54
 CITE	../lxml/html/builder.py	/^CITE = E.cite # citation$/;"	kind:variable	line:55
@@ -59,6 +60,7 @@ DEL_END	../lxml/html/diff.py	/^class DEL_END:$/;"	kind:class	line:259
 DEL_START	../lxml/html/diff.py	/^class DEL_START:$/;"	kind:class	line:257
 DFN	../lxml/html/builder.py	/^DFN = E.dfn # instance definition$/;"	kind:variable	line:61
 DIR	../lxml/html/builder.py	/^DIR = E.dir # directory list (DEPRECATED)$/;"	kind:variable	line:62
+DIR_CACHE_IMAGE	../cache.py	/^DIR_CACHE_IMAGE = '.\/cache'$/;"	kind:variable	line:5
 DISPLAY_DETAILS	../main.py	/^DISPLAY_DETAILS = os.getenv('MM_DISPLAY_DETAILS').isdigit() and int(os.getenv('MM_DISPLAY_DETAILS'))$/;"	kind:variable	line:15
 DISPLAY_THUMBNAILS	../main.py	/^DISPLAY_THUMBNAILS = os.getenv('MM_DISPLAY_THUMBNAILS').isdigit() and int(os.getenv('MM_DISPLAY_THUMBNAILS'))$/;"	kind:variable	line:16
 DIV	../lxml/html/builder.py	/^DIV = E.div # generic language\/style container$/;"	kind:variable	line:63
@@ -267,7 +269,6 @@ RadioGroup	../lxml/html/__init__.py	/^class RadioGroup(list):$/;"	kind:class	lin
 Response	../workflow/web.py	/^class Response(object):$/;"	kind:class	line:181
 S	../lxml/html/builder.py	/^S = E.s # strike-through text style (DEPRECATED)$/;"	kind:variable	line:105
 SAMP	../lxml/html/builder.py	/^SAMP = E.samp # sample program output, scripts, etc.$/;"	kind:variable	line:106
-SAVE_DIR	../cache.py	/^SAVE_DIR = '.\/cache'$/;"	kind:variable	line:5
 SCHEMATRON_NS	../lxml/isoschematron/__init__.py	/^SCHEMATRON_NS = "http:\/\/purl.oclc.org\/dsdl\/schematron"$/;"	kind:variable	line:34
 SCRIPT	../lxml/html/builder.py	/^SCRIPT = E.script # script statements$/;"	kind:variable	line:107
 SELECT	../lxml/html/builder.py	/^SELECT = E.select # option selector$/;"	kind:variable	line:108
@@ -1842,12 +1843,12 @@ clean_html	../lxml/html/clean.py	/^    def clean_html(self, html):$/;"	kind:memb
 clean_html	../lxml/html/clean.py	/^clean_html = clean.clean_html$/;"	kind:variable	line:537
 cleanup_delete	../lxml/html/diff.py	/^def cleanup_delete(chunks):$/;"	kind:function	line:274
 cleanup_html	../lxml/html/diff.py	/^def cleanup_html(html):$/;"	kind:function	line:561
-clear	../cache.py	/^def clear():$/;"	kind:function	line:24
+clear	../cache.py	/^def clear(dir = DIR_CACHE_IMAGE, n = None):$/;"	kind:function	line:38
 clear_cache	../workflow/workflow.py	/^    def clear_cache(self, filter_func=lambda f: True):$/;"	kind:member	line:2599
 clear_data	../workflow/workflow.py	/^    def clear_data(self, filter_func=lambda f: True):$/;"	kind:member	line:2611
 clear_session_cache	../workflow/workflow3.py	/^    def clear_session_cache(self, current=False):$/;"	kind:member	line:651
 clear_settings	../workflow/workflow.py	/^    def clear_settings(self):$/;"	kind:member	line:2623
-clear_workflow_cache	../cache.py	/^def clear_workflow_cache():$/;"	kind:function	line:35
+clear_workflow_cache	../cache.py	/^def clear_workflow_cache():$/;"	kind:function	line:53
 clone	../pyquery/pyquery.py	/^    def clone(self):$/;"	kind:member	line:1460
 closest	../pyquery/pyquery.py	/^    def closest(self, selector=None):$/;"	kind:member	line:571
 codecs	../workflow/web.py	/^import codecs$/;"	kind:namespace	line:12
@@ -2080,7 +2081,7 @@ functools	../workflow/util.py	/^import functools$/;"	kind:namespace	line:20
 functools_lru_cache.py	../backports/functools_lru_cache.py	1;"	kind:file	line:1
 general_block_tags	../lxml/html/defs.py	/^general_block_tags = frozenset([$/;"	kind:variable	line:57
 generate	../workflow/web.py	/^        def generate():$/;"	kind:function	line:367
-get	../cache.py	/^def get(film_id):$/;"	kind:function	line:19
+get	../cache.py	/^def get(film_id):$/;"	kind:function	line:22
 get	../workflow/web.py	/^    def get(self, key, default=None):$/;"	kind:member	line:139
 get	../workflow/web.py	/^def get(url, params=None, headers=None, cookies=None, auth=None,$/;"	kind:function	line:582
 getAttributeValue	../lxml/includes/etreepublic.pxd	/^    cdef object getAttributeValue(_Element element, key, default)$/;"	kind:function	line:112
@@ -2088,6 +2089,7 @@ getDocument	../lxml/html/_html5builder.py	/^    def getDocument(self):$/;"	kind:
 getFragment	../lxml/html/_html5builder.py	/^    def getFragment(self):$/;"	kind:member	line:55
 getNsTag	../lxml/includes/etreepublic.pxd	/^    cdef tuple getNsTag(object tag)$/;"	kind:function	line:191
 getNsTagWithEmptyNs	../lxml/includes/etreepublic.pxd	/^    cdef tuple getNsTagWithEmptyNs(object tag)$/;"	kind:function	line:194
+get_cached_files_by_access_date	../cache.py	/^def get_cached_files_by_access_date(dir):$/;"	kind:function	line:31
 get_content_type	../workflow/web.py	/^    def get_content_type(filename):$/;"	kind:function	line:630
 get_default_parser	../lxml/doctestcompare.py	/^    def get_default_parser(self):$/;"	kind:member	line:370
 get_default_parser	../lxml/doctestcompare.py	/^    def get_default_parser(self):$/;"	kind:member	line:87
@@ -2191,6 +2193,7 @@ install_update	../workflow/update.py	/^def install_update():$/;"	kind:function	l
 intersection	../lxml/html/_setmixin.py	/^    intersection = MutableSet.__and__$/;"	kind:variable	line:29
 intersection_update	../lxml/html/_setmixin.py	/^    def intersection_update(self, other):$/;"	kind:member	line:39
 is_	../pyquery/pyquery.py	/^    def is_(self, selector):$/;"	kind:member	line:649
+is_cache_full	../cache.py	/^def is_cache_full(dir = DIR_CACHE_IMAGE):$/;"	kind:function	line:27
 is_delim	../cssselect/parser.py	/^    def is_delim(self, *values):$/;"	kind:member	line:658
 is_end_tag	../lxml/html/diff.py	/^def is_end_tag(tok):$/;"	kind:function	line:745
 is_non_whitespace	../cssselect/xpath.py	/^is_non_whitespace = re.compile(r'^[^ \\t\\r\\n\\f]+$').match$/;"	kind:variable	line:98
@@ -2448,7 +2451,7 @@ print_function	../workflow/workflow3.py	/^from __future__ import print_function,
 processingInstruction	../lxml/sax.py	/^    def processingInstruction(self, target, data):$/;"	kind:member	line:123
 processing_instructions	../lxml/html/clean.py	/^    processing_instructions = True$/;"	kind:variable	line:202
 pseudo_never_matches	../cssselect/xpath.py	/^    def pseudo_never_matches(self, xpath):$/;"	kind:member	line:584
-put	../cache.py	/^def put(film_id, url):$/;"	kind:function	line:8
+put	../cache.py	/^def put(film_id, url):$/;"	kind:function	line:9
 pyclasslookup.py	../lxml/pyclasslookup.py	1;"	kind:file	line:1
 pyquery.py	../pyquery/pyquery.py	1;"	kind:file	line:1
 pyunicode	../lxml/includes/etreepublic.pxd	/^    cdef object pyunicode(const_xmlChar* s)$/;"	kind:function	line:185
