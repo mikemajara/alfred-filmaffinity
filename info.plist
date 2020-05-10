@@ -51,34 +51,13 @@
 	<key>createdby</key>
 	<string>Mike Majara</string>
 	<key>description</key>
-	<string>Search filmaffinity</string>
+	<string>Filmaffinity extended search</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
 	<string>Filmaffinity</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Text Cache cleared</string>
-				<key>title</key>
-				<string>Title Cache cleared</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>94C0FE01-8104-438E-BFA2-10604C3583D0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -101,6 +80,27 @@
 			<string>73B590C2-74F3-4404-A768-A6C0A545A35D</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Text Cache cleared</string>
+				<key>title</key>
+				<string>Title Cache cleared</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>94C0FE01-8104-438E-BFA2-10604C3583D0</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -193,7 +193,13 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>This workflow searches for films in filmaffinity with suggestions and displays main info on alfred display.</string>
+	<string>This workflow searches for films in filmaffinity with suggestions and displays main info on alfred display.
+
+Workflow Environment Variables can be modified to:
+- Display details of film. Currently film score out of 10.
+- Display thumbnail of the film.
+
+To activate / deactivate this functionality set the workflow variables to 1 / 0 respectively.</string>
 	<key>uidata</key>
 	<dict>
 		<key>73B590C2-74F3-4404-A768-A6C0A545A35D</key>
@@ -239,9 +245,11 @@
 		<key>MM_DISPLAY_THUMBNAILS</key>
 		<string>1</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.1.0</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/MikeMajara/alfred-filmaffinity</string>
 </dict>
 </plist>

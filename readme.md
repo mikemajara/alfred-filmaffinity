@@ -10,3 +10,28 @@ Filmaffinity search for alfred. This workflow reaches out for filmaffinity resul
 - View details inline
 - Copy link to film
 - Preview link in Alfred
+
+## Roadmap
+
+- [ ] Add language support
+- [ ] Extend settings to choose among different information of interest.
+    - [x] Thumbnail
+    - [x] Score
+    - [ ] Country
+    - [ ] Year
+    - [ ] Voted
+    - [ ] Duration
+    - [ ] Genre
+    - [ ] Starring
+- [ ] Add support for preset pages
+    - [-] Coming up next in...
+    - [ ] theatres (🇪🇸, 🇺🇸, 🇬🇧, 🇫🇷)
+    - [ ] popular services (Netflix, HBO)
+
+## Known Issues
+
+Special characters are not correctly displayed.
+
+## ACK
+
+This workflow was made with care and love ❤ and would certainly have not been possible without [Alfred-Workflow](https://github.com/deanishe/alfred-workflow).
