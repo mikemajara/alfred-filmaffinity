@@ -2,7 +2,7 @@
 
 ## Description
 
-Filmaffinity search for alfred. This workflow reaches out for [filmaffinity](https://www.filmaffinity.com/en/main.html) results matching your search and quickly displays it's details and thumbnail for you to check out if the film you are searching is worth your time.
+Filmaffinity search for [Alfred](https://www.alfredapp.com/). This workflow reaches out for [filmaffinity](https://www.filmaffinity.com/en/main.html) results matching your search and quickly displays it's details and thumbnail for you to check out if the film you are searching is worth your time.
 
 ## Features
 
@@ -25,7 +25,7 @@ Filmaffinity search for alfred. This workflow reaches out for [filmaffinity](htt
     - [ ] Genre
     - [ ] Starring
 - [ ] Add support for preset pages
-    - [-] Coming up next in...
+    - Coming up next in...
     - [ ] theatres (🇪🇸, 🇺🇸, 🇬🇧, 🇫🇷)
     - [ ] popular services (Netflix, HBO)
 
