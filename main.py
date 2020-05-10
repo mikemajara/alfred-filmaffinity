@@ -15,26 +15,27 @@ from workflow.background import run_in_background, is_running
 DISPLAY_DETAILS = os.getenv('MM_DISPLAY_DETAILS').isdigit() and int(os.getenv('MM_DISPLAY_DETAILS'))
 DISPLAY_THUMBNAILS = os.getenv('MM_DISPLAY_THUMBNAILS').isdigit() and int(os.getenv('MM_DISPLAY_THUMBNAILS'))
 REFRESH_RATE = 0.2
+DEFAULT_LANGUAGE = 'en'
 
 if DISPLAY_DETAILS or DISPLAY_THUMBNAILS:
     from pyquery import PyQuery as pq
 
-URL_SEARCH_GET = "https://www.filmaffinity.com/es/search.php?stype=title&stext="
-URL_SEARCH_POST = "https://www.filmaffinity.com/es/search-ac.ajax.php?action=searchTerm&term="
+URL_SEARCH_GET = "https://www.filmaffinity.com/"+DEFAULT_LANGUAGE+"/search.php?stype=title&stext="
+URL_SEARCH_POST = "https://www.filmaffinity.com/"+DEFAULT_LANGUAGE+"/search-ac.ajax.php?action=searchTerm&term="
 ICON_DEFAULT = "icon.png"
 
 def get_filmaffinity_suggestions(word):
-    url = "https://www.filmaffinity.com/es/search-ac.ajax.php?action=searchTerm&term=" + urllib.quote(word)
+    url = "https://www.filmaffinity.com/"+DEFAULT_LANGUAGE+"/search-ac.ajax.php?action=searchTerm&term=" + urllib.quote(word)
     return web.post(url)
 
 
 def get_url_for_film_id(id):
-    return "https://www.filmaffinity.com/es/film" + str(id) + ".html"
+    return "https://www.filmaffinity.com/"+DEFAULT_LANGUAGE+"/film" + str(id) + ".html"
 
 
 def is_result_type_movie(result):
     return re.search(r"movie-card-ac", result['label']) is not None
-    
+
 
 def main(wf):    
     args = wf.args
