@@ -125,7 +125,7 @@
 		<key>MM_DISPLAY_DETAILS</key>
 		<string>1</string>
 		<key>MM_DISPLAY_THUMBNAILS</key>
-		<string>0</string>
+		<string>1</string>
 	</dict>
 	<key>version</key>
 	<string>0.1</string>

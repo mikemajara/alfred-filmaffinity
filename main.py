@@ -9,9 +9,11 @@ from time import time
 
 import cache
 from workflow import Workflow3, web
+from workflow.background import run_in_background, is_running
 
 DISPLAY_DETAILS = os.getenv('MM_DISPLAY_DETAILS').isdigit() and int(os.getenv('MM_DISPLAY_DETAILS'))
 DISPLAY_THUMBNAILS = os.getenv('MM_DISPLAY_THUMBNAILS').isdigit() and int(os.getenv('MM_DISPLAY_THUMBNAILS'))
+REFRESH_RATE = 0.5
 
 if DISPLAY_DETAILS or DISPLAY_THUMBNAILS:
     from pyquery import PyQuery as pq
@@ -48,7 +50,7 @@ def get_film_detail_string(id):
         
         return rating_str
     except e:
-        print("Unexpected exception")
+        log.debug("Unexpected exception")
         return ""
 
 def is_result_type_movie(result):
@@ -71,11 +73,13 @@ def main(wf):
 
             # defaults 
             filepath = os.path.join('.', ICON_DEFAULT)
+            result_id = str(result['id'])
             details = ""
+            valid = True
 
 
             if DISPLAY_THUMBNAILS:
-                file_id = 'thumbnail_' + str(result['id'])
+                file_id = 'thumbnail_' + result_id
                 data = cache.load(file_id)
                 if data is None:
                     d = pq(result['label'])
@@ -86,16 +90,24 @@ def main(wf):
                 filepath = cache.load(file_id)
 
             if DISPLAY_DETAILS:
-                details = wf.cached_data(result['id'], max_age=0)
+                details = wf.cached_data(result_id, max_age=0)
                 if details is None:
-                    details = get_film_detail_string(result['id'])
-                    wf.cache_data(result['id'], details)
-            
+                    run_in_background(
+                        'update_details_' + result_id,
+                        [
+                            '/usr/bin/python',
+                            wf.workflowfile('update_details.py'),
+                            result_id
+                        ]
+                    )
+                    details = "Loading details..."
+                    wf.rerun = REFRESH_RATE
+                    
             wf.add_item(
                 title=result['value'].encode('ascii', 'replace'),
                 subtitle=details,
                 arg=get_url_for_film_id(result['id']),
-                valid=True,
+                valid=valid,
                 icon=filepath
             )
 
