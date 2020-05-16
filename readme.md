@@ -1,5 +1,8 @@
 # Filmaffinity Alfred Workflow 🔎
 
+![example 1](./resources/a-wf-filmaffiniti-gif.gif)
+![example 2](./resources/a-wf-filmaffiniti-gif-2.gif)
+
 ## Description
 
 Filmaffinity search for [Alfred](https://www.alfredapp.com/). This workflow reaches out for [filmaffinity](https://www.filmaffinity.com/en/main.html) results matching your search and quickly displays it's details and thumbnail for you to check out if the film you are searching is worth your time.
